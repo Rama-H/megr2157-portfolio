@@ -8,39 +8,35 @@ The objective of this assignment is to build a professional engineering portfoli
 
 For this task, I analyzed two engineering portfolios using four functional requirements: navigability, reproducibility, evidence of reasoning, and professional tone.
 
-### Portfolio 1 — Gavin Poloche
+Portfolio 1 — Gavin Poloche
 
-#### a. Navigability:
+a. Navigability:
 A reader can locate a specific piece of work in under 60 seconds. The portfolio separates the author's personal information from engineering content and identifies major technical sections, including the discussion of force and the analysis of the Uni-ball Kuru Toga mechanical pencil. The headings make it possible for a reader to quickly identify where the relevant engineering work is located.
 
-#### b. Reproducibility:
+b. Reproducibility:
 The portfolio provides some information that would allow a colleague to understand the general design being analyzed, including the primary function of the mechanical pencil, its patent number, the inventors, an alternative design, and information about its materials. It also includes two images of the pencil and its eraser cap, which help visually clarify the components being discussed. However, the documentation does not contain enough technical information for a colleague to fully reproduce the analysis without asking questions. In particular, there are no calculations or quantitative measurements provided. The analysis would be more reproducible with measurements, diagrams, calculations, and additional details about the rotating lead mechanism.
 
-#### c. Evidence of Reasoning:
+c. Evidence of Reasoning:
 The portfolio provides evidence of engineering reasoning in the discussion of the author's ENGR 1201 project. The author explains how the use of basic materials affected the design process and describes how prototyping and trial-and-error contributed to the final product. The Kuru Toga analysis also connects specific geometric features, such as the pencil tip and rotating lead mechanism, to their intended functions. However, the reasoning is primarily qualitative, with limited quantitative analysis or comparison of engineering criteria.
 
-#### d. Professional Tone:
+d. Professional Tone:
 The portfolio communicates genuine engineering interests and includes relevant technical concepts, but the writing contains grammatical errors, informal phrasing, inconsistent capitalization, and some statements that are more personal than professional. For example, some sections focus heavily on personal motivation rather than presenting engineering information in a format intended for a professional reader. A stronger professional presentation would use more consistent technical language, clearer organization, and careful proofreading.
 
-#### Overall Assessment:
-This portfolio demonstrates the author's interest in engineering and provides examples of design experiences and product analysis. Its strongest feature is the inclusion of personal reflection and qualitative engineering reasoning. Its main opportunity for improvement is providing more structured and reproducible technical documentation through measurements, calculations, diagrams, and more formal technical writing.
 
 ### Portfolio 2 — Sammari Tate
 
-#### a. Navigability:
+a. Navigability:
 The portfolio uses clearly labeled sections such as About Me, How Force Affects Mechanical Design, and Swingline Stapler. These headings help separate personal information from technical analysis and make the main topics identifiable to a reader.
 
-#### b. Reproducibility:
+b. Reproducibility:
 The portfolio provides more detailed qualitative documentation of the stapler than a reader would get from only a final answer. It identifies several components, explains their functions, provides patent references, and discusses alternative stapler designs and manufacturing methods. In addition, the inclusion of multiple images from different angles—including internal views showing the spring and internal mechanisms—significantly improves the clarity of the design description and helps the reader understand how the stapler operates.
 
-#### c. Evidence of Reasoning:
+c. Evidence of Reasoning:
 The portfolio provides strong qualitative evidence of engineering reasoning. The author explains how specific components transmit force and how the geometry and orientation of the handle, driver blade, and anvil contribute to the stapler's operation. The discussion of the ENGR 1201 mousetrap-powered car also demonstrates reasoning by identifying a design-process failure and explaining how the team adapted when the axle broke. The portfolio shows that the author is considering not only what the product does, but also why particular design features may have been selected.
 
-#### d. Professional Tone:
+d. Professional Tone:
 The portfolio generally communicates the author's engineering interests and technical observations, but there are areas where the writing could be made more professional. Some sentences are lengthy, informal, or grammatically inconsistent, and some statements about manufacturing materials and processes are presented as assumptions without supporting evidence. A more professional engineering document would distinguish clearly between observed facts, researched information, and engineering inference.
 
-#### Overall Assessment:
-This portfolio provides substantial qualitative discussion of engineering design and demonstrates an effort to connect geometry, forces, materials, and function. Its strongest feature is the explanation of how individual components contribute to the operation of the stapler. Its main opportunity for improvement is increasing the technical rigor and reproducibility of the analysis through quantitative evidence, supporting sources, and a more consistent documentation structure.
 
 ## Task B: Product Analysis
 For this task, I selected an Amazon Basics stapler as the mechanical product to analyze.
