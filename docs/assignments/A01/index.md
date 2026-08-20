@@ -8,7 +8,7 @@ The objective of this assignment is to build a professional engineering portfoli
 
 For this task, I analyzed two engineering portfolios using four functional requirements: navigability, reproducibility, evidence of reasoning, and professional tone.
 
-Portfolio 1 — Gavin Poloche
+**Portfolio 1 — Gavin Poloche**
 
 a. Navigability:
 A reader can locate a specific piece of work in under 60 seconds. The portfolio separates the author's personal information from engineering content and identifies major technical sections, including the discussion of force and the analysis of the Uni-ball Kuru Toga mechanical pencil. The headings make it possible for a reader to quickly identify where the relevant engineering work is located.
@@ -23,7 +23,7 @@ d. Professional Tone:
 The portfolio communicates genuine engineering interests and includes relevant technical concepts, but the writing contains grammatical errors, informal phrasing, inconsistent capitalization, and some statements that are more personal than professional. For example, some sections focus heavily on personal motivation rather than presenting engineering information in a format intended for a professional reader. A stronger professional presentation would use more consistent technical language, clearer organization, and careful proofreading.
 
 
-### Portfolio 2 — Sammari Tate
+**Portfolio 2 — Sammari Tate**
 
 a. Navigability:
 The portfolio uses clearly labeled sections such as About Me, How Force Affects Mechanical Design, and Swingline Stapler. These headings help separate personal information from technical analysis and make the main topics identifiable to a reader.
@@ -41,27 +41,27 @@ The portfolio generally communicates the author's engineering interests and tech
 ## Task B: Product Analysis
 For this task, I selected an Amazon Basics stapler as the mechanical product to analyze.
 
-#### Product Function
+**Product Function**
 
 This section will describe the primary mechanical function of the stapler.
 
-#### Governing Model
+**Governing Model**
 
 This section will identify the physical principle or equation governing the stapler's primary mechanical behavior, define its variables, and state an assumption that makes the model applicable.
 
-#### Component Geometry
+**Component Geometry**
 
 Photographs of the product components will be included here. Each photograph will be accompanied by an explanation of how the geometry of that component affects its mechanical function.
 
-#### Patent Research
+**Patent Research**
 
 This section will identify the relevant patent number and inventor(s) and summarize the patent information related to the product.
 
-#### Alternative Solutions
+**Alternative Solutions**
 
 At least two alternative devices that perform the same primary function will be identified and compared with the selected product.
 
-#### Design Decision
+**Design Decision**
 
 One observable design decision made by the original engineer will be identified and justified based on the product's geometry or patent information
 
