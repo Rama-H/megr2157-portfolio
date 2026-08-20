@@ -4,16 +4,16 @@ site_description: Design portfolio documentation, built with the Analyze / Decid
 theme:
   name: material
   palette:
-    primary: green
+    primary: blue
   features:
     - navigation.instant
     - navigation.tracking
 
 nav:
   - Home: index.md
-  - About the Engineer: aboutme/index.md
+  - About me: aboutme/index.md
   - Portfolio Overview: portfolio-overview.md
-  - Engineering Assignments:
+  - Assignments:
       - A1: assignments/A01/index.md
       - A2: assignments/A02/index.md
       - A3: assignments/A03/index.md
