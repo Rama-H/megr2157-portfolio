@@ -77,7 +77,7 @@ The homepage is designed to give a first-time reader an immediate understanding 
 
 ### 2. One Intentional Customization
 
-[We will write this after we decide exactly what you changed in the template.]
+I changed the portfolio's primary color from green to blue. I made this change to give the portfolio a distinct visual identity while maintaining a consistent and readable interface. The color change also helps create visual separation between the site's navigation elements and its main content, making the website easier for an external reader to navigate. I selected the change based on the functional requirement of improving the organization and usability of the portfolio rather than simply changing the appearance based on personal preference.
 
 ### 3. Documentation Standard
 
