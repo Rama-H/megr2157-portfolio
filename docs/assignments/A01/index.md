@@ -4,7 +4,7 @@
 The objective of this assignment is to build a professional engineering portfolio that documents my development as an engineer through analysis, engineering decisions, and technical communication. The portfolio will be used throughout the semester to document my work and demonstrate my ability to analyze problems, justify engineering decisions, and communicate my reasoning clearly.
 
 ## Analyze
-## Task A: Portfolio Analysis
+**Task A: Portfolio Analysis**
 
 For this task, I analyzed two engineering portfolios using four functional requirements: navigability, reproducibility, evidence of reasoning, and professional tone.
 
@@ -38,49 +38,69 @@ d. Professional Tone:
 The portfolio generally communicates the author's engineering interests and technical observations, but there are areas where the writing could be made more professional. Some sentences are lengthy, informal, or grammatically inconsistent, and some statements about manufacturing materials and processes are presented as assumptions without supporting evidence. A more professional engineering document would distinguish clearly between observed facts, researched information, and engineering inference.
 
 
-## Task B: Product Analysis
-For this task, I selected an Amazon Basics stapler as the mechanical product to analyze.
+**Task B: Product Analysis**
+For this task, I selected a Hair Claw Clip as the mechanical product to analyze.
 
-**Product Function**
+_**Product Function**_
 
-This section will describe the primary mechanical function of the stapler.
+The primary function of the claw clip is to apply and maintain a clamping force to secure a bundle of hair between its two opposing plastic halves. When the user applies an external force to open the clip, the two halves rotate about their central connection and compress the metal spring. When the external force is released, the spring produces a restoring torque that rotates the two halves back toward the closed position, causing the teeth of the clip to apply opposing forces to the hair and maintain its position. The clip therefore converts the user's applied force and the spring's stored elastic energy into a sustained mechanical clamping force
 
-**Governing Model**
+_**Governing Model**_
 
-This section will identify the physical principle or equation governing the stapler's primary mechanical behavior, define its variables, and state an assumption that makes the model applicable.
+The primary mechanical behavior of the claw clip can be modeled using a torsional spring relationship combined with rotational equilibrium. The metal spring stores elastic energy when the two plastic halves of the clip are rotated apart. When the user releases the clip, the spring produces a restoring torque that causes the two halves to rotate toward one another and generate the clamping force that secures the hair.
 
-**Component Geometry**
+The torsional spring model is:
 
+**𝜏=𝑘𝜃**   or Tau=k*Theta
+
+where:
+
+𝜏 = restoring torque produced by the spring,
+k = torsional spring constant,
+𝜃 = angular deflection of the spring from its unloaded position
+
+The restoring torque is transferred through the clip geometry and produces a clamping force at the teeth of the clip. Using moment equilibrium, the approximate clamping force can be represented as:
+
+𝐹_jaw= 𝜏/𝐿= (𝑘𝜃)/𝐿
+
+(F_jaw) = approximate clamping force applied by the clip, 
+(L) = perpendicular distance from the spring's rotational axis to the effective point where the clamping force acts
+
+This model shows that increasing the spring stiffness or increasing the spring's angular deflection increases the available clamping torque, while the geometry and moment arm determine how that torque is converted into the force applied to the hair.
+
+-Assumption: The clip is assumed to behave as a rigid-body mechanism with small elastic deformation of the plastic halves, so the spring torque is the dominant source of the clamping force.
+
+_**Component Geometry**_
 Photographs of the product components will be included here. Each photograph will be accompanied by an explanation of how the geometry of that component affects its mechanical function.
 
-**Patent Research**
+_**Patent Research**_
 
 This section will identify the relevant patent number and inventor(s) and summarize the patent information related to the product.
 
-**Alternative Solutions**
+_**Alternative Solutions**_
 
 At least two alternative devices that perform the same primary function will be identified and compared with the selected product.
 
-**Design Decision**
+_**Design Decision**_
 
 One observable design decision made by the original engineer will be identified and justified based on the product's geometry or patent information
 
 
 ## Decide
-1. Homepage Identity
+**1. Homepage Identity**
 
 The homepage is designed to give a first-time reader an immediate understanding of what this portfolio contains, how the information is organized, and what standard the documentation follows. Because the intended reader may be an engineering instructor, future employer, or professional reviewing my work, the homepage identifies me as a Mechanical Engineering student with a concentration in Biomedical Engineering and presents the site as a record of engineering analysis, design decisions, and technical communication. The navigation separates general information about me from the portfolio overview and individual assignments so that a reader can quickly locate the information they need. The homepage also establishes the Analyze, Decide, and Communicate framework as the standard for the portfolio, signaling that each assignment will document not only the final result but also the reasoning and decisions that produced it.
 
-2. One Intentional Customization
+**2. One Intentional Customization**
 
 I changed the portfolio's primary color from green to blue. I made this change to give the portfolio a distinct visual identity while maintaining a consistent and readable interface. The color change also helps create visual separation between the site's navigation elements and its main content, making the website easier for an external reader to navigate. I selected the change based on the functional requirement of improving the organization and usability of the portfolio rather than simply changing the appearance based on personal preference.
 
-3. Documentation Standard
+**3. Documentation Standard**
 
-Every assignment entry will identify the governing model, state the assumptions used, document the reasoning behind major decisions, and provide enough evidence for another engineer to understand and reproduce the work without needing additional explanation.
+For every assignment, I will identify the governing engineering model, state the assumptions and constraints used, explain the reasoning behind my decisions, support my conclusions with appropriate evidence, and present my work clearly enough that another engineer could understand and reproduce my analysis without needing additional explanation
 
 ## Communicate
-About Me
+**About Me**
 
 My name is Rama Hamid, and I am a Mechanical Engineering student at the University of North Carolina at Charlotte with a concentration in Biomedical Engineering. I chose mechanical engineering because I have always been fascinated by how physical systems work, especially in areas like physics, design, and aerospace concepts. I enjoy understanding how things move, how forces interact, and how engineering principles can be used to create functional and efficient systems. At the same time, I have always had a strong interest in medicine and originally wanted to become a doctor, which is where my interest in biomedical engineering comes from.
 
@@ -90,10 +110,10 @@ As I continue developing as an engineer, I want to become someone who can approa
 
 I am particularly interested in a future career involving biomedical engineering and medical technology, where I can continue blending my interests in engineering, physics, and medicine. I want to gain experience working with both engineers and healthcare professionals to better understand how engineering decisions impact real clinical needs. I also value continuous improvement and learning from mistakes, because engineering problems rarely have perfect conditions. I believe a strong engineer must be able to adapt, evaluate situations critically, and make the best defensible decision with the information available.
 
-Defending an Engineering Decision
+**Defending an Engineering Decision**
 
 To defend an engineering decision means being able to explain not only what choice was made, but also why that choice was appropriate based on the available information, assumptions, constraints, and governing engineering principles. At this point in my education, I can defend simpler engineering decisions by explaining my calculations, assumptions, and reasoning, but I am still developing my ability to evaluate competing alternatives and justify decisions using engineering criteria. I expect this ability to improve throughout the semester as I work through increasingly complex engineering problems and design decisions
 
-Time Spent
+**Time Spent**
 I spent approximately [ENTER THE TIME WHEN FINISHED] working on this assignment
 
