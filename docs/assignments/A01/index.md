@@ -67,20 +67,20 @@ One observable design decision made by the original engineer will be identified 
 
 
 ## Decide
-### 1. Homepage Identity
+1. Homepage Identity
 
 The homepage is designed to give a first-time reader an immediate understanding of what this portfolio contains, how the information is organized, and what standard the documentation follows. Because the intended reader may be an engineering instructor, future employer, or professional reviewing my work, the homepage identifies me as a Mechanical Engineering student with a concentration in Biomedical Engineering and presents the site as a record of engineering analysis, design decisions, and technical communication. The navigation separates general information about me from the portfolio overview and individual assignments so that a reader can quickly locate the information they need. The homepage also establishes the Analyze, Decide, and Communicate framework as the standard for the portfolio, signaling that each assignment will document not only the final result but also the reasoning and decisions that produced it.
 
-### 2. One Intentional Customization
+2. One Intentional Customization
 
 I changed the portfolio's primary color from green to blue. I made this change to give the portfolio a distinct visual identity while maintaining a consistent and readable interface. The color change also helps create visual separation between the site's navigation elements and its main content, making the website easier for an external reader to navigate. I selected the change based on the functional requirement of improving the organization and usability of the portfolio rather than simply changing the appearance based on personal preference.
 
-### 3. Documentation Standard
+3. Documentation Standard
 
 Every assignment entry will identify the governing model, state the assumptions used, document the reasoning behind major decisions, and provide enough evidence for another engineer to understand and reproduce the work without needing additional explanation.
 
 ## Communicate
-### About Me
+About Me
 
 My name is Rama Hamid, and I am a Mechanical Engineering student at the University of North Carolina at Charlotte with a concentration in Biomedical Engineering. I chose mechanical engineering because I have always been fascinated by how physical systems work, especially in areas like physics, design, and aerospace concepts. I enjoy understanding how things move, how forces interact, and how engineering principles can be used to create functional and efficient systems. At the same time, I have always had a strong interest in medicine and originally wanted to become a doctor, which is where my interest in biomedical engineering comes from.
 
@@ -90,10 +90,10 @@ As I continue developing as an engineer, I want to become someone who can approa
 
 I am particularly interested in a future career involving biomedical engineering and medical technology, where I can continue blending my interests in engineering, physics, and medicine. I want to gain experience working with both engineers and healthcare professionals to better understand how engineering decisions impact real clinical needs. I also value continuous improvement and learning from mistakes, because engineering problems rarely have perfect conditions. I believe a strong engineer must be able to adapt, evaluate situations critically, and make the best defensible decision with the information available.
 
-### Defending an Engineering Decision
+Defending an Engineering Decision
 
 To defend an engineering decision means being able to explain not only what choice was made, but also why that choice was appropriate based on the available information, assumptions, constraints, and governing engineering principles. At this point in my education, I can defend simpler engineering decisions by explaining my calculations, assumptions, and reasoning, but I am still developing my ability to evaluate competing alternatives and justify decisions using engineering criteria. I expect this ability to improve throughout the semester as I work through increasingly complex engineering problems and design decisions
 
-### Time Spent
+Time Spent
 I spent approximately [ENTER THE TIME WHEN FINISHED] working on this assignment
 
