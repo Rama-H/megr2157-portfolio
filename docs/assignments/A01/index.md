@@ -161,3 +161,6 @@ To defend an engineering decision means being able to explain not only what choi
 **Time Spent**
 I spent approximately 6 hours and 2 minutes working on this assignment
 
+<img width="3126" height="1644" alt="Screenshot 2026-08-20 234209" src="https://github.com/user-attachments/assets/c5416a26-8087-4120-93de-af3fa93e7f8c" />
+
+
