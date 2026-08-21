@@ -41,11 +41,11 @@ The portfolio generally communicates the author's engineering interests and tech
 **Task B: Product Analysis**
 For this task, I selected a Hair Claw Clip as the mechanical product to analyze.
 
-_**Product Function**_
+_**a. Product Function**_
 
 The primary function of the claw clip is to apply and maintain a clamping force to secure a bundle of hair between its two opposing plastic halves. When the user applies an external force to open the clip, the two halves rotate about their central connection and compress the metal spring. When the external force is released, the spring produces a restoring torque that rotates the two halves back toward the closed position, causing the teeth of the clip to apply opposing forces to the hair and maintain its position. The clip therefore converts the user's applied force and the spring's stored elastic energy into a sustained mechanical clamping force
 
-_**Governing Model**_
+_**b. Governing Model**_
 
 The primary mechanical behavior of the claw clip can be modeled using a torsional spring relationship combined with rotational equilibrium. The metal spring stores elastic energy when the two plastic halves of the clip are rotated apart. When the user releases the clip, the spring produces a restoring torque that causes the two halves to rotate toward one another and generate the clamping force that secures the hair.
 
@@ -70,20 +70,64 @@ This model shows that increasing the spring stiffness or increasing the spring's
 
 -Assumption: The clip is assumed to behave as a rigid-body mechanism with small elastic deformation of the plastic halves, so the spring torque is the dominant source of the clamping force.
 
-_**Component Geometry**_
-Photographs of the product components will be included here. Each photograph will be accompanied by an explanation of how the geometry of that component affects its mechanical function.
+_**c. Component Geometry**_
 
-_**Patent Research**_
+Component 1: Left jaw 
 
-This section will identify the relevant patent number and inventor(s) and summarize the patent information related to the product.
+-Curved outer shell: Provides finger contact area; its curvature sets the moment arm for applied finger force
 
-_**Alternative Solutions**_
+-Inner teeth (comb‑like prongs): Increase local contact pressure and friction with hair by concentrating force at discrete points.
 
-At least two alternative devices that perform the same primary function will be identified and compared with the selected product.
+-Hinge ear with hole: Defines the rotation axis and transmits torque from the spring into the jaw.
 
-_**Design Decision**_
+The left jaw is a rigid plastic body with an ear that forms a pivot about the hinge axis. Its curved finger pad increases the moment arm of the applied finger force, reducing the required force to open the clip. The comb‑like teeth concentrate the clamping force into discrete contact points, increasing friction and preventing hair slip under gravity
+![Description of image](IMG_2285.jpeg)
 
-One observable design decision made by the original engineer will be identified and justified based on the product's geometry or patent information
+Component 2: Right jaw
+
+The right jaw mirrors the left jaw, forming an opposing set of teeth that interlock with the left jaw’s teeth. This symmetric geometry ensures that the normal forces on the hair bundle are distributed from both sides, increasing friction and stabilizing the hair. The matching hinge ear allows both jaws to rotate about the same axis, forming a single degree‑of‑freedom clamping mechanism
+![Description of image](IMG_2287.jpeg)
+
+
+Component 3: Torsion spring
+Geometry features:
+
+-Coiled body around hinge pin: Stores elastic energy in twist.
+
+-Two projecting legs: Press against each jaw, transmitting torque.
+
+-Wire diameter and coil count: Set stiffness 𝑘
+
+The torsion spring is a coiled metal wire wrapped around the hinge pin, with two legs that bear against the inner surfaces of the jaws. When the jaws are opened, the legs rotate relative to the coil, twisting the spring and storing elastic energy. The spring’s wire diameter, coil count, and material modulus determine the torsional stiffness 𝑘, which directly controls the clamping force applied to the hair when the jaws close
+![Description of image](IMG_2286.jpeg)
+
+![Description of image](IMG_2288.jpeg)
+
+
+
+_**d. Patent Research**_
+
+**U.S. Patent No. US8087416B2 — “Hair clip with concealed hinge spring”**
+
+**Inventors**: Michael Defenbaugh and Justin Recchion
+
+**Assignee**: Goody Products, Inc
+
+_**i. Alternative Solutions**_
+
+Two alternative devices that perform the same primary function as the claw clip are a _hair tie_ (rubber band/ scrunchies) and a _bobby pin_, both have the same primary function- clamp hair and resist sliding
+
+Elastic hair tie (rubber band / scrunchie): Uses circumferential tension in an elastic band to compress hair into a bundle.
+
+Bobby pin: Uses elastic bending of a U‑shaped metal strip to apply normal force to hair between its legs.
+
+The claw clip differs from both alternatives because it converts the deformation of a torsion spring into rotational motion of two hinged jaws. The teeth on the jaws then distribute the clamping force across multiple contact points. This allows the clip to secure a larger bundle of hair while remaining reusable and easy to open and close.
+
+_**ii. Design Decision**_
+
+One observable design decision is the use of multiple curved teeth along both jaws instead of a single continuous clamping surface. The teeth extend inward from both sides of the clip and create multiple discrete contact points with the hair. This geometry allows the clamping force generated by the torsion spring to be distributed across several locations rather than concentrated at one contact surface.
+
+I believe this design was selected to increase the clip's ability to resist hair slipping while keeping the clip lightweight and allowing it to accommodate different amounts of hair. The spaces between the teeth also allow the jaws to interlock without requiring the entire surfaces of the two halves to contact one another. As a result, the clip can close around a range of hair thicknesses while maintaining contact through the individual teeth. This design decision therefore connects the geometry of the jaws directly to the product's primary mechanical function of maintaining a clamping force on the hair.
 
 
 ## Decide
@@ -115,5 +159,5 @@ I am particularly interested in a future career involving biomedical engineering
 To defend an engineering decision means being able to explain not only what choice was made, but also why that choice was appropriate based on the available information, assumptions, constraints, and governing engineering principles. At this point in my education, I can defend simpler engineering decisions by explaining my calculations, assumptions, and reasoning, but I am still developing my ability to evaluate competing alternatives and justify decisions using engineering criteria. I expect this ability to improve throughout the semester as I work through increasingly complex engineering problems and design decisions
 
 **Time Spent**
-I spent approximately [ENTER THE TIME WHEN FINISHED] working on this assignment
+I spent approximately 6 hours and 2 minutes working on this assignment
 
