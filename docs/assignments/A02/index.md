@@ -14,9 +14,18 @@ I began by studying the loading and geometric constraints provided in the assign
 
 My final geometry contains five joints and seven truss members. The upper chord has two (0.60 m) sections, the lower chord contains a (0.40 m) section, the two outer diagonal members are (0.50 m) long, and the two inner diagonal members are approximately (0.3606 m) long. 
 
+<img width="3200" height="1908" alt="Screenshot 2026-08-30 173639" src="https://github.com/user-attachments/assets/51ad5681-76dc-420d-a9de-2bb1aeb08d41" />
+
 <img width="2152" height="2856" alt="CamScanner 8-30-26 17 30_1" src="https://github.com/user-attachments/assets/2180bc61-dea2-4a34-bd35-262c9b285fde" />
 
 ### Support Reactions
+
+Point A was modeled as a pin support and point B as a roller support, as required by the assignment. The pin at A provides horizontal and vertical reactions, while the roller at B provides a vertical reaction. I first solved for the external support reactions before calculating the forces in individual truss members.
+
+The unknown reactions were: Ax​,Ay​,By​
+
+
+
 ### Free Body Diagrams and Internal Member Forces
 ### Truss Member Cross-Sectional Area
 ### Selected Truss Member
