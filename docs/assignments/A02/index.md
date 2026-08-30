@@ -5,7 +5,7 @@ The objective of this assignment was to design a lightweight planar truss that c
 
 <img width="1266" height="612" alt="Screenshot 2026-08-30 163129" src="https://github.com/user-attachments/assets/ce281513-ae34-49cd-82ec-e3f87d1c865f" />
 
-<img width="2228" height="2828" alt="CamScanner 8-30-26 16 48_1" src="https://github.com/user-attachments/assets/9a3a78e9-6cd3-41ca-8dfd-bb15d8425a73" />
+<img width="2076" height="2840" alt="CamScanner 8-30-26 17 15_1 1" src="https://github.com/user-attachments/assets/bac7c27a-21ea-4f1f-a4aa-705b50ffcdd6" />
 
 ## Analyze
 ### Initial Design and Geometry
@@ -13,6 +13,9 @@ The objective of this assignment was to design a lightweight planar truss that c
 I began by studying the loading and geometric constraints provided in the assignment. The required dimensions were (a=0.4 m) and (b=0.3 m), and I selected the minimum allowed load of (P=20 kN) to reduce the required material while still satisfying the design requirement. I chose a simple symmetrical truss geometry because it provides a clear load path from the two applied loads toward the supports while keeping the number of members relatively small.
 
 My final geometry contains five joints and seven truss members. The upper chord has two (0.60 m) sections, the lower chord contains a (0.40 m) section, the two outer diagonal members are (0.50 m) long, and the two inner diagonal members are approximately (0.3606 m) long. 
+
+<img width="2152" height="2856" alt="CamScanner 8-30-26 17 30_1" src="https://github.com/user-attachments/assets/2180bc61-dea2-4a34-bd35-262c9b285fde" />
+
 ### Support Reactions
 ### Free Body Diagrams and Internal Member Forces
 ### Truss Member Cross-Sectional Area
