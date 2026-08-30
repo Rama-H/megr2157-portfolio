@@ -56,6 +56,13 @@ and I made this internal forces table to compare which is the max force:
 Therefore the largest internal force is:  Fmax=16.02kN
 	​
 ### Truss Member Cross-Sectional Area
+The largest internal force was used to determine the minimum required cross-sectional area of the truss members. I used a safety factor of 3.5 and the yield strength of the selected structural steel. The purpose of this calculation was to ensure that the working stress remained below the allowable stress while keeping the truss as lightweight as reasonably possible.
+
+Known values
+F_max=16.02kN   SF=3.5 sigma_y 317 MPa 
+Unknown: A_min
+	​
+
 ### Selected Truss Member
 ### Analytical Truss Weight
 
