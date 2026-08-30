@@ -53,7 +53,7 @@ and I made this internal forces table to compare which is the max force:
 
 <img width="1788" height="732" alt="CamScanner 8-30-26 18 08_1" src="https://github.com/user-attachments/assets/40e380f0-755e-4c17-8a3d-96f7e5b4d53b" />
 
-The largest internal force is therefore:  Fmax=16.02kN
+Therefore the largest internal force is:  Fmax=16.02kN
 	​
 ### Truss Member Cross-Sectional Area
 ### Selected Truss Member
