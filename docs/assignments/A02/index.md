@@ -24,9 +24,13 @@ Point A was modeled as a pin support and point B as a roller support, as require
 
 The unknown reactions were: Ax​,Ay​,By​
 
+<img width="1904" height="1252" alt="CamScanner 8-30-26 17 43_1" src="https://github.com/user-attachments/assets/5c8829fc-e3df-454c-8afd-8e656fdc59c3" />
 
 
 ### Free Body Diagrams and Internal Member Forces
+
+After finding the support reactions, I used the method of joints to determine the internal force in every truss member. Each member was initially assumed to be in tension, and the sign of the calculated force was then used to determine whether the member was actually in tension or compression. This process allowed me to identify the most highly loaded member, which was then used to size the cross section. 
+
 ### Truss Member Cross-Sectional Area
 ### Selected Truss Member
 ### Analytical Truss Weight
