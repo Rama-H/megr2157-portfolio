@@ -28,6 +28,7 @@ The unknown reactions were: Ax​,Ay​,By​
 
 and then I plugged in numbers :
 
+<img width="2000" height="1412" alt="CamScanner 8-30-26 18 01_1" src="https://github.com/user-attachments/assets/47e7d803-53ef-4a80-a4d0-500a2d87702c" />
 
 
 and here I used statics to calculate the internal forces which gave me the same answers as the symbolic solution:
@@ -38,6 +39,13 @@ and here I used statics to calculate the internal forces which gave me the same 
 ### Free Body Diagrams and Internal Member Forces
 
 After finding the support reactions, I used the method of joints to determine the internal force in every truss member. Each member was initially assumed to be in tension, and the sign of the calculated force was then used to determine whether the member was actually in tension or compression. This process allowed me to identify the most highly loaded member, which was then used to size the cross section. I solved symbolically first and then numerically as shown below
+
+Symbolic 
+<img width="2160" height="2812" alt="CamScanner 8-30-26 17 55_1" src="https://github.com/user-attachments/assets/ea0717c9-c18b-4fac-bcc6-c8a8af2f5ec5" />
+
+<img width="1364" height="784" alt="CamScanner 8-30-26 17 55_2" src="https://github.com/user-attachments/assets/c82fa9af-cc51-467f-ba69-3eab42db8086" />
+
+and here I plugged the numbers in and found Fmax:
 
 
 ### Truss Member Cross-Sectional Area
