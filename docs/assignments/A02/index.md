@@ -20,16 +20,25 @@ My final geometry contains five joints and seven truss members. The upper chord 
 
 ### Support Reactions
 
-Point A was modeled as a pin support and point B as a roller support, as required by the assignment. The pin at A provides horizontal and vertical reactions, while the roller at B provides a vertical reaction. I first solved for the external support reactions before calculating the forces in individual truss members.
+Point A was modeled as a pin support and point B as a roller support, as required by the assignment. The pin at A provides horizontal and vertical reactions, while the roller at B provides a vertical reaction. I first solved for the external support reactions before calculating the forces in individual truss members, I solved symbolically first and then plugged in the numbers and then solved numerically using statics.
 
 The unknown reactions were: Ax​,Ay​,By​
+
+<img width="1675" height="964" alt="CamScanner 8-30-26 17 48_1" src="https://github.com/user-attachments/assets/8a561f76-260a-4cc4-9e05-793faf5f3f5e" />
+
+and then I plugged in numbers :
+
+
+
+and here I used statics to calculate the internal forces which gave me the same answers as the symbolic solution:
 
 <img width="1904" height="1252" alt="CamScanner 8-30-26 17 43_1" src="https://github.com/user-attachments/assets/5c8829fc-e3df-454c-8afd-8e656fdc59c3" />
 
 
 ### Free Body Diagrams and Internal Member Forces
 
-After finding the support reactions, I used the method of joints to determine the internal force in every truss member. Each member was initially assumed to be in tension, and the sign of the calculated force was then used to determine whether the member was actually in tension or compression. This process allowed me to identify the most highly loaded member, which was then used to size the cross section. 
+After finding the support reactions, I used the method of joints to determine the internal force in every truss member. Each member was initially assumed to be in tension, and the sign of the calculated force was then used to determine whether the member was actually in tension or compression. This process allowed me to identify the most highly loaded member, which was then used to size the cross section. I solved symbolically first and then numerically as shown below
+
 
 ### Truss Member Cross-Sectional Area
 ### Selected Truss Member
