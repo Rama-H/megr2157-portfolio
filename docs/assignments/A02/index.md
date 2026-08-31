@@ -76,6 +76,22 @@ Unknown: A_min
 	​
 <img width="2004" height="2296" alt="CamScanner 8-30-26 18 57_1" src="https://github.com/user-attachments/assets/039da16b-5de8-4828-be2b-6a3e289a3fd9" />
 
+### Initial CAD Attempt and Design Challenge
+I started by sketching a rectangle with these dimensions 
+<img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/fa6e8a83-5acc-4166-b5ff-fc676110e9fb" />
+
+and then added the internal lines accordingly
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/def7da28-8e58-4df3-b700-310f7e5e8472" />
+then deleted the outer lines
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/e1043358-52b8-4408-864c-7441e66880be" />
+and I tried to extrude the shaped truss with a 0.014m thickness but it kept giving me an error and I actually spent ours to try figuring out what I did wrong and see if there were any gaps or overlaps...
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/2cb88d19-73cc-4d30-823d-8f99aa5a283d" />
+Then I realized that the Weldments/Structural Member feature was better suited for creating the truss because it allows the same structural-member profile to be applied along multiple sketch segments
+At first, I had difficulty understanding how to use the Weldments feature and how to select the correct structural-member standard, type, and size. I watched instructional videos and experimented with the different options until I understood how to apply a rectangular tube profile to the sketch. I then restarted the member modeling using the Weldments approach and was able to create the final truss geometry.
+<img width="3200" height="1908" alt="image" src="https://github.com/user-attachments/assets/a9e1097b-e63e-467e-9241-c013e222271b" />
+I also added the external force P=20 KN
+<img width="3194" height="1906" alt="image" src="https://github.com/user-attachments/assets/3cb5109f-ad95-4ecd-b169-ccd5111ca7a1" />
+
 ### Truss Material Selection
 The assignment specifies A500 structural steel for the truss. However, A500 structural steel was not available in the SolidWorks material library I was using. Since the assignment specifically states that another type of steel may be used when the required material is unavailable, I selected ASTM A36 Steel for the truss. I used the material properties associated with the selected material when evaluating the design and assigned ASTM A36 to the truss CAD model. 
 
@@ -157,13 +173,33 @@ shear strength of (170 ksi), a safety factor of 4, and a single-shear connection
 ### Selected Pin
 
 ### Pin Weight
+The pin weight was estimated from the cylindrical shaft and the cylindrical head. The analytical calculation was then compared with the CAD Mass Properties to verify the modeled pin geometry. The complete truss assembly was also evaluated after inserting the pins into the member joints.
+
 ### CAD Model and Verification
 ### CAD vs. Analytical Weight
 
 ## Communicate
 
 ### Engineering Lessons Learned
+This assignment helped me understand the difference between an applied load, internal member force, stress, and the required material area. I learned that the truss geometry must be established before the internal forces can be calculated because the member angles determine how the forces are resolved into horizontal and vertical components. I also learned how the largest internal force can be used with the material yield strength and safety factor to determine a minimum cross-sectional area rather than simply choosing a member size without engineering justification.
+
+Another important lesson was that a truss cannot be designed based only on its overall appearance. Each joint and member needs to be analyzed to understand how the external loads are transferred through the structure. The method of joints allowed me to identify which members were in tension, which were in compression, and which carried essentially zero force under the selected loading condition.
+
+I also learned how analytical calculations and CAD modeling complement each other. The hand calculation predicted the approximate truss mass before the CAD model was created, while SolidWorks provided a mass based on the actual modeled geometry. The difference between the analytical and CAD values showed me that simplifying assumptions in hand calculations can produce a slightly different result from a detailed CAD model.
+
+Finally, I learned that connection design is also an important part of structural design. The truss members may have sufficient cross-sectional area, but the connections still need to withstand the forces transferred between the members. By calculating the minimum pin area using the shear strength and a safety factor of 4, I was able to select a (10 mm) diameter pin that exceeds the calculated minimum area.
 ### Design Process
+At the beginning of the assignment, I was unfamiliar with how to translate the 2D truss requirements into a complete CAD model. I first worked through the geometry and analytical calculations to determine the required member lengths, internal forces, cross-sectional area, and pin size. Once the analytical design was established, I began building the model in SolidWorks and initially had difficulty determining how to create the structural members and connections.
+
+I used SolidWorks Weldments and the Structural Member feature to create the truss members with a consistent rectangular-tube cross section. I also used external instructional videos to better understand the CAD workflow and then applied that information to my own design rather than simply copying a model. After creating the truss, I created the pins separately, assigned the appropriate material, and assembled the pins into the holes at the truss joints.
+
+The CAD process required several adjustments to make the geometry, member intersections, and pin placement work correctly. After completing the assembly, I used the Mass Properties tool to verify the predicted mass of the truss and the complete assembly. This allowed me to compare the physical CAD model with the analytical weight calculations and complete the final verification of the design.
 ### Challenges / Mistakes
+One of the main challenges I encountered was determining how to create the truss members in SolidWorks. My initial approach was to try to create the members using standard extrusions, but the assignment required the truss members to be represented as a structural system, so I switched to the Weldments/Structural Member workflow. Learning how the Structural Member feature uses sketch segments as paths was an important part of completing the CAD model.
+
+Another challenge was determining the correct pin dimensions. The pin's shear area is based on the shaft diameter rather than the larger head diameter, so I used the calculated minimum shaft area to select a (10 mm) diameter shaft. I then modeled the head separately so that the pin could physically retain the truss members.
+
+I also had to make sure that the CAD dimensions matched the analytical geometry. The diagonal lengths were calculated using the Pythagorean theorem rather than being estimated visually. This was important because the member angles affect the internal force calculations.
+
 ### Final Design Summary
 
