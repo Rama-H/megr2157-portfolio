@@ -222,5 +222,8 @@ Another challenge was determining the correct pin dimensions. The pin's shear ar
 
 I also had to make sure that the CAD dimensions matched the analytical geometry. The diagonal lengths were calculated using the Pythagorean theorem rather than being estimated visually. This was important because the member angles affect the internal force calculations.
 
-
+### Download CAD Files
+- [Truss Part (.SLDPRT)](link_here)
+- [Pin Part (.SLDPRT)](link_here)
+- [Truss Assembly (.SLDASM)](link_here)
 
