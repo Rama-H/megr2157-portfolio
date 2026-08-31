@@ -7,6 +7,7 @@ The objective of this assignment was to design a lightweight planar truss that c
 
 <img width="2076" height="2840" alt="CamScanner 8-30-26 17 15_1 1" src="https://github.com/user-attachments/assets/bac7c27a-21ea-4f1f-a4aa-705b50ffcdd6" />
 
+
 ## Analyze
 ### Initial Design and Geometry
 
@@ -14,9 +15,9 @@ I began by studying the loading and geometric constraints provided in the assign
 
 My final geometry contains five joints and seven truss members. The upper chord has two (0.60 m) sections, the lower chord contains a (0.40 m) section, the two outer diagonal members are (0.50 m) long, and the two inner diagonal members are approximately (0.3606 m) long. 
 
-<img width="3200" height="1908" alt="Screenshot 2026-08-30 173639" src="https://github.com/user-attachments/assets/51ad5681-76dc-420d-a9de-2bb1aeb08d41" />
-
 <img width="2152" height="2856" alt="CamScanner 8-30-26 17 30_1" src="https://github.com/user-attachments/assets/2180bc61-dea2-4a34-bd35-262c9b285fde" />
+
+<img width="2096" height="1030" alt="Screenshot 2026-08-30 201022" src="https://github.com/user-attachments/assets/7e164041-97e2-449b-b136-440792f02e00" /> 
 
 ### Support Reactions
 
@@ -69,15 +70,48 @@ Unknown: A_min
 ### Selected Truss Member
 For the CAD model, I selected a rectangular tube with dimensions: 
 
+<img width="2144" height="1964" alt="CamScanner 8-30-26 19 13_1" src="https://github.com/user-attachments/assets/d270253f-542e-48c6-bbd5-76375b11b385" />
+
+I selected this geometry because it provides sufficient cross-sectional area while remaining relatively simple to model and manufacture. Using the same cross section for every member also follows the assignment constraint that all truss elements must have identical cross-sectional geometry. 
+
+<img width="3114" height="1906" alt="Screenshot 2026-08-30 192353" src="https://github.com/user-attachments/assets/dd832201-f6a9-40e8-8332-82a290914109" />
+
+<img width="3200" height="1908" alt="Screenshot 2026-08-30 173639" src="https://github.com/user-attachments/assets/51ad5681-76dc-420d-a9de-2bb1aeb08d41" />
+
+
 ### Analytical Truss Weight
+
+After determining the member cross section, I estimated the mass of the truss by adding the lengths of all members and multiplying the resulting volume by the density of steel.
+
+The total member length is: 3.3211 m
+
+<img width="1860" height="1948" alt="CamScanner 8-30-26 19 29_1" src="https://github.com/user-attachments/assets/27654b2a-fe6b-4357-8b12-e0cf5d1f296e" />
+
+The completed truss was evaluated using SolidWorks Mass Properties to determine the predicted mass and weight. The model was assigned a steel density of 7850 kg/m³, resulting in a predicted truss mass of 9.44 kg, corresponding to a weight of approximately 92.6 N. This CAD result provides a direct check of the physical dimensions and material selection used in the analytical design.
+
+<img width="3190" height="1904" alt="Screenshot 2026-08-29 192740" src="https://github.com/user-attachments/assets/1452defa-a95a-4abc-bce5-907b26bb52e7" />
 
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 ### Final Truss Geometry
+I decided to use the five-joint, seven-member truss because it provides a simple and relatively compact load path while satisfying the required dimensions. The geometry uses symmetry around the center of the structure and places the inner diagonal members between the loaded lower joints and the upper chord. This design was chosen before creating the CAD model so that the analytical calculations and the physical model represented the same geometry. 
+
+
 ### Member Cross Section
+The analytical calculation showed that the minimum required area was approximately (176.8 mm^2). I selected a (50 x 30 x 2.6 mm) rectangular tube with an actual cross-sectional area of approximately (388.96 mm^2), which is greater than the required minimum. The larger available section was selected because it provides additional margin above the theoretical minimum and could be modeled consistently for every truss member. 
+
 ### Pin Design
+The next part of the design was determining the required cross-sectional area of the connecting pins. The assignment specifies hardened tool steel with a yield 
+shear strength of (170 ksi), a safety factor of 4, and a single-shear connection.
+
+<img width="1904" height="1500" alt="CamScanner 8-30-26 20 15_1" src="https://github.com/user-attachments/assets/367aefa3-f2ad-43ee-b90d-f769da6fb5c3" />
+
+<img width="2268" height="2888" alt="CamScanner 8-30-26 20 20_1" src="https://github.com/user-attachments/assets/052384db-ea26-43c7-9ae0-55b8ef0f20c9" />
+
+
 ### Selected Pin
+
 ### Pin Weight
 ### CAD Model and Verification
 ### CAD vs. Analytical Weight
