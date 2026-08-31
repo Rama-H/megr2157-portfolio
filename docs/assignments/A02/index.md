@@ -5,17 +5,21 @@ The objective of this assignment was to design a lightweight planar truss that c
 
 <img width="1266" height="612" alt="Screenshot 2026-08-30 163129" src="https://github.com/user-attachments/assets/ce281513-ae34-49cd-82ec-e3f87d1c865f" />
 
-<img width="2076" height="2840" alt="CamScanner 8-30-26 17 15_1 1" src="https://github.com/user-attachments/assets/bac7c27a-21ea-4f1f-a4aa-705b50ffcdd6" />
-
+The assignment also specifies A500 structural steel for the truss; however, A500 was not available in my SolidWorks material library. The assignment allows another type of steel to be used when the specified material is unavailable, so I selected ASTM A36 Steel as the equivalent material for my CAD model. For the connecting pins, I used AISI Type A2 Tool Steel, following the assignment requirement for hardened tool steel with a yield shear strength of (170 ksi) and a density of (0.278 lb/in^3).
 
 ## Analyze
 ### Initial Design and Geometry
+I began by identifying the fixed parameters provided in the assignment, point A was modeled as a pin support and point B as a roller support. I then developed a simple symmetrical five-joint truss containing seven members so that the loading could be transferred to the two supports while keeping the geometry relatively simple. 
 
-I began by studying the loading and geometric constraints provided in the assignment. The required dimensions were (a=0.4 m) and (b=0.3 m), and I selected the minimum allowed load of (P=20 kN) to reduce the required material while still satisfying the design requirement. I chose a simple symmetrical truss geometry because it provides a clear load path from the two applied loads toward the supports while keeping the number of members relatively small.
+<img width="2076" height="2840" alt="CamScanner 8-30-26 17 15_1 1" src="https://github.com/user-attachments/assets/bac7c27a-21ea-4f1f-a4aa-705b50ffcdd6" />
+
+I studied the loading and geometric constraints provided in the assignment. The required dimensions were (a=0.4 m) and (b=0.3 m), and I selected the minimum allowed load of (P=20 kN) to reduce the required material while still satisfying the design requirement. I chose a simple symmetrical truss geometry because it provides a clear load path from the two applied loads toward the supports while keeping the number of members relatively small.
 
 My final geometry contains five joints and seven truss members. The upper chord has two (0.60 m) sections, the lower chord contains a (0.40 m) section, the two outer diagonal members are (0.50 m) long, and the two inner diagonal members are approximately (0.3606 m) long. 
 
 <img width="2152" height="2856" alt="CamScanner 8-30-26 17 30_1" src="https://github.com/user-attachments/assets/2180bc61-dea2-4a34-bd35-262c9b285fde" />
+
+and then I sketched it in SolidWorks
 
 <img width="2096" height="1030" alt="Screenshot 2026-08-30 201022" src="https://github.com/user-attachments/assets/7e164041-97e2-449b-b136-440792f02e00" /> 
 
@@ -49,6 +53,11 @@ Symbolic
 and here I plugged the numbers in and found Fmax:
 
 <img width="2096" height="2928" alt="CamScanner 8-30-26 18 05_1" src="https://github.com/user-attachments/assets/d0698821-736f-4e0a-b7f5-e5bf6ff86861" />
+and here's my statics work solving using method of joints 
+
+<img width="2412" height="1380" alt="CamScanner 8-30-26 20 50_1" src="https://github.com/user-attachments/assets/3ee2a530-f064-4f7d-b87a-07b97b35cf92" />
+
+<img width="2024" height="252" alt="CamScanner 8-30-26 20 50_2" src="https://github.com/user-attachments/assets/11adfb60-a62f-454f-ae0d-d219ff7e60e9" />
 
 and I made this internal forces table to compare which is the max force:
 
@@ -66,6 +75,11 @@ F_max=16.02kN   SF=3.5    sigma_y 317 MPa
 Unknown: A_min
 	​
 <img width="2004" height="2296" alt="CamScanner 8-30-26 18 57_1" src="https://github.com/user-attachments/assets/039da16b-5de8-4828-be2b-6a3e289a3fd9" />
+
+### Truss Material Selection
+The assignment specifies A500 structural steel for the truss. However, A500 structural steel was not available in the SolidWorks material library I was using. Since the assignment specifically states that another type of steel may be used when the required material is unavailable, I selected ASTM A36 Steel for the truss. I used the material properties associated with the selected material when evaluating the design and assigned ASTM A36 to the truss CAD model. 
+
+<img width="3200" height="1778" alt="Screenshot 2026-08-30 205456" src="https://github.com/user-attachments/assets/6bd09036-36d9-47c2-8641-2ad15d767f84" />
 
 ### Selected Truss Member
 For the CAD model, I selected a rectangular tube with dimensions: 
@@ -87,10 +101,40 @@ The total member length is: 3.3211 m
 
 <img width="1860" height="1948" alt="CamScanner 8-30-26 19 29_1" src="https://github.com/user-attachments/assets/27654b2a-fe6b-4357-8b12-e0cf5d1f296e" />
 
-The completed truss was evaluated using SolidWorks Mass Properties to determine the predicted mass and weight. The model was assigned a steel density of 7850 kg/m³, resulting in a predicted truss mass of 9.44 kg, corresponding to a weight of approximately 92.6 N. This CAD result provides a direct check of the physical dimensions and material selection used in the analytical design.
+The completed truss was evaluated using SolidWorks Mass Properties to determine the predicted mass and weight. The model was assigned a steel density of 7850 kg/m³, resulting in a predicted truss mass of 9.44 kg, corresponding to a weight of approximately 92.6 N, the difference is approximately (6.9%) which can be attributed to differences between the simplified analytical volume calculation and the actual CAD geometry at the member intersections. This CAD result provides a direct check of the physical dimensions and material selection used in the analytical design.
 
 <img width="3190" height="1904" alt="Screenshot 2026-08-29 192740" src="https://github.com/user-attachments/assets/1452defa-a95a-4abc-bce5-907b26bb52e7" />
 
+### Pin Material and Design
+The next part of the design was determining the required cross-sectional area of the connecting pins. The assignment requires the connecting pins to be made from hardened tool steel with a yield shear strength of (170 ksi), a safety factor of 4, a density of (0.278 lb/in^3) and a single-shear connection.
+For the CAD model, I selected AISI Type A2 Tool Steel as the pin material because it is a hardened tool steel and was available in the SolidWorks material library. The specified shear yield strength and density from the assignment were used for the pin design calculation.
+
+<img width="1904" height="1500" alt="CamScanner 8-30-26 20 15_1" src="https://github.com/user-attachments/assets/367aefa3-f2ad-43ee-b90d-f769da6fb5c3" />
+
+### Pin Area Calculation
+
+<img width="2268" height="2888" alt="CamScanner 8-30-26 20 20_1" src="https://github.com/user-attachments/assets/052384db-ea26-43c7-9ae0-55b8ef0f20c9" />
+
+
+### Pin CAD Design
+I first sketched a circle in the front plan with a 10 mm diameter
+<img width="3188" height="1906" alt="Screenshot 2026-08-30 211556" src="https://github.com/user-attachments/assets/cef52e02-b34a-4bca-9afd-cf8bf8aa7bf7" />
+
+Then selected the AISI Type A2 Tool Steel material
+<img width="3196" height="1890" alt="Screenshot 2026-08-30 212049" src="https://github.com/user-attachments/assets/a44c2d87-05b5-4524-9a65-916aca8bd19d" />
+
+I extruded the Circle with a 50 mm thickness so it spans with the truss thickness 
+<img width="3198" height="1902" alt="Screenshot 2026-08-30 212219" src="https://github.com/user-attachments/assets/da301939-0b80-4b9b-8928-e66c19e1e2e4" />
+
+I added a fillet at one of the edges of the circle faces with a 0.50mm radius 
+<img width="3194" height="1702" alt="Screenshot 2026-08-30 212402" src="https://github.com/user-attachments/assets/96f3b9b6-02bc-4324-ba4a-e5e7173a2e5c" />
+<img width="2822" height="1478" alt="Screenshot 2026-08-30 212512" src="https://github.com/user-attachments/assets/54ed3c3a-c59a-453f-9f94-d27533760f62" />
+
+and then I added a head to the shaft with a 16mm diameter and 2mm thickness so that the pin could retain the truss members in the assembly, and prevent the pin shaft from sliding 
+<img width="3200" height="1906" alt="Screenshot 2026-08-30 212808" src="https://github.com/user-attachments/assets/9737320b-fa58-426e-ad8a-f0c58f33f338" />
+<img width="3186" height="1900" alt="Screenshot 2026-08-30 212915" src="https://github.com/user-attachments/assets/a15cf478-3014-4d6d-9aba-435f647c3fd4" />
+
+### Pin Weight
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
