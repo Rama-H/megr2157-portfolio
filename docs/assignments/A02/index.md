@@ -84,9 +84,13 @@ and then added the internal lines accordingly
 <img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/def7da28-8e58-4df3-b700-310f7e5e8472" />
 then deleted the outer lines
 <img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/e1043358-52b8-4408-864c-7441e66880be" />
-and I tried to extrude the shaped truss with a 0.014m thickness but it kept giving me an error and I actually spent ours to try figuring out what I did wrong and see if there were any gaps or overlaps...
+
+I initially attempted to create the truss using a standard extrusion with a 0.014 m thickness. However, SolidWorks repeatedly produced errors, and I spent several hours checking the sketch for gaps, overlaps, and other geometry problems...
+
 <img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/2cb88d19-73cc-4d30-823d-8f99aa5a283d" />
-Then I realized that the Weldments/Structural Member feature was better suited for creating the truss because it allows the same structural-member profile to be applied along multiple sketch segments
+
+I eventually realized that the Weldments/Structural Member feature was better suited for this design because it allowed the same structural-member profile to be applied along multiple sketch segments.
+
 At first, I had difficulty understanding how to use the Weldments feature and how to select the correct structural-member standard, type, and size. I watched instructional videos and experimented with the different options until I understood how to apply a rectangular tube profile to the sketch. I then restarted the member modeling using the Weldments approach and was able to create the final truss geometry.
 <img width="3200" height="1908" alt="image" src="https://github.com/user-attachments/assets/a9e1097b-e63e-467e-9241-c013e222271b" />
 I also added the external force P=20 KN
@@ -151,9 +155,15 @@ and then I added a head to the shaft with a 16mm diameter and 2mm thickness so t
 <img width="3186" height="1900" alt="Screenshot 2026-08-30 212915" src="https://github.com/user-attachments/assets/a15cf478-3014-4d6d-9aba-435f647c3fd4" />
 
 ### Pin Weight
+The approximate pin weight was calculated using the dimensions of the modeled pin and the density specified in the assignment. Each pin consists of a 10 mm diameter × 50 mm long cylindrical shaft and a 16 mm diameter × 2 mm thick cylindrical head. The calculated volume of one pin was (4329.11 mm^3), and using the specified density of (0.278 lb/in^3), the weight of one pin was approximately 0.0734 lb (0.327 N). Since the truss uses five identical pins, the combined pin weight was approximately 0.367 lb (1.63 N).
+
+<img width="1456" height="2088" alt="CamScanner 8-30-26 22 20_1" src="https://github.com/user-attachments/assets/84c9e31d-9bbb-4213-b27e-a12506b663aa" />
+
+The SolidWorks Mass Properties tool reported a pin volume of 4327.92 mm³ and a mass of 34.02 g. The CAD volume differs from the analytical volume by only approximately 0.03%, showing that the modeled pin geometry closely matches the analytical dimensions. The SolidWorks mass corresponds to a weight of approximately 0.334 N, which is close to the analytical value of 0.327 N. This comparison verifies that the pin geometry was modeled consistently with the hand calculations.
+
+<img width="3184" height="1912" alt="image" src="https://github.com/user-attachments/assets/cffdae85-ee65-4c0c-9c6c-7609a8861469" />
 
 ## Decide
-_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 ### Final Truss Geometry
 I decided to use the five-joint, seven-member truss because it provides a simple and relatively compact load path while satisfying the required dimensions. The geometry uses symmetry around the center of the structure and places the inner diagonal members between the loaded lower joints and the upper chord. This design was chosen before creating the CAD model so that the analytical calculations and the physical model represented the same geometry. 
 
@@ -171,12 +181,23 @@ shear strength of (170 ksi), a safety factor of 4, and a single-shear connection
 
 
 ### Selected Pin
+I selected a 10 mm diameter × 50 mm long shaft with a 16 mm diameter × 2 mm thick head for the connecting pins. The pins were modeled using AISI Type A2 tool steel, representing the hardened tool steel specified in the assignment.
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/af2d6bce-b709-4a88-9e0b-c19561639e10" />
+
 
 ### Pin Weight
 The pin weight was estimated from the cylindrical shaft and the cylindrical head. The analytical calculation was then compared with the CAD Mass Properties to verify the modeled pin geometry. The complete truss assembly was also evaluated after inserting the pins into the member joints.
 
 ### CAD Model and Verification
+I created a 3D CAD model of the truss and pins using the dimensions determined from my calculations. I used Weldments/Structural Members for the truss and modeled the pins as cylinders. SolidWorks Mass Properties was used to verify the model and determine its predicted mass.
+
+<img width="3194" height="1898" alt="image" src="https://github.com/user-attachments/assets/4d0f053c-df89-421a-96c1-fc0ea1c9f9c0" />
+
 ### CAD vs. Analytical Weight
+The SolidWorks mass of the truss was 9.44 kg, corresponding to approximately 92.6 N of weight. The completed assembly with the pins had a mass of 9.591 kg, or approximately 94.1 N. The CAD results were compared with the analytical calculations to verify the design.
+
+<img width="3188" height="1908" alt="image" src="https://github.com/user-attachments/assets/81db4400-43a5-419e-b002-7f3342bb836b" />
+
 
 ## Communicate
 
