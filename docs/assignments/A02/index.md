@@ -222,6 +222,9 @@ Another challenge was determining the correct pin dimensions. The pin's shear ar
 
 I also had to make sure that the CAD dimensions matched the analytical geometry. The diagonal lengths were calculated using the Pythagorean theorem rather than being estimated visually. This was important because the member angles affect the internal force calculations.
 
+## Time Estimation
+Took me about 5 days to finish
+
 ### Download CAD Files
 - [Download Truss Part (.SLDPRT)](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A02/Truss.SLDPRT)
 - [Download Pin Part (.SLDPRT)](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A02/Pin%20for%20Truss.SLDPRT)
