@@ -126,7 +126,7 @@ The completed truss was evaluated using SolidWorks Mass Properties to determine 
 <img width="3190" height="1904" alt="Screenshot 2026-08-29 192740" src="https://github.com/user-attachments/assets/1452defa-a95a-4abc-bce5-907b26bb52e7" />
 
 ### Pin Material and Design
-The next part of the design was determining the required cross-sectional area of the connecting pins. The assignment requires the connecting pins to be made from hardened tool steel with a yield shear strength of (170 ksi), a safety factor of 4, a density of (0.278 lb/in^3) and a single-shear connection, I used Fmax to be 20KN since the forces were applied at where the pins are located.
+The next part of the design was determining the required cross-sectional area of the connecting pins. The assignment requires the connecting pins to be made from hardened tool steel with a yield shear strength of (170 ksi), a safety factor of 4, a density of (0.278 lb/in^3) and a single-shear connection, I chose Fmax to be 20KN since P forces were applied at where the pins are located.
 For the CAD model, I selected AISI Type A2 Tool Steel as the pin material because it is a hardened tool steel and was available in the SolidWorks material library. The specified shear yield strength and density from the assignment were used for the pin design calculation.
 
 <img width="1904" height="1500" alt="CamScanner 8-30-26 20 15_1" src="https://github.com/user-attachments/assets/367aefa3-f2ad-43ee-b90d-f769da6fb5c3" />
