@@ -57,9 +57,11 @@ Therefore: the analytical design predicts a required **bar length** of approxima
 The calculated tensile stress is significantly below the specified aluminum yield strength of 40 ksi. The resulting analytical safety factor is approximately 19.6, indicating that yielding is not expected under the applied 400-lbf load.
 
 **Volume**
-
+<img width="1706" height="370" alt="CamScanner 9-3-26 22 09_1 1" src="https://github.com/user-attachments/assets/02725199-6854-40b7-a12f-23b4df6ec0e3" />
 
 **Weight**
+<img width="2282" height="489" alt="CamScanner 9-3-26 22 09_1 2" src="https://github.com/user-attachments/assets/04bc4164-8ffc-46da-b40b-d1d1d8303a83" />
+I used the density given from the Matweb Material Property Data
 <img width="3160" height="1580" alt="Screenshot 2026-09-02 212820" src="https://github.com/user-attachments/assets/a9a8ad55-2e73-4757-ad7a-479ce6d84797" />
 
 
