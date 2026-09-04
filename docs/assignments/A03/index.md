@@ -36,26 +36,30 @@ The maximum allowable deflection of 0.009 in was used as the design target. Desi
 
 ### Circular Cross-Section Calculation
 Because the assignment specifies a circular cross section, the cross-sectional area was calculated using
+<img width="1338" height="503" alt="CamScanner 9-3-26 21 48_1 1" src="https://github.com/user-attachments/assets/fe5f7e47-6a8b-4350-9f02-7bb30854b59b" />
 
-For a selected diameter of 0.50 in
+For the selected diameter of 0.50 in, the cross-sectional area used for the initial design was approximately 0.196 in^2, this area was then used in the axial deflection and stress calculations
 
-Therefore, the cross-sectional area used for the initial design was approximately
-
-This area was then used in the axial deflection and stress calculations
 ### Analytical Calculations
-For a uniform bar subjected to direct tension, the axial deflection is calculated using the Axial Deflection Equation
+For a uniform bar subjected to direct tension, the axial deflection is calculated using the Axial Deflection Equation δ = (F × L) / (A × E)
 
-Since the required bar length was unknown, the equation was rearranged to solve for (L):
+Since the required bar length was the unknown, the equation was rearranged to solve for (L):
+<img width="2304" height="716" alt="CamScanner 9-3-26 21 48_1 2" src="https://github.com/user-attachments/assets/f23f646f-495c-422b-9e76-3e313812a59b" />
 
-**Bar Length**
-Therefore, the analytical design predicts a required bar length of approximately **L=43.5in**
+Therefore: the analytical design predicts a required **bar length** of approximately **L=43.5in**
 
 **Analytical Stress**
+<img width="2304" height="379" alt="CamScanner 9-3-26 21 48_1 3" src="https://github.com/user-attachments/assets/39c05490-cd4b-4816-9f22-64a731b48151" />
 
-Analytical Safety Factor
+**Analytical FOS or Factor Of Safety**
+<img width="2280" height="370" alt="CamScanner 9-3-26 22 09_1" src="https://github.com/user-attachments/assets/f087c0f2-a8e1-439a-9397-ed02bc243cd0" />
+
 The calculated tensile stress is significantly below the specified aluminum yield strength of 40 ksi. The resulting analytical safety factor is approximately 19.6, indicating that yielding is not expected under the applied 400-lbf load.
-Volume
-Weight
+
+**Volume**
+
+
+**Weight**
 <img width="3160" height="1580" alt="Screenshot 2026-09-02 212820" src="https://github.com/user-attachments/assets/a9a8ad55-2e73-4757-ad7a-479ce6d84797" />
 
 
