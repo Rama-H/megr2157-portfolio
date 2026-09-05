@@ -62,8 +62,7 @@ The calculated tensile stress is significantly below the specified aluminum yiel
 **Weight**
 <img width="2282" height="489" alt="CamScanner 9-3-26 22 09_1 2" src="https://github.com/user-attachments/assets/04bc4164-8ffc-46da-b40b-d1d1d8303a83" />
 I used the density given from the Matweb Material Property Data
-<img width="3160" height="1580" alt="Screenshot 2026-09-02 212820" src="https://github.com/user-attachments/assets/a9a8ad55-2e73-4757-ad7a-479ce6d84797" />
-
+<img width="3145" height="1652" alt="image" src="https://github.com/user-attachments/assets/57b4303a-bf1f-43f8-af51-3da72ca99be8" />
 
 ## Decide
 
