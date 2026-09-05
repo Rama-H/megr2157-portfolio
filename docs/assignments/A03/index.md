@@ -65,6 +65,23 @@ I used the density given from the Matweb Material Property Data
 <img width="3145" height="1652" alt="image" src="https://github.com/user-attachments/assets/57b4303a-bf1f-43f8-af51-3da72ca99be8" />
 
 ## Decide
+### Parametric CAD
+The next step was to convert the analytical design into a parametric CAD model. Rather than manually entering the calculated bar length, the length was linked to the design parameters through an equation.
+
+
+The circular cross-sectional area was defined as
+
+
+and the required length was defined as
+
+
+### FEA Setup
+After completing the parametric CAD model, the geometry was used for finite element analysis. The same 400-lbf tensile load and aluminum material properties used in the analytical calculation were applied to the FEA model.
+
+The bar was constrained at one end and loaded in tension at the opposite end. A mesh was generated over the bar before solving the study.
+
+Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution.
+
 
 
 ## Communicate
