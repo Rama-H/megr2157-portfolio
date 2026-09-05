@@ -67,12 +67,22 @@ I used the density given from the Matweb Material Property Data
 ## Decide
 ### Parametric CAD
 The next step was to convert the analytical design into a parametric CAD model. Rather than manually entering the calculated bar length, the length was linked to the design parameters through an equation.
+**Setup**
+CAD parameter/equation table:
+<img width="1610" height="778" alt="image" src="https://github.com/user-attachments/assets/1ba27585-2a91-4c95-a38c-24377b723d48" />
+
+The circular cross-sectional area was defined as  A="Diameter D" ^ 2 * pi / 4
+
+and the required length was defined as L="Max Deflection" * "Area" * "Young's Modulus E" / F
+
+The CAD model produced a calculated bar length of approximately 43.56 in, which agrees with the analytical calculation. This confirms that the parametric equation was correctly implemented.
+
+Here I sketched the circle using the global variable of the Diameter D= 0.50, I chose the Right Plane for sketcing
+<img width="3198" height="1910" alt="image" src="https://github.com/user-attachments/assets/c36d68d8-f15b-415b-b556-42af71834651" />
+and then extruded the circle, using the global variable of the Length = 43.56 in
+<img width="3198" height="1850" alt="image" src="https://github.com/user-attachments/assets/bc09e83d-a966-44f1-bc12-a1020f570197" />
 
 
-The circular cross-sectional area was defined as
-
-
-and the required length was defined as
 
 
 ### FEA Setup
