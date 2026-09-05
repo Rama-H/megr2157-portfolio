@@ -81,9 +81,8 @@ Here I sketched the circle using the global variable of the Diameter D= 0.50, I 
 <img width="3198" height="1910" alt="image" src="https://github.com/user-attachments/assets/c36d68d8-f15b-415b-b556-42af71834651" />
 and then extruded the circle, using the global variable of the Length = 43.56 in
 <img width="3198" height="1850" alt="image" src="https://github.com/user-attachments/assets/bc09e83d-a966-44f1-bc12-a1020f570197" />
-
-
-
+This is the final shape of the bar
+<img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/ce9bb127-a363-44b9-8d77-9262092716e5" />
 
 ### FEA Setup
 After completing the parametric CAD model, the geometry was used for finite element analysis. The same 400-lbf tensile load and aluminum material properties used in the analytical calculation were applied to the FEA model.
