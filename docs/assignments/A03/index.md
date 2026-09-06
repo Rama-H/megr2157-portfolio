@@ -91,6 +91,7 @@ The bar was constrained at one end and loaded in tension at the opposite end. A 
 <img width="3196" height="1904" alt="image" src="https://github.com/user-attachments/assets/088abab0-dc89-4562-84ac-60db4d22e12d" />
 
 Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution, I created a custom Aluminum material with:
+
 Elastic Modulus: 9.86𝑒6 psi
 
 Density: 0.097504 lb/in^3
