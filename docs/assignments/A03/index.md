@@ -88,9 +88,13 @@ This is the final shape of the bar
 After completing the parametric CAD model, the geometry was used for finite element analysis. The same 400-lbf tensile load and aluminum material properties used in the analytical calculation were applied to the FEA model.
 
 The bar was constrained at one end and loaded in tension at the opposite end. A mesh was generated over the bar before solving the study.
+<img width="3196" height="1904" alt="image" src="https://github.com/user-attachments/assets/088abab0-dc89-4562-84ac-60db4d22e12d" />
 
-Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution.
+Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution
+<img width="2540" height="1896" alt="image" src="https://github.com/user-attachments/assets/a8b6ea2a-ae35-45a6-80b3-b2b17be9f337" />
 
+Applied load
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/7436355c-70f9-4134-ac78-662812d30e88" />
 
 
 ## Communicate
