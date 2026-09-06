@@ -103,10 +103,29 @@ Yield Strength: 40000 psi   and assigned it to the part
 
 Applied load
 <img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/7436355c-70f9-4134-ac78-662812d30e88" />
+And here I clicked Mesh and Run
+<img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/f748ab6d-7aeb-47df-ab87-229e549066bb" />
+
+### FEA Deflection
+After I ran FEA, the FEA produced a maximum axial displacement of 0.000228781 m which converts to 0.009007 in. 
+<img width="2256" height="835" alt="IMG_2415" src="https://github.com/user-attachments/assets/5f85a9a3-eba8-4638-b808-9b042d17cc9c" />
+That's extremely close to the required 0.009 in.
+
+The maximum displacement occurred at the loaded end of the bar, while the constrained end remained approximately fixed.
+<img width="3198" height="1906" alt="image" src="https://github.com/user-attachments/assets/ea2f693b-7d14-495c-9857-f7af46c01ac0" />
+
+
+### FEA Stress- Von Mises stress
+The maximum von Mises stress obtained from the FEA was 2.247 ksi. This value was compared with the specified aluminum yield strength of 40 ksi.
+<img width="2744" height="1384" alt="IMG_2416" src="https://github.com/user-attachments/assets/422bf41e-2d47-4a54-8d75-9e81a53e3878" />
+The maximum von Mises stress was approximately 1.549x10^7 Pa which equals to 2.247 ksi. This is substantially below the specified aluminum yield strength of 40 ksi, resulting in an FEA safety factor of approximately 17.8
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/a9a0703b-6e34-41bb-97e9-272dc7a6373c" />
+<img width="3200" height="1914" alt="image" src="https://github.com/user-attachments/assets/532e00cb-7fee-4945-bb45-39a9f7c0f386" />
 
 
 ## Communicate
 ### Analytical vs. FEA
+the difference from the analytical value of 0.009 in is only about: 0.079%
 ### Pin Hole
 ### Lessons Learned
 What I learned
