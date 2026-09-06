@@ -90,7 +90,14 @@ After completing the parametric CAD model, the geometry was used for finite elem
 The bar was constrained at one end and loaded in tension at the opposite end. A mesh was generated over the bar before solving the study.
 <img width="3196" height="1904" alt="image" src="https://github.com/user-attachments/assets/088abab0-dc89-4562-84ac-60db4d22e12d" />
 
-Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution
+Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution, I created a custom Aluminum material with:
+Elastic Modulus: 9.86𝑒6 psi
+
+Density: 0.097504 lb/in^3
+
+Poisson’s Ratio: 0.36
+
+Yield Strength: 40000 psi   and assigned it to the part
 <img width="2540" height="1896" alt="image" src="https://github.com/user-attachments/assets/a8b6ea2a-ae35-45a6-80b3-b2b17be9f337" />
 
 Applied load
