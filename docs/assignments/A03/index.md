@@ -66,7 +66,8 @@ I used the density given from the Matweb Material Property Data
 
 ## Decide
 ### Parametric CAD
-The next step was to convert the analytical design into a parametric CAD model. Rather than manually entering the calculated bar length, the length was linked to the design parameters through an equation.
+After completing the analytical calculations, I created a parametric CAD model of the aluminum bar in SolidWorks. The bar was modeled with a circular cross section using a diameter of 0.50 in. Rather than manually entering the calculated bar length, the length was linked to the design parameters through an equation
+The CAD model was created parametrically so that the design dimensions could be modified if the load, diameter, material properties, or allowable deflection were changed. This allowed the model to be used for the later FEA verification and parameter study.
 **Setup**
 CAD parameter/equation table:
 <img width="1610" height="778" alt="image" src="https://github.com/user-attachments/assets/1ba27585-2a91-4c95-a38c-24377b723d48" />
@@ -85,10 +86,20 @@ This is the final shape of the bar
 <img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/ce9bb127-a363-44b9-8d77-9262092716e5" />
 
 ### FEA Setup
-After completing the parametric CAD model, the geometry was used for finite element analysis. The same 400-lbf tensile load and aluminum material properties used in the analytical calculation were applied to the FEA model.
+After completing the CAD model, I created a static FEA study in SolidWorks Simulation. The final material properties were assigned to the model, and the same 400 lbf tensile load used in the analytical calculations was applied.
 
-The bar was constrained at one end and loaded in tension at the opposite end. A mesh was generated over the bar before solving the study.
+One end of the bar was fixed, while the tensile load was applied at the opposite end. The model was then meshed and solved.
 <img width="3196" height="1904" alt="image" src="https://github.com/user-attachments/assets/088abab0-dc89-4562-84ac-60db4d22e12d" />
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/7436355c-70f9-4134-ac78-662812d30e88" />
+The FEA results were examined using:
+
+-Total displacement
+
+-Equivalent (von Mises) stress
+
+-Equivalent strain
+
+The deformation shown in the FEA plots was visually exaggerated by the software to make the deformation easier to see. The actual numerical displacement was taken from the result legend rather than from the visual deformation.
 
 Using the same material, geometry, and loading conditions allows the FEA results to be directly compared with the analytical solution, I created a custom Aluminum material with:
 
@@ -101,7 +112,7 @@ Poisson’s Ratio: 0.36
 Yield Strength: 40000 psi   and assigned it to the part
 <img width="2540" height="1896" alt="image" src="https://github.com/user-attachments/assets/a8b6ea2a-ae35-45a6-80b3-b2b17be9f337" />
 
-Applied load
+Applied load: 400lbs in Tension
 <img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/7436355c-70f9-4134-ac78-662812d30e88" />
 And here I clicked Mesh and Run
 <img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/f748ab6d-7aeb-47df-ab87-229e549066bb" />
@@ -118,15 +129,121 @@ The maximum displacement occurred at the loaded end of the bar, while the constr
 ### FEA Stress- Von Mises stress
 The maximum von Mises stress obtained from the FEA was 2.247 ksi. This value was compared with the specified aluminum yield strength of 40 ksi.
 <img width="2744" height="1384" alt="IMG_2416" src="https://github.com/user-attachments/assets/422bf41e-2d47-4a54-8d75-9e81a53e3878" />
-The maximum von Mises stress was approximately 1.549x10^7 Pa which equals to 2.247 ksi. This is substantially below the specified aluminum yield strength of 40 ksi, resulting in an FEA safety factor of approximately 17.8
+The maximum von Mises stress was approximately 1.549x10^7 Pa which equals to 2.247 ksi. This is substantially below the specified aluminum yield strength of 40 ksi, resulting in an FEA safety factor of approximately 17.8. Since the safety factor is significantly greater than 1, the FEA indicates that yielding is not expected under the specified loading condition.
 <img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/a9a0703b-6e34-41bb-97e9-272dc7a6373c" />
 <img width="3200" height="1914" alt="image" src="https://github.com/user-attachments/assets/532e00cb-7fee-4945-bb45-39a9f7c0f386" />
 
+### Design Decision
+Based on the FEA results, I decided not to modify the applied load or bar diameter. The maximum displacement is essentially equal to the allowable 0.009 in, while the maximum von Mises stress remains well below the 40 ksi yield strength.
+Therefore, the final design satisfies both the deflection requirement and the strength requirement for the loading condition specified in the assignment.
 
 ## Communicate
 ### Analytical vs. FEA
+The analytical calculations were compared with the SolidWorks FEA results to verify the final design. The analytical and FEA displacement results were in very close agreement. The FEA maximum displacement was approximately 0.00901 in compared with the analytical value of 0.00900 in.
 the difference from the analytical value of 0.009 in is only about: 0.079%
+The percent difference was calculated using:
+
+pic
+
+Therefore, the analytical and FEA displacement results differed by only approximately 0.08%.
+
+The stress results showed a larger difference. The analytical stress was approximately 2.037 ksi, while the FEA maximum von Mises stress was approximately 2.247 ksi. This represents a difference of approximately 10.3%.
+
+pic
+
+Despite this difference, both methods predict stresses far below the specified 40 ksi yield strength. Both results therefore indicate that the bar should remain elastic under the applied 400 lbf load.
+
+**Interpretation of the Results**
+The close agreement between the analytical and FEA displacement results provides confidence that the CAD model, material properties, loading, and boundary conditions were set up correctly.
+
+The analytical calculation assumes a uniform bar under ideal axial tension. FEA evaluates the geometry numerically using a mesh, so the local stress distribution can produce a somewhat higher maximum stress than the simple analytical value.
+
+For this project, I would use the FEA result when evaluating the actual CAD geometry, because it accounts for the modeled geometry and local stress distribution. However, the analytical calculation remains important because it provides a simple independent check of whether the FEA result is reasonable.
+
 ### Pin Hole
+
+
+### Obstacles and Corrections
+
+Several challenges occurred during the project, and documenting them helped show how the design developed rather than only presenting the final result.
+
+**1. Understanding the Circular Cross Section**
+
+At the beginning, I needed to determine how the circular cross-section requirement affected the geometry and calculations. For a circular bar, the cross-sectional area is:
+
+[
+A=\frac{\pi d^2}{4}
+]
+
+This was different from using a rectangular width × thickness area, so I had to make sure the CAD model and analytical calculations both represented a round bar.
+
+**2. Initially Assuming Young's Modulus**
+
+The first analytical calculation used an assumed value of:
+
+[
+E=10\times10^6\text{ psi}
+]
+
+Although this value was within the assignment's allowed aluminum range, I later found the provided MatWeb material data and corrected the value to:
+
+[
+E=9.86\times10^6\text{ psi}
+]
+
+I updated the analytical calculation and used the corrected value consistently in the final CAD and FEA model.
+
+This taught me that when a specific material-property source is provided, I should use the source data rather than simply choosing a representative value within the allowed range.
+
+**3. Creating a Consistent Parametric CAD Model**
+
+Another challenge was translating the analytical relationship into the CAD model. The length should not simply be treated as an unrelated dimension because it depends on the applied load, material stiffness, diameter, and allowable deflection.
+
+The analytical relationship
+
+[
+L=\frac{\delta\pi d^2E}{4F}
+]
+
+was therefore used as the basis for the parametric design.
+
+**4. Setting Up and Interpreting FEA**
+
+The FEA setup required correctly assigning the material, fixing one end, applying the tensile load to the opposite end, creating a mesh, and interpreting the resulting plots.
+
+The deformation displayed by SolidWorks was highly exaggerated visually. I therefore learned to use the numerical result shown in the result legend rather than estimating deformation from the appearance of the deformed bar.
+
+The final FEA results were physically reasonable and closely matched the analytical displacement calculation.
+
+### Lessons Learned
+
+This project helped me understand how analytical equations, parametric CAD, and FEA work together during the engineering design process.
+
+One of the most important lessons was the importance of using consistent material properties. I initially used an assumed Young's modulus, but after locating the provided MatWeb data, I corrected the value and updated the design.
+
+I also learned how a circular cross section changes the area calculation and how the diameter affects both stiffness and material usage.
+
+The FEA portion helped me understand that numerical results should be checked against analytical calculations rather than accepted without verification. The close agreement between the analytical and FEA displacement results gave me confidence that the model was set up correctly.
+
+Finally, I learned that a design does not need to have a safety factor close to one to be considered successful. In this case, the design was primarily controlled by the allowable deflection, while the yield-strength requirement provided a much larger safety margin.
+
+Final Design Summary
+
+The final bar was modeled using a circular aluminum cross section with a diameter of 0.50 in and a calculated length of approximately 43.56 in. The applied tensile load was 400 lbf, and the final Young's modulus used was 9.86 × 10⁶ psi.
+
+The analytical calculation predicted a maximum displacement of 0.00900 in and a nominal stress of approximately 2.037 ksi.
+
+The FEA predicted a maximum displacement of approximately 0.00901 in and a maximum von Mises stress of approximately 2.247 ksi. The corresponding FEA safety factor was approximately 17.8 based on the 40 ksi yield strength.
+
+The close agreement between the analytical and FEA displacement results indicates that the final model provides a reasonable representation of the analytical design.
+
+CAD File
+
+The final SolidWorks CAD file is provided with the project submission so that the parametric model can be inspected and downloaded.
+
+[Insert your CAD download link here.]
+
+
 ### Lessons Learned
 What I learned
 I learned that even though an assumed value may satisfy the numerical range given in the assignment, using an actual material property from the provided source makes the design more accurate and better supported. I also learned that material properties used in the analytical calculations should match the properties used in the CAD and FEA models.
