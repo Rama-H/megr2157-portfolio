@@ -143,13 +143,15 @@ The analytical calculations were compared with the SolidWorks FEA results to ver
 the difference from the analytical value of 0.009 in is only about: 0.079%
 The percent difference was calculated using:
 
-pic
+<img width="2337" height="1031" alt="IMG_2421" src="https://github.com/user-attachments/assets/24ae8af6-a2af-456f-a381-e3de4adc3838" />
+
 
 Therefore, the analytical and FEA displacement results differed by only approximately 0.08%.
 
 The stress results showed a larger difference. The analytical stress was approximately 2.037 ksi, while the FEA maximum von Mises stress was approximately 2.247 ksi. This represents a difference of approximately 10.3%.
 
-pic
+<img width="1951" height="951" alt="IMG_2422" src="https://github.com/user-attachments/assets/53a7ae1f-26a5-4282-95b5-20d1eefb8c8f" />
+
 
 Despite this difference, both methods predict stresses far below the specified 40 ksi yield strength. Both results therefore indicate that the bar should remain elastic under the applied 400 lbf load.
 
