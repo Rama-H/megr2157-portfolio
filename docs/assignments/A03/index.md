@@ -265,11 +265,9 @@ The FEA predicted a maximum displacement of approximately 0.00901 in and a maxim
 
 The close agreement between the analytical and FEA displacement results indicates that the final model provides a reasonable representation of the analytical design.
 
-CAD File
+### CAD File
+https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A03/Parametric%20and%20FEA%20Bar.SLDPRT 
 
-The final SolidWorks CAD file is provided with the project submission so that the parametric model can be inspected and downloaded.
-
-[Insert your CAD download link here.]
 
 
 
