@@ -180,17 +180,18 @@ the stress concentration factor was approximately  K_t=2.156
 
 The nominal stress away from the hypothetical hole was taken from the completed FEA:  
 
-PIC
+<img width="2924" height="1868" alt="image" src="https://github.com/user-attachments/assets/268bf9b8-b18f-41a0-8abc-c2e9d85b1e95" />
+<img width="2926" height="1872" alt="image" src="https://github.com/user-attachments/assets/b8a5f1c0-703c-483e-94a8-1971bd35f4b8" />
+<img width="850" height="360" alt="image" src="https://github.com/user-attachments/assets/8ee67b8e-4766-4a88-84c0-40dafab085c6" />
 
 The estimated peak stress at the hole was calculated using:
-
-PIC
+<img width="828" height="134" alt="image" src="https://github.com/user-attachments/assets/d0e3c950-b0af-43f4-88a3-40eaaa6cf528" />
 
 The specified aluminum yield strength is: Sy=40ksi
 
 Therefore, the estimated safety factor against yielding is:
+<img width="828" height="166" alt="image" src="https://github.com/user-attachments/assets/43fc0053-e0c9-4192-931d-8ae6dea6d1d5" />
 
-PIC
 
 
 The estimated peak stress of approximately 4.85 ksi remains well below the specified aluminum yield strength of 40 ksi. Therefore, the hypothetical pin hole would still satisfy the yield-strength requirement using this stress-concentration estimate.
@@ -271,9 +272,6 @@ The close agreement between the analytical and FEA displacement results indicate
 [Download Parametric and FEA (.SLDPRT)](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A03/Parametric%20and%20FEA%20Bar.SLDPRT)
 
 
-
-
-
-Actual Time Spent
+Actual Time Spent: 16 hours
 
 
