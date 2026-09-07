@@ -161,6 +161,41 @@ The analytical calculation assumes a uniform bar under ideal axial tension. FEA 
 For this project, I would use the FEA result when evaluating the actual CAD geometry, because it accounts for the modeled geometry and local stress distribution. However, the analytical calculation remains important because it provides a simple independent check of whether the FEA result is reasonable.
 
 ### Pin Hole
+The final part of the design reflection investigated the effect of adding a substantial pin hole near the left side of the bar. The assignment specifically required this investigation to be completed using a stress concentration factor and stated that the FEA should not be rerun.
+
+Therefore, the original CAD model and FEA study were not modified. Instead, the nominal stress obtained from the completed FEA was used to estimate the peak stress that would occur around a hypothetical hole.
+
+The final bar has a diameter of 0.50 in. For this investigation, I considered a hypothetical circular pin hole with a diameter of 0.25 in. This represents a substantial hole because the hole diameter is one-half of the bar diameter.
+d=0.25in      
+The geometric ratio used to determine the stress concentration factor was:   0.25/0.50
+
+A Peterson-type stress concentration relationship for a circular hole in a finite-width flat bar under tension was used to determine the theoretical stress concentration factor. Peterson's stress-concentration references include circular holes in finite-width elements under uniaxial tension.
+For:  d/W= 0.50
+
+the stress concentration factor was approximately  K_t=2.156
+
+
+
+The nominal stress away from the hypothetical hole was taken from the completed FEA:  
+
+PIC
+
+The estimated peak stress at the hole was calculated using:
+
+PIC
+
+The specified aluminum yield strength is: Sy=40ksi
+
+Therefore, the estimated safety factor against yielding is:
+
+PIC
+
+
+The estimated peak stress of approximately 4.85 ksi remains well below the specified aluminum yield strength of 40 ksi. Therefore, the hypothetical pin hole would still satisfy the yield-strength requirement using this stress-concentration estimate.
+
+This investigation also demonstrated why geometric discontinuities are important in mechanical design. Although the original bar had a relatively low nominal stress, the hole increases the local stress through a stress concentration. Even with this increase, the estimated safety factor remains substantially greater than 1.
+
+No additional FEA was performed for the hole, consistent with the assignment instructions. The result was instead estimated using the existing FEA nominal stress and the appropriate stress concentration factor.
 
 
 ### Obstacles and Corrections
@@ -171,25 +206,20 @@ Several challenges occurred during the project, and documenting them helped show
 
 At the beginning, I needed to determine how the circular cross-section requirement affected the geometry and calculations. For a circular bar, the cross-sectional area is:
 
-[
-A=\frac{\pi d^2}{4}
-]
-
+Area=π/4 x d^2
+ 
 This was different from using a rectangular width × thickness area, so I had to make sure the CAD model and analytical calculations both represented a round bar.
 
 **2. Initially Assuming Young's Modulus**
 
 The first analytical calculation used an assumed value of:
 
-[
-E=10\times10^6\text{ psi}
-]
+E=10x10^6 psi
+
 
 Although this value was within the assignment's allowed aluminum range, I later found the provided MatWeb material data and corrected the value to:
 
-[
-E=9.86\times10^6\text{ psi}
-]
+E=9.86x10^6 psi
 
 I updated the analytical calculation and used the corrected value consistently in the final CAD and FEA model.
 
@@ -201,9 +231,7 @@ Another challenge was translating the analytical relationship into the CAD model
 
 The analytical relationship
 
-[
-L=\frac{\delta\pi d^2E}{4F}
-]
+L=(delta\pi d^2E)(4F)
 
 was therefore used as the basis for the parametric design.
 
@@ -219,7 +247,7 @@ The final FEA results were physically reasonable and closely matched the analyti
 
 This project helped me understand how analytical equations, parametric CAD, and FEA work together during the engineering design process.
 
-One of the most important lessons was the importance of using consistent material properties. I initially used an assumed Young's modulus, but after locating the provided MatWeb data, I corrected the value and updated the design.
+One of the most important lessons was the importance of using consistent material properties. I initially used an assumed Young's modulus, but after locating the provided MatWeb data, I corrected the value and updated the design. I learned that even though an assumed value may satisfy the numerical range given in the assignment, using an actual material property from the provided source makes the design more accurate and better supported. I also learned that material properties used in the analytical calculations should match the properties used in the CAD and FEA models.
 
 I also learned how a circular cross section changes the area calculation and how the diameter affects both stiffness and material usage.
 
@@ -227,7 +255,7 @@ The FEA portion helped me understand that numerical results should be checked ag
 
 Finally, I learned that a design does not need to have a safety factor close to one to be considered successful. In this case, the design was primarily controlled by the allowable deflection, while the yield-strength requirement provided a much larger safety margin.
 
-Final Design Summary
+### Final Design Summary
 
 The final bar was modeled using a circular aluminum cross section with a diameter of 0.50 in and a calculated length of approximately 43.56 in. The applied tensile load was 400 lbf, and the final Young's modulus used was 9.86 × 10⁶ psi.
 
@@ -244,11 +272,8 @@ The final SolidWorks CAD file is provided with the project submission so that th
 [Insert your CAD download link here.]
 
 
-### Lessons Learned
-What I learned
-I learned that even though an assumed value may satisfy the numerical range given in the assignment, using an actual material property from the provided source makes the design more accurate and better supported. I also learned that material properties used in the analytical calculations should match the properties used in the CAD and FEA models.
 
 
 Actual Time Spent
-CAD Files
+
 
