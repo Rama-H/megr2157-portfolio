@@ -234,7 +234,7 @@ Another challenge was translating the analytical relationship into the CAD model
 
 The analytical relationship
 
-L=(delta\pi d^2E)/(4F)
+L=(delta*pi*d^2*E)/(4F)
 
 was therefore used as the basis for the parametric design.
 
