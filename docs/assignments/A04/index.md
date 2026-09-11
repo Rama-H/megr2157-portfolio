@@ -21,7 +21,7 @@ The final design will be modeled parametrically in CAD and will include appropri
 
 <img width="1518" height="688" alt="image" src="https://github.com/user-attachments/assets/276b3c02-80e2-4ddf-96b7-62838b775b54" />
 
-The motor dimensions were taken from Appendix A of the assignment. Important dimensions for the motor mount include the Ø6 mm shaft, four M3 mounting holes located on a Ø22 mm bolt circle, and the Ø28 mm motor body.
+The motor dimensions were taken from Appendix A of the assignment. Important dimensions for the motor mount include the Ø6 mm diameter shaft, four M3 mounting holes located on a Ø22 mm diameter bolt circle, and the Ø28 mm motor body.
 
 ### Material Properties
 
