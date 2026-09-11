@@ -25,6 +25,14 @@ The motor dimensions were taken from Appendix A of the assignment. Important dim
 
 ### Material Properties
 
+For the preliminary design, **ABS was selected** as the motor-mount material because it is one of the materials permitted by the assignment.
+
+The provided ABS properties are ranges, so the lower-bound values were selected for a conservative analysis:
+<img width="1670" height="906" alt="image" src="https://github.com/user-attachments/assets/4b0ee011-e1bb-40b0-bee1-609caa52a261" />
+
+<img width="828" height="424" alt="image" src="https://github.com/user-attachments/assets/295e485a-f1f4-4d9d-baff-1b5cdec4f419" />
+
+
 ### Feature 1 – Motor Support
 
 #### Known and Unknown Variables
