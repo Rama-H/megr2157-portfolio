@@ -61,8 +61,46 @@ To simplify the analysis, Feature 1 was modeled as a rectangular cantilever beam
 #### Deflection Analysis
 <img width="725" height="960" alt="image" src="https://github.com/user-attachments/assets/148fe8b3-754b-4593-ae2c-cef7904771e4" />
 
+#### Numerical solution
+<img width="712" height="960" alt="image" src="https://github.com/user-attachments/assets/79220e86-bb72-45e3-ba00-cd555b3c71ef" />
+
 #### Cross-Sectional Geometry
+<img width="828" height="276" alt="image" src="https://github.com/user-attachments/assets/603dcd3b-e4f5-499e-9d52-945ee4292c86" />
+
+Moment of Inertia check:
+
+<img width="1564" height="292" alt="image" src="https://github.com/user-attachments/assets/4ddcc122-5338-4fa8-868c-e09f5be42d69" />
+
+
+Stress check:
+
+<img width="828" height="254" alt="image" src="https://github.com/user-attachments/assets/2e0e2db8-9f6f-47ce-8b6d-a198b301b5d3" />
+
+Deflection check:
+
+<img width="828" height="254" alt="image" src="https://github.com/user-attachments/assets/15b2061b-8589-4641-8c83-050c29a8de04" />
+
+
 #### Feature 1 Results
+| Parameter | Value |
+|----------|--------|
+| Material | ABS |
+| Applied force, P | 300 N |
+| Safety factor, n | 3 |
+| Beam length, L | 50 mm* |
+| Beam width, b | 40 mm |
+| Beam thickness, h | 20 mm |
+| Young’s modulus, E | 1790 MPa |
+| Yield strength, Sy | 29.6 MPa |
+| Allowable stress | 9.87 MPa |
+| Max bending moment | 15,000 N·mm |
+| Required I | 23,277.5 mm⁴ |
+| Actual I | 26,666.7 mm⁴ |
+| Max bending stress | 5.625 MPa |
+| Max deflection | 0.262 mm |
+| Stress requirement | PASS |
+| Deflection requirement | PASS |
+
 
 ### Feature 2 – Wall Mount
 
