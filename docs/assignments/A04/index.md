@@ -204,7 +204,7 @@ n = safety factor
 delta_max = maximum allowable deflection
 
 **Unknown variables:**
-The primary unknown is the required wall-mount thickness \(t\). The required cross-sectional area moment of inertia, bending stress, shear stress, and deflection will also be determined.
+The primary unknown is the required wall-mount thickness (t). The required cross-sectional area moment of inertia, bending stress, shear stress, and deflection will also be determined.
 
 #### Assumptions
 To make the analysis manageable using the beam equations discussed in lecture, Feature 2 was approximated as a rectangular cantilever beam attached to a rigid wall. The wall is assumed to be sufficiently rigid that its deformation can be neglected. The motor weight is neglected as instructed in the assignment. The bolts are assumed to provide a rigid attachment to the wall.
@@ -217,12 +217,24 @@ These assumptions are preliminary and will be revisited when the final CAD geome
 
 The free-body diagram for Feature 2 shows the loading transferred from Feature 1 to the vertical wall mount. Feature 1 applies a 300 N vertical force to Feature 2. Because the 300 N force acts 50 mm from the wall, it also produces a bending moment at the Feature 1–Feature 2 connection. Feature 2 transfers these loads into the rigid wall through the bolted connection.
 
-IMAGE
+<img width="828" height="606" alt="image" src="https://github.com/user-attachments/assets/4602710b-6064-4b9b-ada5-1f96cd7e1557" />
+
 
 The 300 N motor force acting at the end of Feature 1 creates a bending moment at the connection between the two features. This moment is transferred into Feature 2 and must therefore be included in the wall-mount analysis.
 
 #### Stress Analysis
+
+<img width="828" height="343" alt="image" src="https://github.com/user-attachments/assets/8dbed333-609e-407e-98a1-ce2e2658e9c1" />
+
 The maximum bending moment occurs at the fixed connection to the wall. Feature 2 experiences the moment transferred from Feature 1 as well as the moment produced by the 300 N force acting over the assumed height of the wall mount. Therefore, the two moment contributions are combined to determine the maximum bending moment used for the stress design
+
+<img width="832" height="606" alt="image" src="https://github.com/user-attachments/assets/c50c0d42-f016-41e5-8c95-de33e0873739" />
+
+Allowable Stress
+
+<img width="1274" height="788" alt="image" src="https://github.com/user-attachments/assets/049310ce-ca5e-43d0-b69a-1ab6f7ddc1ba" />
+
+So the stress requirement alone gives:   t_stress ≈ 21.35 mm
 
 #### Shear Analysis
 
