@@ -240,9 +240,29 @@ So the stress requirement alone gives:   t_stress ≈ 21.35 mm
 
 In addition to bending, the wall mount experiences transverse shear from the 300 N motor load. I used the maximum shear-stress equation for a rectangular beam to check that the wall-mount cross-section has sufficient shear capacity
 
+<img width="828" height="840" alt="image" src="https://github.com/user-attachments/assets/f3a85c36-b264-46e1-854d-209b9f4bb886" />
+
+The shear calculation requires a minimum thickness of approximately 1.97 mm, which is much smaller than the thickness required by the bending-stress calculation. Therefore, bending stress controls the preliminary wall-mount thickness.
 
 #### Deflection Analysis
+
+Because Feature 2 is subjected to both a force and a transferred moment, the total deflection can be approximated by adding the deflections caused by each load.
+
+For a cantilever with a point force at the free end:
+
+<img width="828" height="162" alt="image" src="https://github.com/user-attachments/assets/b15421f7-c2eb-4d2d-9686-e41b85564ee7" />
+
+
+For a cantilever with an applied end moment:
+
+<img width="828" height="162" alt="image" src="https://github.com/user-attachments/assets/ca7ddd19-3677-42db-9f71-663d32267833" />
+
+<img width="828" height="162" alt="image" src="https://github.com/user-attachments/assets/0039bdc8-f6d3-4716-8c72-b9cb0995f399" />
+
 The deflection of Feature 2 was evaluated using superposition. The first term represents the deflection caused by the 300 N force, while the second term represents the deflection caused by the bending moment transferred from Feature 1. The combined deflection must remain below the assignment limit of 0.30 mm
+
+<img width="826" height="556" alt="image" src="https://github.com/user-attachments/assets/8d713f78-50b5-414b-b34f-1f22b972eea6" />
+
 
 #### Cross-Sectional Geometry
 
