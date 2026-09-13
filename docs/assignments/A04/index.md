@@ -320,6 +320,8 @@ The preliminary analysis of Feature 2 resulted in a 40 mm wide × 30 mm thick re
 | Final preliminary thickness | —             | **30 mm**      |  PASS |
 
 
+
+
 ## Decide
 
 ### Material Selection
@@ -461,8 +463,15 @@ I then reran the FEA with the corrected material
 
 ## Communicate
 
-### Initial Concept Sketch
 ### Isometric Sketch
+The initial concept was based on a simple L-shaped bracket. The horizontal section would support the motor, while the vertical section would attach to the wall.
+
+The basic concept was developed from the beam calculations before creating the detailed CAD model.
+
+<img width="699" height="960" alt="image" src="https://github.com/user-attachments/assets/cd251a7d-f705-4629-af8c-c303a5d86112" />
+
+<img width="694" height="960" alt="image" src="https://github.com/user-attachments/assets/2f8f07cf-66cb-4a15-9eb6-199bc67cc6dc" />
+
 ### CAD Model
 
 **FEA Validation**
@@ -599,7 +608,6 @@ Finally, I learned that the analytical calculations and FEA serve different purp
 
 Overall, the final design satisfied the required stress, deflection, and safety-factor constraints
 
-### Engineering Drawing
 ### CAD File Download
 ### Time Log
 
