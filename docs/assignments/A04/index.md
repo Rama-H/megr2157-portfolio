@@ -291,11 +291,28 @@ The bending stress was recalculated using the selected 40 mm × 30 mm cross-sect
 **Shear Check**
 The selected cross-section was also checked for transverse shear. The calculated maximum shear stress was compared with the conservative allowable shear stress estimated from the ABS yield strength using the von Mises criterion.
 
+<img width="2794" height="1040" alt="IMG_2478" src="https://github.com/user-attachments/assets/058d18b0-f1b4-48f3-b135-daf7acdca61b" />
+
 
 **Deflection Check**
 Finally, the deflection of the selected 40 mm × 30 mm cross-section was calculated. The total deflection includes the contribution from both the 300 N force and the moment transferred from Feature 1.
 
+<img width="2200" height="1714" alt="IMG_2479" src="https://github.com/user-attachments/assets/f4614f4a-9683-49c2-895d-65587c84b97c" />
+
+
 #### Feature 2 Results
+
+The preliminary analysis of Feature 2 resulted in a 40 mm wide × 30 mm thick rectangular cross-section. The design was evaluated for bending stress, transverse shear, and deflection using the conservative lower-bound ABS material properties. The selected geometry produces a maximum bending stress of 5.00 MPa, a maximum shear stress of 0.375 MPa, and an estimated total deflection of approximately 0.233 mm. All three values are below their respective allowable limits. Therefore, the preliminary Feature 2 geometry satisfies the analytical requirements.
+
+
+| Design Check                | Requirement   | Calculated     | Result |
+|-----------------------------|--------------:|---------------:|:------:|
+| Bending stress              | ≤ 9.87 MPa    | **5.00 MPa**   |  PASS |
+| Shear stress                | ≤ 5.70 MPa    | **0.375 MPa**  |  PASS |
+| Moment of inertia           | ≥ 69,832 mm⁴  | **90,000 mm⁴** |  PASS |
+| Deflection                  | ≤ 0.30 mm     | **0.233 mm**   |  PASS |
+| Final preliminary thickness | —             | **30 mm**      |  PASS |
+
 
 ## Decide
 
