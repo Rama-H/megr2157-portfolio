@@ -493,19 +493,17 @@ The material properties were manually entered into the SOLIDWORKS material defin
 
 The maximum Von Mises stress from the FEA was:
 
-$$ \boxed{\sigma_{VM,max}=6.884\text{ MPa}} $$
+σVM,max=6.884 MPa
 
 The allowable stress based on the safety factor of 3 was:
 
-$$ \sigma_{allow}= \frac{29.6}{3} $$ $$ \boxed{\sigma_{allow}=9.87\text{ MPa}} $$
+σallow=29.6/3       σallow=9.87 MPa
 
 Comparing the results:
 
-$$ 6.884<9.87\text{ MPa} $$
+6.884<9.87 MPa
 
-Therefore:
-
-$$ \boxed{\text{PASS}} $$
+Therefore:  PASS
 
 The highest stress occurred near the transition between the horizontal section and the reinforced wall region, which is reasonable because this is where the bending load is transferred through the bracket.
 
@@ -520,19 +518,21 @@ The highest stress occurred near the transition between the horizontal section a
 
 The maximum displacement reported by SOLIDWORKS was:
 
-$$ 0.00017825\text{ m} $$
+0.00017825 m
 
 Converting to millimeters:
 
-$$ 0.00017825(1000) $$ $$ \boxed{\delta_{max}=0.17825\text{ mm}} $$
+0.00017825(1000)
 
-The assignment limit was:
+δmax=0.17825 mm
 
-$$ \boxed{0.30\text{ mm}} $$
+The assignment limit was: 0.30 mm
 
 Therefore:
 
-$$ 0.17825<0.30 $$ $$ \boxed{\text{PASS}} $$
+0.17825<0.30
+
+PASS
 
 The deformation displayed in the SOLIDWORKS screenshot is visually exaggerated so that the deformation can be seen. The displayed deformation shape is not the actual physical amount of deformation.
 
@@ -543,15 +543,19 @@ The deformation displayed in the SOLIDWORKS screenshot is visually exaggerated s
 
 The minimum factor of safety can be calculated from the maximum Von Mises stress:
 
-$$ FOS=\frac{S_y}{\sigma_{VM,max}} $$ $$ FOS=\frac{29.6}{6.884} $$ $$ \boxed{FOS\approx4.30} $$
+FOS=S_y/σVM,max 
+
+FOS=29.6/6.884
+
+FOS≈4.30
 
 The required factor of safety was:
 
-$$ \boxed{FOS\geq3} $$
+FOS ≥ 3
 
 Since:
 
-$$ 4.30>3 $$
+4.30 > 3
 
 the final design satisfies the required safety factor.
 
