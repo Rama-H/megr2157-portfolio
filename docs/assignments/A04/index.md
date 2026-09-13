@@ -569,9 +569,20 @@ Important dimensions were defined parametrically, including:
 
 Using parametric dimensions allows the model to be modified without rebuilding the entire part
 
-### Engineering Drawing
-### CAD File Download
-### Time Log
+
+### Analytical vs. FEA Results
+The analytical calculations and FEA both showed that the design satisfies the requirements
+
+| Parameter            | Analytical Result |     FEA Result | Requirement | Status |
+|--------------------- |-----------------:|---------------:|------------:|:------:|
+| Maximum stress       |   5.625–5.00 MPa* | **6.884 MPA**  |   ≤ 9.87 MPa |  PASS |
+| Maximum displacement |   0.233–0.262 mm* | **0.17825 mm** |    ≤ 0.30 mm |  PASS |
+| Safety factor        |               ≥ 3 |     **≈ 4.30** |          ≥ 3 |  PASS |
+
+The analytical values differ for Feature 1 and Feature 2 because each feature was analyzed separately using the simplified beam model.
+
+The FEA result is more representative of the final CAD geometry because it includes the actual geometry, holes, gussets, fillets, and load distribution
+
 ### Lessons Learned
 
 This project helped me understand how analytical engineering calculations can be translated into an actual CAD design.
@@ -586,5 +597,10 @@ The FEA portion also showed me the importance of using the correct material prop
 
 Finally, I learned that the analytical calculations and FEA serve different purposes. The beam equations allowed me to determine reasonable starting dimensions, while FEA allowed me to evaluate the actual CAD geometry, including the holes, gussets, and fillets.
 
-Overall, the final design satisfied the required stress, deflection, and safety-factor constraints.
+Overall, the final design satisfied the required stress, deflection, and safety-factor constraints
+
+### Engineering Drawing
+### CAD File Download
+### Time Log
+
 
