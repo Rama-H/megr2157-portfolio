@@ -609,6 +609,9 @@ Finally, I learned that the analytical calculations and FEA serve different purp
 Overall, the final design satisfied the required stress, deflection, and safety-factor constraints
 
 ### CAD File Download
+[Download Motor Mount.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/Motor%20Mount.SLDPRT)
+
 ### Time Log
+5 days
 
 
