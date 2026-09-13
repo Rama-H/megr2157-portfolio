@@ -266,8 +266,34 @@ The deflection of Feature 2 was evaluated using superposition. The first term re
 
 #### Cross-Sectional Geometry
 
+<img width="828" height="450" alt="image" src="https://github.com/user-attachments/assets/4d117a36-bdf5-44c3-aa59-8f4a9484577b" />
+
 The required thickness was determined independently from the bending-stress and deflection requirements. The stress analysis required approximately 21.35 mm, while the deflection analysis required approximately 27.56 mm. Since the design must satisfy both requirements, the larger value controls the preliminary design.
 
+Therefore, round upward to a practical CAD dimension:  t=30 mm
+
+So our preliminary Feature 2 cross-section is:
+
+**40 mm wide × 30 mm thick**
+
+**Moment of Inertia Check**
+After determining the minimum thickness from the deflection requirement, I selected a practical thickness of 30 mm. The resulting moment of inertia was then checked against the required value.
+
+<img width="828" height="666" alt="image" src="https://github.com/user-attachments/assets/198d79c7-4122-4f7c-847b-84cce2584797" />
+
+**Stress Check**
+
+The bending stress was recalculated using the selected 40 mm × 30 mm cross-section. The resulting stress was compared with the allowable ABS stress of 9.87 MPa.
+
+<img width="2283" height="1249" alt="IMG_2477" src="https://github.com/user-attachments/assets/601fa26a-95f8-48c8-8216-293b4b530b69" />
+
+
+**Shear Check**
+The selected cross-section was also checked for transverse shear. The calculated maximum shear stress was compared with the conservative allowable shear stress estimated from the ABS yield strength using the von Mises criterion.
+
+
+**Deflection Check**
+Finally, the deflection of the selected 40 mm × 30 mm cross-section was calculated. The total deflection includes the contribution from both the 300 N force and the moment transferred from Feature 1.
 
 #### Feature 2 Results
 
