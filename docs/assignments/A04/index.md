@@ -323,11 +323,33 @@ The preliminary analysis of Feature 2 resulted in a 40 mm wide × 30 mm thick re
 ## Decide
 
 ### Material Selection
+ABS was selected as the material for the motor mount because it is one of the materials permitted by the assignment and provides sufficient strength and stiffness for the calculated loading. For a conservative design, the lower-bound values of the provided material-property ranges were used. The Young's modulus was taken as 1.79 GPa and the tensile yield strength as 29.6 MPa. With a safety factor of 3, the allowable tensile stress is 9.87 MPa.
+
 ### Final Dimensions
+Right now the analytical preliminary dimensions are
+
+| Feature   | Width | Thickness |
+|---------- |------:|----------:|
+| Feature 1 | 40 mm |     20 mm |
+| Feature 2 | 40 mm |     30 mm |
+
+The beam calculations provided the starting dimensions for the CAD model. Feature 1 was analytically sized to 40 mm × 20 mm, while Feature 2 was sized to 40 mm × 30 mm. These dimensions will be incorporated into the CAD model and adjusted where necessary to accommodate the motor geometry, mounting bolts, shaft clearance, and structural reinforcement
+
+
 ### Design Decisions
+The analytical calculations were used as the starting point for the motor-mount geometry. The design was developed around the required 300 N motor load while maintaining the required safety factor of 3 and maximum deflection of 0.30 mm. The mount was designed with a simple rectangular structure so that the analytical beam model could be related directly to the CAD geometry
+
+
+
 ### Deflection-Minimizing Features
+To reduce deflection in the final motor mount, structural reinforcement will be added to increase the effective stiffness of the mount. Triangular gussets will be incorporated between the horizontal motor-supporting feature and the vertical wall-mount feature. These reinforcements increase the resistance to bending without requiring the entire mount to be made significantly thicker
+
 ### Clearance Holes
+Clearance holes were included for the motor-mounting bolts. The assignment specifies 3.4 mm diameter clearance holes for the bolts, so Ø3.4 mm holes will be used in the CAD model. The shaft opening will also be sized according to the motor dimensions provided in Appendix A
+
 ### Design Changes / Mistakes
+My initial geometry was based only on the beam calculations. When I began creating the CAD model, I realized that the motor mounting holes and shaft clearance needed to be incorporated into the design. I adjusted the geometry to accommodate these features
+
 
 ## Communicate
 
