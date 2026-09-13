@@ -337,29 +337,250 @@ The beam calculations provided the starting dimensions for the CAD model. Featur
 
 
 ### Design Decisions
-The analytical calculations were used as the starting point for the motor-mount geometry. The design was developed around the required 300 N motor load while maintaining the required safety factor of 3 and maximum deflection of 0.30 mm. The mount was designed with a simple rectangular structure so that the analytical beam model could be related directly to the CAD geometry
+After completing the analytical calculations, I converted the beam dimensions into a practical motor-mount design.
+
+The final design uses an L-shaped bracket. Feature 1 supports the motor, while Feature 2 attaches the mount to the wall.
+
+I added the motor mounting-hole pattern based on the motor's mounting geometry. The motor mounting holes were modeled as 3.4 mm diameter clearance holes.
+
+I also added a central shaft opening to provide clearance for the motor shaft.
+
+The wall plate was designed with four mounting holes. The four holes were positioned using a Linear Sketch Pattern, with:
+
+20 mm horizontal spacing
+20 mm vertical spacing
+3.4 mm hole diameter
+
+This made the hole layout easier to control and helped keep the wall mounting pattern symmetric.
+
+<img width="2906" height="1908" alt="image" src="https://github.com/user-attachments/assets/a4c55d08-4ef7-4245-a448-7eb9442939d6" />
 
 
 
 ### Deflection-Minimizing Features
-To reduce deflection in the final motor mount, structural reinforcement will be added to increase the effective stiffness of the mount. Triangular gussets will be incorporated between the horizontal motor-supporting feature and the vertical wall-mount feature. These reinforcements increase the resistance to bending without requiring the entire mount to be made significantly thicker
+To improve the stiffness of the mount, I added two triangular gussets between the horizontal motor-supporting section and the vertical wall plate.
+
+**Gusset Design – Initial Attempt**
+
+One of the mistakes I made during the CAD process was how I created the gussets.
+
+My first approach was to manually draw a right triangle using individual sketch lines on both sides of the mount. I then extruded the triangular profiles to create the supports.
+
+After doing this, I realized that SOLIDWORKS already has a dedicated Gusset feature that can create this type of reinforcement much more directly.
+
+I changed my approach and used the Gusset tool instead.
+
+The final gussets were:
+
+25mm horizontal x 25mm vertical x 5mm thick
+
+This made the modeling process cleaner and more appropriate for the intended design.
+
+<img width="2922" height="1910" alt="image" src="https://github.com/user-attachments/assets/623507bd-9ae9-47d0-9503-e5f212ef09d5" />
+
+The purpose of the gussets is to provide additional support at the region where the horizontal and vertical sections meet. This reduces bending of the horizontal section and increases the stiffness of the bracket.
+
+**Fillets**
+
+I added small fillets to the mount to remove sharp edges and improve the transition between surfaces.
+
+The fillet radius used was: R=0.50 mm
+
+The fillets also provide a smoother transition at the corners and help reduce sharp geometric discontinuities.
 
 ### Clearance Holes
-Clearance holes were included for the motor-mounting bolts. The assignment specifies 3.4 mm diameter clearance holes for the bolts, so Ø3.4 mm holes will be used in the CAD model. The shaft opening will also be sized according to the motor dimensions provided in Appendix A
+Clearance holes were included for the motor-mounting bolts. The assignment specifies 3.4 mm diameter clearance holes for the bolts, so Ø3.4 mm holes were used in the CAD model. The shaft opening was also sized according to the motor dimensions provided in Appendix A
+
+<img width="1532" height="730" alt="image" src="https://github.com/user-attachments/assets/3167c32a-00f8-44ac-8dcb-6584b3223928" />
+
+
+**Motor Mounting Holes**
+I created the motor mounting-hole pattern.
+
+The motor mounting holes were modeled as: 3.4 mm diameter
+
+This provides clearance for the required M3 bolts
+
+The holes were positioned according to the motor's mounting-hole pattern
+
+A central opening was also added for the motor shaft:  6.3 mm diameter. This provides clearance around the motor shaft
+
+<img width="2912" height="1896" alt="image" src="https://github.com/user-attachments/assets/e68f87ac-a110-4203-8706-63d7fcd7ba9f" />
+
+<img width="2914" height="1802" alt="image" src="https://github.com/user-attachments/assets/1d86a6e9-a7a9-4de2-9c09-99b2d107790e" />
+
+
+**Wall Mounting Holes**
+
+The wall plate was then modified to include four mounting holes.
+
+Each hole has a diameter of: 3.4 mm
+
+I used a Linear Sketch Pattern to create the four holes instead of manually sketching each hole.
+
+The horizontal spacing was:
+
+20 mm 
+
+and the vertical spacing was:
+
+20 mm
+
+This helped maintain consistent spacing between the holes and made the design more parametric.
+
+<img width="2916" height="1904" alt="image" src="https://github.com/user-attachments/assets/c305c95b-dfcc-43ef-bda8-a1764a56011f" />
 
 ### Design Changes / Mistakes
-My initial geometry was based only on the beam calculations. When I began creating the CAD model, I realized that the motor mounting holes and shaft clearance needed to be incorporated into the design. I adjusted the geometry to accommodate these features
+During the CAD process, I encountered several issues that required me to make changes.
 
+**1. Wall Plate Extrusion**
+
+My first wall-plate sketch was created with the incorrect orientation, which caused the 30 mm extrusion to extend in the wrong direction.
+
+I corrected this by creating the sketch on the appropriate vertical face and reversing the extrusion direction.
+
+**2. Manual Gusset Creation**
+
+Initially, I created the gussets manually by drawing right triangles with sketch lines on both sides of the mount and extruding them.
+
+After realizing that SOLIDWORKS has a dedicated Gusset feature, I changed the design and used the built-in tool instead.
+
+This was faster and produced a cleaner feature.
+
+**3. Fillets**
+
+After creating the main geometry and gussets, I added 0.50 mm fillets to smooth the sharp edges and improve the final appearance of the mount.
+
+**4. Material Setup for FEA**
+
+Initially, the material properties shown in the simulation did not match the conservative ABS values I intended to use. I corrected the material definition so that the simulation used:
+
+E=1790 MPa  and   S_y=29.6 MPa
+
+I then reran the FEA with the corrected material
 
 ## Communicate
 
 ### Initial Concept Sketch
 ### Isometric Sketch
 ### CAD Model
+
+**FEA Validation**
+After completing the CAD model, I used SOLIDWORKS Simulation to validate the design. The simulation was set up as a static study using ABS as the assigned material.
+
+The applied force was: F=300N
+
+<img width="2922" height="1902" alt="image" src="https://github.com/user-attachments/assets/b2f4344b-29d2-4cb8-a614-0d4ab23c7ccf" />
+
+
+The wall side of the mount was fixed to represent attachment to a rigid wall.
+
+<img width="1898" height="1342" alt="image" src="https://github.com/user-attachments/assets/c7429639-e89b-48ab-bd5f-d5c35d5f1ddf" />
+
+
+**FEA Material Setup**
+
+The ABS material was assigned using:
+
+E=1790 MPa    S_y=29.6 MPa
+
+The material properties were manually entered into the SOLIDWORKS material definition so that the simulation matched the values used in the analytical calculations.
+
+<img width="2926" height="1900" alt="image" src="https://github.com/user-attachments/assets/590b0726-0603-43ff-af06-530e37fc644c" />
+
+
+**Von Mises Stress Result**
+
+The maximum Von Mises stress from the FEA was:
+
+$$ \boxed{\sigma_{VM,max}=6.884\text{ MPa}} $$
+
+The allowable stress based on the safety factor of 3 was:
+
+$$ \sigma_{allow}= \frac{29.6}{3} $$ $$ \boxed{\sigma_{allow}=9.87\text{ MPa}} $$
+
+Comparing the results:
+
+$$ 6.884<9.87\text{ MPa} $$
+
+Therefore:
+
+$$ \boxed{\text{PASS}} $$
+
+The highest stress occurred near the transition between the horizontal section and the reinforced wall region, which is reasonable because this is where the bending load is transferred through the bracket.
+
+<img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/bfb73fe7-438a-4edd-ab98-327e38c4f967" />
+
+<img width="3200" height="1908" alt="image" src="https://github.com/user-attachments/assets/dbf64a01-6f1e-4cf4-a9f7-93701aba01de" />
+
+<img width="3182" height="1902" alt="image" src="https://github.com/user-attachments/assets/4585b1c5-9e11-4820-9728-4c917cd5b0a8" />
+
+
+**FEA Displacement Result**
+
+The maximum displacement reported by SOLIDWORKS was:
+
+$$ 0.00017825\text{ m} $$
+
+Converting to millimeters:
+
+$$ 0.00017825(1000) $$ $$ \boxed{\delta_{max}=0.17825\text{ mm}} $$
+
+The assignment limit was:
+
+$$ \boxed{0.30\text{ mm}} $$
+
+Therefore:
+
+$$ 0.17825<0.30 $$ $$ \boxed{\text{PASS}} $$
+
+The deformation displayed in the SOLIDWORKS screenshot is visually exaggerated so that the deformation can be seen. The displayed deformation shape is not the actual physical amount of deformation.
+
+<img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/a1e37512-de65-4859-aaed-b336700e4e90" />
+
+
+**Factor of Safety**
+
+The minimum factor of safety can be calculated from the maximum Von Mises stress:
+
+$$ FOS=\frac{S_y}{\sigma_{VM,max}} $$ $$ FOS=\frac{29.6}{6.884} $$ $$ \boxed{FOS\approx4.30} $$
+
+The required factor of safety was:
+
+$$ \boxed{FOS\geq3} $$
+
+Since:
+
+$$ 4.30>3 $$
+
+the final design satisfies the required safety factor.
+
+
 ### Parametric Modeling
-### CAD Images
+The model was created using dimensions and features that can be edited in SOLIDWORKS.
+
+Important dimensions were defined parametrically, including:
+
+<img width="2908" height="1904" alt="image" src="https://github.com/user-attachments/assets/b34228d7-7acd-4e3b-a775-868add7ccfbf" />
+
+Using parametric dimensions allows the model to be modified without rebuilding the entire part
+
 ### Engineering Drawing
 ### CAD File Download
 ### Time Log
 ### Lessons Learned
-### Appendix – Research
+
+This project helped me understand how analytical engineering calculations can be translated into an actual CAD design.
+
+One of the main things I learned was that the dimensions calculated from beam equations provide a starting point, but the final design also has to consider practical features such as mounting holes, motor clearance, wall attachment, gussets, and fillets.
+
+I also learned that CAD problems are sometimes caused by the way a sketch is created rather than by the dimension itself. For example, I initially created the wall plate on the wrong orientation, which caused the extrusion to go in the wrong direction.
+
+Another thing I learned was how to use built-in SOLIDWORKS features more effectively. I originally created the gussets manually using triangular sketches and extrusions. After realizing that SOLIDWORKS has a dedicated Gusset feature, I changed my approach and used that tool instead.
+
+The FEA portion also showed me the importance of using the correct material properties. I had to make sure that the ABS material in SOLIDWORKS matched the conservative values used in my calculations before trusting the simulation results.
+
+Finally, I learned that the analytical calculations and FEA serve different purposes. The beam equations allowed me to determine reasonable starting dimensions, while FEA allowed me to evaluate the actual CAD geometry, including the holes, gussets, and fillets.
+
+Overall, the final design satisfied the required stress, deflection, and safety-factor constraints.
+
