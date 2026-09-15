@@ -235,6 +235,55 @@ Therefore, Feature B passes both requirements.
 
 
 ### Feature C – Stress Analysis
+Appendix D specifically says to treat C as:
+
+a simply supported beam with a concentrated load at the center.
+
+I'll use:
+
+L_C=4.00 in 
+
+b_C=1.00 in
+
+and use the 300-lbf load at the center.
+
+
+**Known**
+P=300 lbf
+
+L=4.00 in
+
+b=1.00 in
+
+S_allow=10,000 psi
+
+
+**Unknown**   h_C
+
+**Assumptions**
+Feature C is simply supported
+The concentrated load acts at the center
+The beam has a rectangular cross section
+The cross section is uniform
+Direct shear failure is neglected
+Shear deflection is negligible
+
+**FBD**
+
+<img width="684" height="960" alt="image" src="https://github.com/user-attachments/assets/75174bae-0493-42a6-ad5d-3342f219a741" />
+
+
+**Algebraic & Numerical solution**
+
+<img width="830" height="806" alt="image" src="https://github.com/user-attachments/assets/6ab4067a-8255-40ef-ba68-2f64d6f8173b" />
+
+
+### C — Stiffness Analysis
+
+For a simply supported beam with a center load, the Handbook gives
+
+<img width="1482" height="970" alt="image" src="https://github.com/user-attachments/assets/9574a1f8-15b0-41d9-bc7c-167d3ffaaa91" />
+
 
 ## Decide
 
