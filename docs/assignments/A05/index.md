@@ -470,9 +470,13 @@ The final dimensions were rounded upward from the theoretical minimum dimensions
 Based on the stress and stiffness calculations, the final dimensions selected for the preliminary CAD model are:
 
 Feature A: 1.000-in diameter
+
 Feature B: 0.125-in thickness
+
 Feature C: 0.625-in height
+
 Feature D: 0.125-in thickness
+
 Feature E: 0.375-in height
 
 The final dimensions were selected by comparing the minimum dimensions required by stress and stiffness and choosing the larger value
