@@ -1,4 +1,4 @@
-# A5 – [Topic]
+# A5 – Bracket Design
 
 ## Objective
 The objective of this assignment was to design a bracket by analyzing its strength and stiffness
