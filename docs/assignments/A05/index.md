@@ -478,6 +478,7 @@ Feature E: 0.375-in height
 The final dimensions were selected by comparing the minimum dimensions required by stress and stiffness and choosing the larger value
 
 **Final Stress Check**
+
 | Feature | Final Maximum Stress | Allowable Stress | Result |
 |---------|-----------------------|------------------|--------|
 | A       | 6.11 ksi              | 10 ksi           | PASS   |
@@ -486,7 +487,9 @@ The final dimensions were selected by comparing the minimum dimensions required 
 | D       | 1.20 ksi              | 10 ksi           | PASS   |
 | E       | 9.60 ksi              | 10 ksi           | PASS   |
 
+
 **Final Stiffness Check**
+
 | Feature | Final Deflection | Maximum Allowed | Result |
 |---------|-------------------|------------------|--------|
 | A       | 0.00163 in        | 0.005 in         | PASS   |
