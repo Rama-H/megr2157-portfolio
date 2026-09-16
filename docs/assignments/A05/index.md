@@ -280,12 +280,223 @@ Shear deflection is negligible
 
 ### C — Stiffness Analysis
 
+**Known Values**
+
+
+**Unknown**
+
+
+**Assumptions**
+
+The beam is simply supported.
+The load acts at the center.
+The cross section is rectangular.
+Shear deflection is negligible.
+Maximum deflection occurs at the center.
+
+**FBD**
+
+**Algebraic & Numerical Solution**
+
+<img width="709" height="960" alt="image" src="https://github.com/user-attachments/assets/af05f83e-001e-4476-8e6b-f3277ea06aec" />
+
+
 For a simply supported beam with a center load, the Handbook gives
 
 <img width="1482" height="970" alt="image" src="https://github.com/user-attachments/assets/9574a1f8-15b0-41d9-bc7c-167d3ffaaa91" />
 
+**Feature C Decision**
+
+<img width="830" height="790" alt="image" src="https://github.com/user-attachments/assets/3fd0a9af-7ef7-4147-b00d-fc46dec3133a" />
+
+Therefore, Feature C passes both requirements.
+
+
+### Feature D – Stress Analysis
+
+Feature D transfers the reaction from Feature C into the upper portion of the bracket.
+
+Because the loading is symmetric, the reaction transferred from Feature C is:
+
+P_D=150 lbf
+
+For the preliminary model:
+
+L_D=1.50 in
+
+
+b_D=1.00 in
+
+S_allow=10,000 psi
+
+The unknown is the thickness (t_D)
+
+**Assumptions**
+
+Feature D is modeled as an axially loaded rectangular member.
+The load is centered.
+The cross section is uniform.
+Direct shear failure is neglected.
+Bending effects are neglected in this simplified model
+
+
+**FBD**
+
+<img width="828" height="494" alt="image" src="https://github.com/user-attachments/assets/1de0f962-c4b2-44b8-8c7d-157a819ce9ff" />
+
+
+**Algebraic and Numerical Solution**
+
+<img width="826" height="616" alt="image" src="https://github.com/user-attachments/assets/75a9dba0-47c2-41b4-9f25-74421ebbe607" />
+
+
+### Feature D – Stiffness Analysis
+
+**Known Values**
+
+P=150 lbf
+
+L=1.50 in
+
+b=1.00 in
+
+E=10,000,000 psi
+
+delta=0.005 in
+
+**Unknown**  t_D=?
+
+
+**Assumptions**
+
+The same axial-bar assumptions used for Feature D stress analysis are used here.
+
+**Algebraic Solution & Numerical Solution**
+
+<img width="826" height="486" alt="image" src="https://github.com/user-attachments/assets/8f939148-df7d-4dca-9833-047736a4b4ae" />
+
+**Feature D Decision**
+
+Feature D passes both requirements
+<img width="826" height="486" alt="image" src="https://github.com/user-attachments/assets/8f3d396a-250e-493b-a3cd-2da980018510" />
+
+
+### Feature E – Stress Analysis
+
+Feature E represents the upper bracket member that transfers the load from the support into the main bracket.
+
+For the simplified model
+
+P_E=150 lbf
+
+L_E=1.50 in
+
+b_E=1.00 in
+
+S_allow=10,000 psi
+
+The unknown dimension is (h_E)
+
+**Assumptions**
+
+Feature E is modeled as a rectangular cantilever.
+The load acts at the end of the member.
+The cross section is uniform.
+The material remains elastic.
+Direct shear failure is neglected
+
+**FBD**
+**Algebraic & Numerical Solution**
+
+<img width="830" height="946" alt="image" src="https://github.com/user-attachments/assets/c171600f-bce5-4cc4-ac02-534f67ce90a1" />
+
+### Feature E – Stiffness Analysis
+
+**Known Values**
+
+P=150 lbf
+
+L=1.50 in
+
+b=1.00 in
+
+E=10,000,000 psi
+
+delta=0.005 in
+
+**Unknown** h_E=?
+
+
+**Assumptions**
+
+Feature E behaves as a cantilever.
+The load acts at the free end.
+The cross section is rectangular.
+Shear deflection is negligible.
+Small-deflection beam theory applies.
+
+
+**FBD**
+
+[INSERT FEATURE E FBD HERE]
+
+**Algebraic & Numerical Solution**
+
+<img width="757" height="960" alt="image" src="https://github.com/user-attachments/assets/e5a85cfd-e562-4af4-99ab-b19efd4d930b" />
+
+
+**Feature E Decision**
+
+<img width="822" height="434" alt="image" src="https://github.com/user-attachments/assets/7d9aceab-eff4-4381-9ca9-6235988e8a74" />
+
+
+### Overall Stress and Stiffness Comparison
+
+The calculated minimum dimensions were compared to determine which requirement controlled the design
+
+| Feature | Stress Minimum | Stiffness Minimum | Final Dimension      | Governing Requirement |
+|---------|----------------|-------------------|-----------------------|------------------------|
+| A       | 0.849 in       | 0.756 in          | 1.000 in diameter     | Stress                 |
+| B       | 0.030 in       | 0.012 in          | 0.125 in              | Stress                 |
+| C       | 0.600 in       | 0.577 in          | 0.625 in              | Stress                 |
+| D       | 0.015 in       | 0.0045 in         | 0.125 in              | Stress                 |
+| E       | 0.367 in       | 0.343 in          | 0.375 in              | Stress                 |
+
+The final dimensions were rounded upward from the theoretical minimum dimensions to provide practical CAD dimensions and additional margin
 
 ## Decide
+### Final Design
+
+Based on the stress and stiffness calculations, the final dimensions selected for the preliminary CAD model are:
+
+Feature A: 1.000-in diameter
+Feature B: 0.125-in thickness
+Feature C: 0.625-in height
+Feature D: 0.125-in thickness
+Feature E: 0.375-in height
+
+The final dimensions were selected by comparing the minimum dimensions required by stress and stiffness and choosing the larger value
+
+**Final Stress Check**
+| Feature | Final Maximum Stress | Allowable Stress | Result |
+|---------|-----------------------|------------------|--------|
+| A       | 6.11 ksi              | 10 ksi           | PASS   |
+| B       | 2.40 ksi              | 10 ksi           | PASS   |
+| C       | 5.76 ksi              | 10 ksi           | PASS   |
+| D       | 1.20 ksi              | 10 ksi           | PASS   |
+| E       | 9.60 ksi              | 10 ksi           | PASS   |
+
+**Final Stiffness Check**
+| Feature | Final Deflection | Maximum Allowed | Result |
+|---------|-------------------|------------------|--------|
+| A       | 0.00163 in        | 0.005 in         | PASS   |
+| B       | 0.00048 in        | 0.005 in         | PASS   |
+| C       | 0.00313 in        | 0.005 in         | PASS   |
+| D       | 0.00018 in        | 0.005 in         | PASS   |
+| E       | 0.00384 in        | 0.005 in         | PASS   |
+
+The calculations show that all five features satisfy both the allowable stress and maximum deflection requirements
+
 
 
 ## Communicate
