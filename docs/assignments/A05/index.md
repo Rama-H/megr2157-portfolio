@@ -87,7 +87,8 @@ Direct shear failure is ignored.
 
 **4. FBD**
 
-<img width="828" height="368" alt="image" src="https://github.com/user-attachments/assets/02db6069-17a8-4268-b3cd-8a792e7e9396" />
+<img width="828" height="452" alt="image" src="https://github.com/user-attachments/assets/e659499e-70f1-498f-ba46-389ce02db1e7" />
+
 
 At the fixed end:  R=300 lbf
 
@@ -181,7 +182,8 @@ Direct shear failure ignored
 
 **FBD**
 
-<img width="830" height="538" alt="image" src="https://github.com/user-attachments/assets/0ebf23de-ffea-4f13-96bf-56c6b1bf3ec3" />
+<img width="828" height="362" alt="image" src="https://github.com/user-attachments/assets/153d61d8-a35f-45ad-934e-a9c5dbdc0d6b" />
+
 
 
 **Algebraic solution**
@@ -276,7 +278,8 @@ Shear deflection is negligible
 
 **FBD**
 
-<img width="684" height="960" alt="image" src="https://github.com/user-attachments/assets/75174bae-0493-42a6-ad5d-3342f219a741" />
+<img width="828" height="396" alt="image" src="https://github.com/user-attachments/assets/882328df-9a10-4b5d-9228-09ac80966adf" />
+
 
 
 **Algebraic & Numerical solution**
@@ -368,7 +371,7 @@ Bending effects are neglected in this simplified model
 
 **FBD**
 
-<img width="828" height="494" alt="image" src="https://github.com/user-attachments/assets/1de0f962-c4b2-44b8-8c7d-157a819ce9ff" />
+<img width="828" height="524" alt="image" src="https://github.com/user-attachments/assets/8c0567fc-8232-482f-b69d-fdc930ad1d84" />
 
 
 **Algebraic and Numerical Solution**
@@ -472,7 +475,8 @@ Small-deflection beam theory applies.
 
 **FBD**
 
-[INSERT FEATURE E FBD HERE]
+<img width="828" height="704" alt="image" src="https://github.com/user-attachments/assets/792258ba-5548-4ca0-bfae-23205fa861a6" />
+
 
 **Algebraic & Numerical Solution**
 
