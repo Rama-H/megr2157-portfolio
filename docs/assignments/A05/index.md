@@ -64,7 +64,7 @@ P=300 lbf
 
 L_A=2.00 in 
 
-S_allow=10,000 psi
+S_allow=10,000,000 psi
 
 For a circular cross section:
 
