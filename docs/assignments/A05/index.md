@@ -263,10 +263,15 @@ S_allow=10,000 psi
 
 **Assumptions**
 Feature C is simply supported
+
 The concentrated load acts at the center
+
 The beam has a rectangular cross section
+
 The cross section is uniform
+
 Direct shear failure is neglected
+
 Shear deflection is negligible
 
 **FBD**
@@ -284,16 +289,32 @@ Shear deflection is negligible
 **Known Values**
 
 
-**Unknown**
+P=300 lbf
+
+L=4.00 in
+
+b=1.00 in
+
+E=10,000,000 psi
+
+delta=0.005 in
+
+**Unknown**   h_C=?
+
 
 
 **Assumptions**
 
-The beam is simply supported.
-The load acts at the center.
-The cross section is rectangular.
-Shear deflection is negligible.
-Maximum deflection occurs at the center.
+The beam is simply supported
+
+The load acts at the center
+
+The cross section is rectangular
+
+Shear deflection is negligible
+
+Maximum deflection occurs at the center
+
 
 **FBD**
 
@@ -334,10 +355,14 @@ The unknown is the thickness (t_D)
 
 **Assumptions**
 
-Feature D is modeled as an axially loaded rectangular member.
-The load is centered.
-The cross section is uniform.
-Direct shear failure is neglected.
+Feature D is modeled as an axially loaded rectangular member
+
+The load is centered
+
+The cross section is uniform
+
+Direct shear failure is neglected
+
 Bending effects are neglected in this simplified model
 
 
@@ -400,10 +425,14 @@ The unknown dimension is (h_E)
 
 **Assumptions**
 
-Feature E is modeled as a rectangular cantilever.
-The load acts at the end of the member.
-The cross section is uniform.
-The material remains elastic.
+Feature E is modeled as a rectangular cantilever
+
+The load acts at the end of the member
+
+The cross section is uniform
+
+The material remains elastic
+
 Direct shear failure is neglected
 
 **FBD**
@@ -431,9 +460,13 @@ delta=0.005 in
 **Assumptions**
 
 Feature E behaves as a cantilever.
+
 The load acts at the free end.
+
 The cross section is rectangular.
+
 Shear deflection is negligible.
+
 Small-deflection beam theory applies.
 
 
