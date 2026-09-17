@@ -449,7 +449,7 @@ Direct shear failure is neglected
 
 **FBD**
 
-<img width="432" height="310" alt="image" src="https://github.com/user-attachments/assets/13cc14d2-e5eb-4ef6-83e8-0ed1da57e09d" />
+<img width="828" height="704" alt="image" src="https://github.com/user-attachments/assets/306a6537-b331-4a08-8ef2-f5bfc3c0d7ef" />
 
 
 
@@ -489,7 +489,7 @@ Small-deflection beam theory applies.
 
 **FBD**
 
-<img width="828" height="704" alt="image" src="https://github.com/user-attachments/assets/792258ba-5548-4ca0-bfae-23205fa861a6" />
+<img width="436" height="378" alt="image" src="https://github.com/user-attachments/assets/cdd95027-6591-471d-9be1-593191689568" />
 
 
 **Algebraic & Numerical Solution**
