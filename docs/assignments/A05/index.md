@@ -170,6 +170,7 @@ b_B=1.00 in
 S_{allow}=10,000 psi
 
 **Unknown**: tB  thickness of B
+
 	​
 ​**Assumptions**
 B is an axially loaded rectangular bar
