@@ -126,7 +126,7 @@ The maximum deflection occurs at the free end.
 
 **4. FBD**
 
-<img width="828" height="368" alt="image" src="https://github.com/user-attachments/assets/02db6069-17a8-4268-b3cd-8a792e7e9396" /> 
+<img width="488" height="300" alt="image" src="https://github.com/user-attachments/assets/d6402a74-6e2d-42de-a11a-a6ba7e70983c" />
 
 **Algebraic Solution**
 
@@ -219,7 +219,8 @@ Shear deformation is negligible
 
 **FBD**
 
-<img width="830" height="538" alt="image" src="https://github.com/user-attachments/assets/0ebf23de-ffea-4f13-96bf-56c6b1bf3ec3" />
+<img width="718" height="302" alt="image" src="https://github.com/user-attachments/assets/d2b829e5-9c88-4af5-9da4-9a70eaee7e09" />
+
 
 **Algebraic Solution**
 
@@ -321,6 +322,9 @@ Maximum deflection occurs at the center
 
 **FBD**
 
+<img width="482" height="246" alt="image" src="https://github.com/user-attachments/assets/f92be008-a3c1-4b8e-a6f5-159d9f168c2e" />
+
+
 **Algebraic & Numerical Solution**
 
 <img width="709" height="960" alt="image" src="https://github.com/user-attachments/assets/af05f83e-001e-4476-8e6b-f3277ea06aec" />
@@ -395,6 +399,11 @@ delta=0.005 in
 
 **Unknown**  t_D=?
 
+**FBD**
+
+<img width="458" height="278" alt="image" src="https://github.com/user-attachments/assets/2d908eb4-6ed9-4246-972c-53989c86d355" />
+
+
 
 **Assumptions**
 
@@ -439,6 +448,11 @@ The material remains elastic
 Direct shear failure is neglected
 
 **FBD**
+
+<img width="432" height="310" alt="image" src="https://github.com/user-attachments/assets/13cc14d2-e5eb-4ef6-83e8-0ed1da57e09d" />
+
+
+
 **Algebraic & Numerical Solution**
 
 <img width="830" height="946" alt="image" src="https://github.com/user-attachments/assets/c171600f-bce5-4cc4-ac02-534f67ce90a1" />
