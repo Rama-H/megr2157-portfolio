@@ -794,12 +794,17 @@ Two multiview drawings were created to communicate the final design.
 **Stress Analysis Drawing**
 The stress-analysis sketch shows the important dimensions used to determine the required structural sizes.
 
-[INSERT IMAGE: Hand-drawn stress multiview sketch]
+<img width="728" height="960" alt="image" src="https://github.com/user-attachments/assets/0b5c2900-2463-45c7-9502-0ca480f3b752" />
+
+<img width="730" height="960" alt="image" src="https://github.com/user-attachments/assets/a39b571e-f564-4e9c-bfa1-093931c53c55" />
+
 
 **Stiffness Analysis Drawing**
 The stiffness-analysis sketch shows the dimensions used in the deflection calculations.
 
-[INSERT IMAGE: Hand-drawn stiffness multiview sketch]
+<img width="737" height="960" alt="image" src="https://github.com/user-attachments/assets/04248611-91d0-4c5c-aa26-7f11d1af5649" />
+
+<img width="719" height="960" alt="image" src="https://github.com/user-attachments/assets/982c9c34-4aa7-43a3-a606-91faa6fd499e" />
 
 
 ### Lessons Learned
@@ -868,6 +873,9 @@ The final design satisfies the original analytical stress and stiffness requirem
 
 The final design therefore maintains the original analytical design basis while providing a more substantial physical geometry
 
+### Time spent 
+
+About 4 days
 
 
 
