@@ -774,8 +774,8 @@ Isometrics View:
 
 Front View:
 
-<img width="3200" height="1906" alt="image" src="https://github.com/user-
-attachments/assets/f92489ab-ad85-4296-9952-746326ff2f14" />
+<img width="3200" height="1910" alt="image" src="https://github.com/user-attachments/assets/31de8a0f-40e8-4ccc-8f54-dddee6c6608f" />
+
 
 Right View:
 
