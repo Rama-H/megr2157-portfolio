@@ -556,81 +556,326 @@ The calculated minimum dimensions were compared to determine which requirement c
 
 The final dimensions were rounded upward from the theoretical minimum dimensions to provide practical CAD dimensions and additional margin
 
+
+### Initial CAD Design
+
+After completing the initial calculations, I began creating the bracket in SolidWorks.
+
+I created the model feature-by-feature instead of creating the entire bracket as one sketch. This allowed each feature to correspond to the calculations in the analysis
+I used parameters 
+
+<img width="1586" height="736" alt="image" src="https://github.com/user-attachments/assets/5fe30cc7-0468-4b3c-aba3-7beca35ebe64" />
+
+**CAD Step 1 – Feature A**
+I started with Feature A, the cylindrical portion of the bracket.
+
+I created a sketch on the appropriate plane and drew a circle centered at the origin.
+
+The initial diameter was:  D_A= 1.00in
+
+<img width="3192" height="1902" alt="image" src="https://github.com/user-attachments/assets/2c33569f-3bb2-4321-adca-2f0a568fd5da" />
+
+I then used Boss-Extrude to create the cylinder with a length of: 2.00in
+
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/dabb89c7-211a-4756-a82a-33635f831f69" />
+
+
+**CAD Step 2 – Feature B**
+
+After creating Feature A, I created the vertical support
+
+I started a sketch on the appropriate face and created the rectangular profile for Feature B
+
+The initial dimensions were:
+
+t_B=0.125 or 0.13 in
+
+h_B= 2.00in
+
+W_B= 1.00in
+
+<img width="3192" height="1900" alt="image" src="https://github.com/user-attachments/assets/695cc4d7-3aab-431b-928c-b2605ae361dd" />
+
+<img width="3198" height="1902" alt="image" src="https://github.com/user-attachments/assets/7118328c-0944-4d47-a573-7b8a57d1f408" />
+
+
+**CAD Step 3 – Feature C**
+Next, I created the lower horizontal portion of the bracket.
+
+The initial dimensions were:   L_C=4.00in    h_C=0.63in
+
+The feature was created using a rectangular sketch and Boss-Extrude
+
+<img width="3200" height="1908" alt="image" src="https://github.com/user-attachments/assets/5d922fd7-680b-41cf-90c5-75589c88fcbd" />
+
+<img width="3196" height="1908" alt="image" src="https://github.com/user-attachments/assets/626e2d25-2392-4b5a-89fc-de073729ed6b" />
+
+
+**CAD Step 4 – Feature D**
+
+I then created the vertical end feature.
+
+The initial dimensions were:  L_D= 1.50 in     t_D=0.13 in 
+
+The sketch was placed on the appropriate face and then extruded to form the vertical end of the bracket
+
+<img width="3164" height="1904" alt="image" src="https://github.com/user-attachments/assets/d57fd915-9fe7-4764-8c67-682517abcf73" />
+
+<img width="3200" height="1896" alt="image" src="https://github.com/user-attachments/assets/029fdc96-f831-45dc-af8d-e908ef235df9" />
+
+
+**CAD Step 5 – Feature E**
+
+Finally, I created the upper horizontal feature.
+
+The initial dimensions were
+
+L_E= 1.50 in
+
+h_E=0.38 in
+
+This feature was created with another rectangular sketch and extrusion
+
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/8ac1d670-be15-429a-ac83-f5d26de3c3d0" />
+
+<img width="3196" height="1914" alt="image" src="https://github.com/user-attachments/assets/1c79c488-80a5-49c8-a6e9-9a05d8106ad8" />
+
+
+### Initial CAD Evaluation
+
+After completing the first CAD model, I inspected the overall geometry.
+
+Although the calculated dimensions satisfied the stress and stiffness requirements, the model appeared thinner than I expected, particularly at the 0.13-in-thick sections.
+
+The initial model was technically based on the calculated minimum dimensions, but the visual inspection made me question whether the geometry provided enough practical structural margin.
+
+<img width="3196" height="1910" alt="image" src="https://github.com/user-attachments/assets/d08b956f-e89a-40f3-a083-e9ed8436d109" />
+
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/f5ebcbaf-1ac4-4055-8347-da0f3e2c88cb" />
+
+
+This was an important part of my design process because the first calculated solution was not automatically treated as the final CAD design. I used the initial model to evaluate the physical proportions and identify areas where additional material could be beneficial.
+
+
+### Final Design Revision
+
+After completing the initial CAD model, I reviewed the overall geometry and compared the physical appearance of the model with the calculated dimensions.
+
+Although the initial dimensions satisfied the analytical calculations, some of the sections appeared very thin in the CAD model. In particular, the 0.13-in extrusion thickness made several features appear narrow compared with the rest of the bracket.
+
+Rather than changing the entire design, I made a targeted geometry revision.
+
+The following dimensions were changed:
+
+| Feature      | Initial   | Final   |
+|------------- |----------:|--------:|
+| B thickness  | 0.13 in   | 0.50 in |
+| C thickness  | 0.13 in   | 0.50 in |
+| D thickness  | 0.13 in   | 0.50 in |
+| D width      | 0.13 in   | 0.25 in |
+| E thickness  | 0.13 in   | 0.50 in |
+
+
+The other major dimensions remained unchanged.
+
+The purpose of this revision was to increase the structural cross section without changing the overall design concept.
+
+Increasing the thickness of the members increases the available cross-sectional area and, for bending members, increases the section modulus and moment of inertia. Therefore, the change provides additional resistance to stress and deflection compared with the thinner initial geometry.
+
+I retained the original analytical calculations as the initial sizing basis rather than completely repeating the analysis for every feature after the CAD revision. The final geometry uses equal or larger structural thicknesses than the initial calculated design.
+
+initial CAD Model:
+
+<img width="3200" height="1906" alt="Screenshot 2026-09-17 225515" src="https://github.com/user-attachments/assets/ae64c6f5-eaaa-4f58-8997-22c486b214ed" />
+
+Final CAD Model:
+
+<img width="3160" height="1904" alt="image" src="https://github.com/user-attachments/assets/3579ef3e-0a00-405c-9fad-ce01cc5332e4" />
+
+Final CAD Dimensions
+
+The final bracket was modeled using the following dimensions
+
+<img width="1754" height="854" alt="image" src="https://github.com/user-attachments/assets/764a9741-a415-434a-a0a8-ff307edad5ff" />
+
+
 ## Decide
+
 ### Final Design
 
-The stress and stiffness analyses were first used to determine the theoretical minimum dimensions for each feature. After reviewing the resulting dimensions and comparing them with the concept design, I decided to use larger dimensions for the final CAD model. The larger dimensions provide a more practical geometry and additional material around the load-bearing features.
+After completing the stress and stiffness calculations and creating the CAD model, I selected the following final dimensions:
 
-The final preliminary CAD dimensions are:
+Feature A: 1.00-in diameter, 2.00-in length
 
+Feature B: 1.00-in width, 2.00-in height, 0.50-in thickness
 
-| Feature        | Final CAD Dimension      |
-|----------------|---------------------------|
-| Feature A      | Ø0.950 in diameter        |
-| Feature A      | 0.800 in length           |
-| Feature B      | 0.700 in width            |
-| Feature B      | 1.000 in length           |
-| Feature C      | 0.800 in width            |
-| Feature C      | 3.100 in length           |
-| Feature C      | 1.200 in height           |
-| Feature D      | 0.800 in width            |
-| Feature D      | 0.780 in length           |
-| Feature D      | 1.700 in height           |
-| Feature E      | 0.800 in width            |
-| Feature E      | 1.800 in length           |
-| Feature E      | 1.550 in height           |
+Feature C: 4.00-in length, 0.63-in height, 0.50-in thickness
 
+Feature D: 1.50-in length, 0.25-in width, 0.50-in thickness
 
-These dimensions were selected as the starting dimensions for the SolidWorks model. They are larger than the theoretical minimum dimensions calculated from the simplified strength-of-materials models.
+Feature E: 1.50-in length, 0.38-in height, 0.50-in thickness
 
+The analytical calculations showed that the original design dimensions satisfied the stress and stiffness requirements. During CAD development, I increased the thickness of Features B, C, D, and E and increased the width of Feature D. These changes provided additional structural material while maintaining the original design concept
 
-### Design Decision
+The final design was therefore selected based on both the analytical results and the physical review of the CAD model
 
+### Final Stress Check
 
-The theoretical calculations provide minimum dimensions based on the assumed loading conditions and simplified beam models. However, a practical component cannot always be designed using only the exact theoretical minimum because manufacturing, geometry, connections, and stress concentrations also need to be considered.
+The original analytical stress calculations produced the following results:
 
-Therefore, I selected larger dimensions for the final CAD model. After completing the CAD model, the final dimensions will be checked again using the stress and stiffness equations to verify that they satisfy the design requirements.
-
-The design requirements are:
-
-F=600 lbf
-
-SF=4
-
-delta_{max}=0.005 in
-
-The allowable stress is:
-
-S_{allow}=S_y x SF
+|Feature	|Maximum Stress | Allowable Stress	| Result|
+|-----------|---------------|-------------------|-------|
+|A			|6.11 ksi		|10 ksi				|PASS	|
+|B			|2.40 ksi		|10 ksi				|PASS	|
+|C			|5.76 ksi		|10 ksi				|PASS	|
+|D			|1.20 ksi		|10 ksi				|PASS	|
+|E			|9.60 ksi		|10 ksi				|PASS	|
 
 
-The final CAD dimensions will be considered acceptable only if the calculated stresses remain below the allowable stress and the calculated deflections remain below 0.005 in
+All calculated stresses were below the allowable stress.
+
+The final CAD model also uses increased thicknesses for Features B–E, providing additional cross-sectional material compared with the initial geometry.
+
+### Final Stiffness Check
+
+The original stiffness calculations produced:
+
+| Feature | Deflection   | Maximum Allowed | Result |
+|--------|--------------:|----------------:|:------:|
+| A      | 0.00163 in    | 0.005 in        | PASS   |
+| B      | 0.00048 in    | 0.005 in        | PASS   |
+| C      | 0.00313 in    | 0.005 in        | PASS   |
+| D      | 0.00018 in    | 0.005 in        | PASS   |
+| E      | 0.00384 in    | 0.005 in        | PASS   |
 
 
-**Final Stress Check**
+All calculated deflections were below the required maximum of 0.005 in.
 
-| Feature | Final Maximum Stress | Allowable Stress | Result |
-|---------|-----------------------|------------------|--------|
-| A       | 6.11 ksi              | 10 ksi           | PASS   |
-| B       | 2.40 ksi              | 10 ksi           | PASS   |
-| C       | 5.76 ksi              | 10 ksi           | PASS   |
-| D       | 1.20 ksi              | 10 ksi           | PASS   |
-| E       | 9.60 ksi              | 10 ksi           | PASS   |
-
-
-**Final Stiffness Check**
-
-| Feature | Final Deflection | Maximum Allowed | Result |
-|---------|-------------------|------------------|--------|
-| A       | 0.00163 in        | 0.005 in         | PASS   |
-| B       | 0.00048 in        | 0.005 in         | PASS   |
-| C       | 0.00313 in        | 0.005 in         | PASS   |
-| D       | 0.00018 in        | 0.005 in         | PASS   |
-| E       | 0.00384 in        | 0.005 in         | PASS   |
-
-The calculations show that all five features satisfy both the allowable stress and maximum deflection requirements
-
+The final CAD revision increased the thickness of Features B, C, D, and E, which increases their available cross-sectional stiffness relative to the initial 0.13-in-thick geometry
 
 
 ## Communicate
+
+### Final Design Communication
+
+The final bracket was created in SolidWorks using a feature-by-feature modeling approach. I started with the cylindrical Feature A and then built Features B, C, D, and E around it.
+
+The CAD model was developed directly from the dimensions obtained from the stress and stiffness analysis.
+
+One important part of the design process was recognizing that a mathematically acceptable dimension does not always produce a CAD model that looks structurally appropriate. The initial 0.13-in-thick sections technically satisfied the original calculations, but they appeared very thin in the CAD model
+
+Instead of completely redesigning the bracket, I made a targeted revision by increasing the extrusion thicknesses to 0.50 in and increasing the width of Feature D to 0.25 in.
+
+This allowed me to preserve the original calculations and design concept while producing a more substantial final CAD model
+
+Isometrics View:
+
+<img width="3166" height="1906" alt="image" src="https://github.com/user-attachments/assets/a5da5cfc-a25a-41e9-9ff6-fce0b83a64cd" />
+
+Front View:
+
+<img width="3200" height="1906" alt="image" src="https://github.com/user-
+attachments/assets/f92489ab-ad85-4296-9952-746326ff2f14" />
+
+Right View:
+
+<img width="3200" height="1914" alt="image" src="https://github.com/user-attachments/assets/2fe87944-4f3f-427e-a6d1-72dd691b5ee6" />
+
+
+Top View:
+
+<img width="3200" height="1910" alt="image" src="https://github.com/user-attachments/assets/da33eba3-d486-4706-9080-87ca1e63c747" />
+
+
+### Multiview Drawings
+
+Two multiview drawings were created to communicate the final design.
+
+**Stress Analysis Drawing**
+The stress-analysis sketch shows the important dimensions used to determine the required structural sizes.
+
+[INSERT IMAGE: Hand-drawn stress multiview sketch]
+
+**Stiffness Analysis Drawing**
+The stiffness-analysis sketch shows the dimensions used in the deflection calculations.
+
+[INSERT IMAGE: Hand-drawn stiffness multiview sketch]
+
+
+### Lessons Learned
+#### Governing Failure Mode
+
+The stress and stiffness calculations showed that the bracket satisfied both requirements. The largest calculated stress was associated with Feature E:
+
+sigma_E=9.60 ksi
+
+compared with the allowable stress of:
+
+sigma_allow=10 ksi
+
+
+The largest calculated deflection was also associated with Feature E:
+
+delta_E=0.00384 in
+
+
+compared with the maximum allowable deflection:
+
+delta_max=0.005 in
+
+
+Therefore, Feature E was one of the most critical features in the original analytical design because it had the highest calculated stress and deflection.
+
+#### Error Propagation
+
+The bracket features were not independent
+
+The reaction force from one feature became the loading condition for another feature
+
+This means that an error in an earlier calculation can affect the dimensions and calculations of later features
+
+For example, an incorrect reaction force at Feature A could change the loading used for Feature B and then continue through the remaining bracket features
+
+This showed me why it is important to check the FBD and equilibrium equations before moving on to the next feature.
+
+#### Assumption Sensitivity
+
+One important assumption was that direct shear failure could be neglected, as allowed by the assignment.
+
+If shear were significant in the actual design, the calculated dimensions could change because the component would need to be checked for both bending/normal stress and shear stress.
+
+Another important assumption was the use of simplified beam models. The actual bracket contains several connected features and is more complicated than an ideal beam. The beam models were useful for developing a first-order design, but a more detailed analysis such as FEA could be used to evaluate the final geometry more accurately.
+
+### What I Learned
+
+This assignment helped me understand the connection between strength calculations, stiffness calculations, and CAD design.
+
+One of the main things I learned was that passing a stress calculation does not automatically mean that the CAD model looks or feels like a practical design. My first CAD version used thin 0.13-in sections, which were acceptable according to the initial calculations but appeared very thin when I looked at the completed model
+
+I learned that increasing the cross-sectional dimensions can improve both strength and stiffness. For bending members, the moment of inertia and section modulus have a strong effect on the resulting stress and deflection
+
+I also learned the importance of modeling the load path correctly. The force does not simply act on one feature; it travels through the bracket, meaning that the features must be analyzed in sequence
+
+Finally, I learned how to connect an analytical model to an actual SolidWorks model. The calculations provided the starting dimensions, while the CAD model allowed me to visually evaluate and refine the final design
+
+### Final CAD File
+
+
+
+
+[INSERT LINK TO SOLIDWORKS CAD FILE]
+
+
+
+### Final Result
+The final design satisfies the original analytical stress and stiffness requirements. The final CAD model also incorporates a geometry revision in which the thickness of Features B, C, D, and E was increased to 0.50 in and the width of Feature D was increased to 0.25 in.
+
+The final design therefore maintains the original analytical design basis while providing a more substantial physical geometry.
+
+
+
+
+
+
+
 
