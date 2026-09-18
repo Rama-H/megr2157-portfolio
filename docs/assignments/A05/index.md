@@ -860,17 +860,13 @@ Finally, I learned how to connect an analytical model to an actual SolidWorks mo
 
 ### Final CAD File
 
-
-
-
-[INSERT LINK TO SOLIDWORKS CAD FILE]
-
+[A5 Bracket Design.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A5%20Bracket%201.SLDPRT)
 
 
 ### Final Result
-The final design satisfies the original analytical stress and stiffness requirements. The final CAD model also incorporates a geometry revision in which the thickness of Features B, C, D, and E was increased to 0.50 in and the width of Feature D was increased to 0.25 in.
+The final design satisfies the original analytical stress and stiffness requirements. The final CAD model also incorporates a geometry revision in which the thickness of Features B, C, D, and E was increased to 0.50 in and the width of Feature D was increased to 0.25 in
 
-The final design therefore maintains the original analytical design basis while providing a more substantial physical geometry.
+The final design therefore maintains the original analytical design basis while providing a more substantial physical geometry
 
 
 
