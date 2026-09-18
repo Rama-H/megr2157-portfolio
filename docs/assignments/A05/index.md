@@ -13,13 +13,20 @@ The bracket was divided into five features, labeled A through E. Each feature wa
 The design requirements used for this analysis were:
 
 Applied load: (F=600) lbf
+
 Safety factor: (SF=4)
+
 Maximum allowable deflection: (delta_{max}=0.005) in
+
 Material: 6061-T6 aluminum
+
 Yield strength: (S_y=40) ksi
+
 Elastic modulus: (E=10,000,000) psi
-Direct shear failure was neglected as instructed.
-Shear deflection was assumed to be negligible.
+
+Direct shear failure was neglected as instructed
+
+Shear deflection was assumed to be negligible
 
 Because the bracket is symmetric, the 600-lbf load was divided equally between the two sides:
 
@@ -33,15 +40,19 @@ The material properties were obtained from Machinery's Handbook. The Handbook li
 The bracket was separated into Features A, B, C, D, and E as shown in Appendix C. Appendix D provides the simplified strength-of-materials models for the first three features:
  
 Feature A -> cantilever beam
+
 Feature B -> axially loaded bar
+
 Feature C -> simply supported beam with a concentrated load at the center
 
 The load was transferred through the features so that the reaction from one feature became the loading condition for the next feature.
 
 For each feature, I performed two analyses:
 
-1) Stress analysis to determine the minimum dimension required to prevent yielding.
-2) Stiffness analysis to determine the minimum dimension required to keep deflection below 0.005 in.
+1) Stress analysis to determine the minimum dimension required to prevent yielding
+
+3) Stiffness analysis to determine the minimum dimension required to keep deflection below 0.005 in
+
 
 The final dimension for each feature was selected by comparing the stress-controlled and stiffness-controlled dimensions and choosing the larger value.
 
@@ -59,7 +70,9 @@ The 300-lbf half-load acts at the free end.
 
 
 ### A — Stress Analysis
+
 **1. Known Values**
+
 P=300 lbf  
 
 L_A=2.00 in 
@@ -77,13 +90,20 @@ Find the minimum diameter:  d_A
 
 
 **3. Assumptions**
-Feature A behaves as a cantilever.
-One end is fixed to Feature B.
-The 300-lbf load acts at the free end.
-Circular cross section.
-Static loading.
-Bending stress controls the design.
-Direct shear failure is ignored.
+
+Feature A behaves as a cantilever
+
+One end is fixed to Feature B
+
+The 300-lbf load acts at the free end
+
+Circular cross section
+
+Static loading
+
+Bending stress controls the design
+
+Direct shear failure is ignored
 
 **4. FBD**
 
@@ -107,6 +127,7 @@ At the fixed end:  R=300 lbf
 ### Feature A – Stiffness Analysis
 
 **1. Known Values**
+
 P=300 lbf  
 
 L_A=2.00 in 
@@ -118,11 +139,16 @@ Delta_max= 0.005 in
 **2. Unknown**    d_A
 
 **3. Assumptions**
-Feature A behaves as a cantilever.
-The load acts at the free end.
-Small-deflection beam theory applies.
-Shear deflection is negligible.
-The maximum deflection occurs at the free end.
+
+Feature A behaves as a cantilever
+
+The load acts at the free end
+
+Small-deflection beam theory applies
+
+Shear deflection is negligible
+
+The maximum deflection occurs at the free end
 
 **4. FBD**
 
@@ -144,6 +170,7 @@ The maximum deflection occurs at the free end.
 Therefore, Feature A passes both the strength and stiffness requirements.
 
 ### Feature B – Stress Analysis
+
 Appendix D says:
 
 Treat Feature B as an axial loaded bar.
@@ -162,6 +189,7 @@ The unknown will be the thickness t_B
 ### B — Stress Analysis
 
 **Known**
+
 P_B=300 lbf
 
 L_B=2.00 in
@@ -174,10 +202,15 @@ S_{allow}=10,000 psi
 
 	​
 ​**Assumptions**
+
 B is an axially loaded rectangular bar
+
 Load is centered
+
 Uniform cross section
+
 No bending
+
 Direct shear failure ignored
 
 **FBD**
@@ -212,9 +245,13 @@ Delta=0.005 in
 
 
 **Assumptions**
-Feature B carries an axial load.
-The load is centered.
-The material remains elastic.
+
+Feature B carries an axial load
+
+The load is centered
+
+The material remains elastic
+
 Shear deformation is negligible
 
 **FBD**
@@ -235,10 +272,11 @@ Shear deformation is negligible
 
 <img width="826" height="440" alt="image" src="https://github.com/user-attachments/assets/7ad3ad65-8a3f-410b-8b9e-9ea5a192469b" />
 
-Therefore, Feature B passes both requirements.
+Therefore, Feature B passes both requirements
 
 
 ### Feature C – Stress Analysis
+
 Appendix D specifically says to treat C as:
 
 a simply supported beam with a concentrated load at the center.
@@ -253,6 +291,7 @@ and use the 300-lbf load at the center.
 
 
 **Known**
+
 P=300 lbf
 
 L=4.00 in
@@ -265,6 +304,7 @@ S_allow=10,000 psi
 **Unknown**   h_C
 
 **Assumptions**
+
 Feature C is simply supported
 
 The concentrated load acts at the center
@@ -506,7 +546,7 @@ Small-deflection beam theory applies.
 
 The calculated minimum dimensions were compared to determine which requirement controlled the design
 
-| Feature | Stress Minimum | Stiffness Minimum | Final Dimension      | Governing Requirement |
+| Feature | Stress Minimum | Stiffness Minimum | Initial Dimension      | Governing Requirement |
 |---------|----------------|-------------------|-----------------------|------------------------|
 | A       | 0.849 in       | 0.756 in          | 1.000 in diameter     | Stress                 |
 | B       | 0.030 in       | 0.012 in          | 0.125 in              | Stress                 |
@@ -519,19 +559,53 @@ The final dimensions were rounded upward from the theoretical minimum dimensions
 ## Decide
 ### Final Design
 
-Based on the stress and stiffness calculations, the final dimensions selected for the preliminary CAD model are:
+The stress and stiffness analyses were first used to determine the theoretical minimum dimensions for each feature. After reviewing the resulting dimensions and comparing them with the concept design, I decided to use larger dimensions for the final CAD model. The larger dimensions provide a more practical geometry and additional material around the load-bearing features.
 
-Feature A: 1.000-in diameter
+The final preliminary CAD dimensions are:
 
-Feature B: 0.125-in thickness
 
-Feature C: 0.625-in height
+| Feature        | Final CAD Dimension      |
+|----------------|---------------------------|
+| Feature A      | Ø0.950 in diameter        |
+| Feature A      | 0.800 in length           |
+| Feature B      | 0.700 in width            |
+| Feature B      | 1.000 in length           |
+| Feature C      | 0.800 in width            |
+| Feature C      | 3.100 in length           |
+| Feature C      | 1.200 in height           |
+| Feature D      | 0.800 in width            |
+| Feature D      | 0.780 in length           |
+| Feature D      | 1.700 in height           |
+| Feature E      | 0.800 in width            |
+| Feature E      | 1.800 in length           |
+| Feature E      | 1.550 in height           |
 
-Feature D: 0.125-in thickness
 
-Feature E: 0.375-in height
+These dimensions were selected as the starting dimensions for the SolidWorks model. They are larger than the theoretical minimum dimensions calculated from the simplified strength-of-materials models.
 
-The final dimensions were selected by comparing the minimum dimensions required by stress and stiffness and choosing the larger value
+
+### Design Decision
+
+
+The theoretical calculations provide minimum dimensions based on the assumed loading conditions and simplified beam models. However, a practical component cannot always be designed using only the exact theoretical minimum because manufacturing, geometry, connections, and stress concentrations also need to be considered.
+
+Therefore, I selected larger dimensions for the final CAD model. After completing the CAD model, the final dimensions will be checked again using the stress and stiffness equations to verify that they satisfy the design requirements.
+
+The design requirements are:
+
+F=600 lbf
+
+SF=4
+
+delta_{max}=0.005 in
+
+The allowable stress is:
+
+S_{allow}=S_y x SF
+
+
+The final CAD dimensions will be considered acceptable only if the calculated stresses remain below the allowable stress and the calculated deflections remain below 0.005 in
+
 
 **Final Stress Check**
 
