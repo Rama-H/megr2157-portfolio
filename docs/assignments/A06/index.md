@@ -77,13 +77,79 @@ The relationships between the thickness variables allow several features to rema
 
 <img width="1820" height="1036" alt="image" src="https://github.com/user-attachments/assets/2c21554f-c0ae-427d-8c88-2e222730e82e" />
 
+### Analytical Equation Used in the Parametric Model
+
+One of the main dimensions driven by an analytical equation was the diameter of Feature A.
+
+The stiffness relationship used was:
+
+D_A = ({8(SF)(F)L_A^3} / {(E)pi(delta)})^{1/4}
 
 
+The equation was entered directly into SolidWorks as:
+
+=((8*"SF"*"F"*"L_A"^3)/("E"*PI()*"def"))^(1/4)
+
+The calculation produced a required diameter of approximately 0.99 in.
+
+Rather than manually calculating the value outside of CAD and entering it as an unrelated dimension, the equation was entered directly into the SolidWorks Global Variables table. This allowed the required diameter to respond to changes in the design inputs
+
+<img width="1398" height="470" alt="image" src="https://github.com/user-attachments/assets/690ec2e6-841a-429f-aa15-d14d04ab6ca4" />
+
+**Parametric Relationships**
+
+Additional relationships were created between dimensions so that the model could update when a parameter changed.
+
+For example:
+
+"W_B" = "D_A"
+
+This makes the width of Feature B dependent on the diameter parameter of Feature A.
+
+The thicknesses were also related:
+
+"t_C" = "t_B"
+"t_D" = "t_B"
+"t_E" = "t_B"
+
+The height of Feature D was related to the overall height and Feature C height:
+
+"H_D" = "H_total" - "h_C"
+
+Using these relationships made the model easier to modify because related dimensions did not have to be changed individually.
+
+[INSERT IMAGE: Screenshot of the bracket with several dimensions visible]
+
+**Parametric Verification**
+
+After creating the Global Variables, I verified that the model responded to changes in the parameters. A dimension was temporarily changed in the Global Variables table and the model was rebuilt to confirm that the corresponding geometry updated.
+
+After verifying the relationship, the value was returned to the intended design dimension.
+
+[INSERT IMAGE: Before changing a parameter]
+
+[INSERT IMAGE: After changing the parameter and showing the model update]
+
+Mistakes and Corrections
+
+One issue occurred while entering the Feature A stiffness equation. The exponent was initially entered without grouping the entire exponent correctly. This caused SolidWorks to evaluate the equation incorrectly and produce an incorrect diameter.
+
+I corrected the equation by placing the exponent inside parentheses:
+
+=((8*"SF"*"F"*"L_A"^3)/("E"*PI()*"def"))^(1/4)
+
+After correcting the equation, SolidWorks evaluated the required diameter at approximately 0.99 in.
+
+Another design decision was separating the calculated required diameter from the final nominal CAD dimension. The analytical calculation resulted in approximately 0.99 in, while the final model uses a 1.00-in diameter.
+
+This allowed the analytical result to remain documented while using the selected nominal dimension in the final CAD model.
 
 ## Analyze
 
 
 ## Decide
+
+### Final CAD Design
 
 
 ## Communicate
