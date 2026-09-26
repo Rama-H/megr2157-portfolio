@@ -2,34 +2,35 @@
 
 ## Objective
 
-The objective of this assignment was to continue the bracket design from A5 by converting the model into a parametric CAD model and creating a detailed multi-view engineering drawing.
+The objective of A6 was to continue the bracket design from A5 and turn the previous design into a parametric CAD model and a detailed engineering drawing
 
-The main goals were to:
+In A5, I analyzed the bracket using strength and stiffness calculations and selected dimensions that satisfied the design requirements. In A6, I used those dimensions to build and organize the bracket in SolidWorks using Global Variables and equations. I then used the completed model to create a multi-view engineering drawing with dimensions and tolerances
 
-- Create a parametric solid model using SolidWorks Global Variables and equations
-  
-- Connect important CAD dimensions to the design calculations from A5
-  
-- Allow dimensions to update automatically when a related parameter changes
-  
-- Create a fully dimensioned engineering drawing of the bracket
-  
-- Apply appropriate tolerances to the drawing
+The main goals for this assignment were to:
 
-- Use third-angle projection
-  
-- Document the design process, including calculations, CAD work, mistakes, and lessons learned
-  
-- Provide a downloadable CAD file for the completed design
+-Continue the bracket design from A5
 
-The bracket was carried forward from the previous assignment, where strength and stiffness requirements were analyzed. For A6, those design decisions were incorporated into the CAD model so that important dimensions could be controlled parametrically instead of being entered only as fixed values
+-Create the bracket as a parametric SolidWorks model
 
-<img width="1290" height="826" alt="image" src="https://github.com/user-attachments/assets/9abbc736-dcb4-4ff0-b0d6-a47c787bc6bf" />
+-Use equations and Global Variables to control important dimensions
 
-My A5 finished CAD design 
+-Document the modeling process for each feature
 
-<img width="2850" height="1896" alt="image" src="https://github.com/user-attachments/assets/a77cdd38-36d6-442a-ae2a-3ae016f292b1" />
+-Verify that the model responds correctly when parameters are changed
 
+-Create a fully dimensioned multi-view engineering drawing
+
+-Apply appropriate tolerances to functional and non-critical features
+
+-Document the design process, mistakes, and lessons learned
+
+-Provide downloadable CAD files
+
+
+<img width="1230" height="794" alt="image" src="https://github.com/user-attachments/assets/2c4fbfea-9542-408b-b658-e99f4e8d615e" />
+
+
+## Analyze
 
 ### Parametric Design Process
 
@@ -77,6 +78,7 @@ The relationships between the thickness variables allow several features to rema
 
 <img width="1820" height="1036" alt="image" src="https://github.com/user-attachments/assets/2c21554f-c0ae-427d-8c88-2e222730e82e" />
 
+
 ### Analytical Equation Used in the Parametric Model
 
 One of the main dimensions driven by an analytical equation was the diameter of Feature A.
@@ -118,39 +120,277 @@ The height of Feature D was related to the overall height and Feature C height:
 
 Using these relationships made the model easier to modify because related dimensions did not have to be changed individually.
 
-[INSERT IMAGE: Screenshot of the bracket with several dimensions visible]
+<img width="2938" height="1908" alt="image" src="https://github.com/user-attachments/assets/d478e591-5e39-4a76-be96-8c761c77a1fa" />
 
-**Parametric Verification**
 
-After creating the Global Variables, I verified that the model responded to changes in the parameters. A dimension was temporarily changed in the Global Variables table and the model was rebuilt to confirm that the corresponding geometry updated.
 
-After verifying the relationship, the value was returned to the intended design dimension.
+**Creating Feature A**
 
-[INSERT IMAGE: Before changing a parameter]
+I began the CAD modeling process with Feature A. I created the sketch for the first section of the bracket and used the dimensions determined from A5 to define the geometry.
 
-[INSERT IMAGE: After changing the parameter and showing the model update]
+The main dimensions controlling Feature A were the diameter and length.
 
-Mistakes and Corrections
+The diameter was especially important because it was connected to the stiffness requirement from the previous assignment.
 
-One issue occurred while entering the Feature A stiffness equation. The exponent was initially entered without grouping the entire exponent correctly. This caused SolidWorks to evaluate the equation incorrectly and produce an incorrect diameter.
+The initial diameter used in the parametric calculation was determined using the stiffness equation. The calculated required diameter was approximately 0.99 in, and the final nominal CAD dimension was selected as 1.00 in.
 
-I corrected the equation by placing the exponent inside parentheses:
+After completing the sketch, I used a Boss-Extrude feature to create the solid geometry.
+
+<img width="3200" height="1900" alt="image" src="https://github.com/user-attachments/assets/f7d594ab-bc64-48c0-837c-90ffbc326ad9" />
+
+<img width="2906" height="1898" alt="image" src="https://github.com/user-attachments/assets/d96c1cfe-2f55-4504-92d3-5c459ba0ba9d" />
+
+
+**Creating Feature B**
+
+After creating Feature A, I created the next sketch for Feature B.
+
+Feature B was modeled to connect to the first section of the bracket. I used the dimensions selected during the A5 design process and constrained the sketch before creating the solid feature.
+
+The main dimensions for Feature B were:
+
+Width = 1.00 in
+Height = 2.00 in
+Thickness/extrusion = 0.50 in
+
+The width of Feature B was later connected parametrically to the Feature A diameter using the relationship:
+
+W_B = D_A
+
+This means that the width of Feature B can automatically follow the diameter parameter of Feature A which is 0.99
+
+After completing the sketch, I created the solid geometry using Boss-Extrude.
+
+<img width="2938" height="1906" alt="image" src="https://github.com/user-attachments/assets/4e181259-1898-44b6-8a83-2f80b2022ecf" />
+
+<img width="2936" height="1910" alt="image" src="https://github.com/user-attachments/assets/a34a084e-9e5a-44fa-8b3f-f2f7a280b7bb" />
+
+
+**Creating Feature C**
+
+Next, I created the sketch for Feature C. This feature forms the main horizontal portion of the bracket.
+
+The main dimensions used for Feature C were:
+
+Length = 4.00 in
+Height = 0.625 in
+Thickness/extrusion = 0.50 in
+
+I added the necessary sketch dimensions and constraints before creating the solid feature.
+
+After the sketch was completed, I used Boss-Extrude to create the three-dimensional Feature C.
+
+The thickness of Feature C was also linked to the main thickness parameter:
+
+t_C = t_B
+
+<img width="2912" height="1900" alt="image" src="https://github.com/user-attachments/assets/7962d131-4013-438f-8379-c03615e126ab" />
+
+
+This allows the thickness of Feature C to update automatically if the main thickness parameter is changed.
+
+<img width="2932" height="1906" alt="image" src="https://github.com/user-attachments/assets/d2af68ed-df73-404d-9fc1-4eade3c4795a" />
+
+<img width="2916" height="1892" alt="image" src="https://github.com/user-attachments/assets/b8903c8a-3403-44ed-b1f9-f0841cbea9a5" />
+
+
+**Creating Feature D**
+
+After Feature C, I created the sketch for Feature D.
+
+Feature D is the vertical section located between the upper and lower portions of the bracket. I used the dimensions from the design and constrained the sketch before extruding it.
+
+The main dimensions associated with Feature D were:
+
+Length = 1.50 in
+Width = 0.25 in
+Thickness/extrusion = 0.50 in
+
+The vertical height of Feature D was also represented parametrically.
+
+The overall height of this portion of the bracket was set to 1.50 in, while Feature C has a height of 0.625 in. Therefore, the height of Feature D was represented by:
+
+H_D = H_total - h_C
+
+With the current dimensions:
+
+H_D = 1.50 - 0.625
+
+which gives approximately:
+
+H_D = 0.875 in
+
+This relationship allows the height of Feature D to update if the related dimensions change
+
+After completing the sketch, I used Boss-Extrude to create Feature D.
+
+<img width="2930" height="1906" alt="image" src="https://github.com/user-attachments/assets/e71c4acc-abbd-431e-9982-0d8f08d10f14" />
+
+<img width="2908" height="1894" alt="image" src="https://github.com/user-attachments/assets/f6682d05-2cc0-4761-854f-41f8cdc540d3" />
+
+
+**Creating Feature E**
+
+The final major section was Feature E.
+
+I created the sketch for the upper section of the bracket and used the dimensions selected from the previous design.
+
+The main dimensions for Feature E were:
+
+Length = 1.50 in
+Height = 0.375 in
+Thickness/extrusion = 0.50 in
+
+After adding the required sketch dimensions and constraints, I used Boss-Extrude to create the solid feature.
+
+The thickness was linked to the main thickness parameter using:
+
+t_E = t_B
+
+This keeps the thickness of Feature E connected to the other major thickness dimensions.
+
+<img width="2928" height="1904" alt="image" src="https://github.com/user-attachments/assets/de63dfc1-f229-4d3b-a69c-f46476ccd014" />
+
+<img width="2938" height="1900" alt="image" src="https://github.com/user-attachments/assets/ebabbc0c-26d2-4a73-b880-4279c1255e6a" />
+
+
+
+### Parametric Verification
+
+After entering the Global Variables, I tested the model to make sure the relationships were actually controlling the geometry.
+
+For the test, I temporarily changed one of the parameters and rebuilt the model. The corresponding feature changed with the parameter instead of requiring the geometry to be manually redrawn.
+
+For example, the thickness relationship between Features B, C, D, and E means that changing the main thickness variable can update the other features automatically.
+
+
+### Mistakes During Modeling
+
+One mistake occurred while entering the Feature A stiffness equation.
+
+I initially entered the exponent without correctly grouping the entire expression. SolidWorks therefore evaluated the equation incorrectly and produced an incorrect diameter.
+
+I corrected the equation by placing the entire expression inside parentheses before applying the (1/4) exponent:
 
 =((8*"SF"*"F"*"L_A"^3)/("E"*PI()*"def"))^(1/4)
 
-After correcting the equation, SolidWorks evaluated the required diameter at approximately 0.99 in.
+After correcting the equation, SolidWorks produced the expected result of approximately 0.99 in.
 
-Another design decision was separating the calculated required diameter from the final nominal CAD dimension. The analytical calculation resulted in approximately 0.99 in, while the final model uses a 1.00-in diameter.
-
-This allowed the analytical result to remain documented while using the selected nominal dimension in the final CAD model.
-
-## Analyze
-
+This showed me that equation formatting is important when using CAD software because a small syntax error can change the calculated result.
 
 ## Decide
 
 ### Final CAD Design
 
+After completing the sketches, extrusions, and parametric relationships, I reviewed the complete bracket to make sure the features were connected correctly and the final dimensions matched the design selected from A5.
+
+The final model uses the following main dimensions:
+
+`Feature A diameter: 1.00 in`
+`Feature A length: 2.00 in`
+`Feature B width: 1.00 in`
+`Feature B height: 2.00 in`
+`Feature B thickness: 0.50 in`
+`Feature C length: 4.00 in`
+`Feature C height: 0.625 in`
+`Feature C thickness: 0.50 in`
+`Feature D length: 1.50 in`
+`Feature D width: 0.25 in`
+`Feature D thickness: 0.50 in`
+`Feature E length: 1.50 in`
+`Feature E height: 0.375 in`
+`Feature E thickness: 0.50 in`
+
+The final CAD model was kept connected to the Global Variables so that the important dimensions could be modified without rebuilding the entire part manually.
+
+<img width="2930" height="1894" alt="image" src="https://github.com/user-attachments/assets/88b3a916-9706-4cd5-81d8-fd02042f5eb6" />
+
+<img width="2922" height="1910" alt="image" src="https://github.com/user-attachments/assets/7f747fc0-2fc9-4396-be22-2d987fd75d06" />
+
+
+### Engineering Drawing Plan
+
+After completing the parametric model, the next step was to create the engineering drawing.
+
+I planned to use a third-angle projection layout and include the necessary orthographic views to communicate the complete geometry of the bracket.
+
+The drawing will include:
+
+Front view
+Top view
+Right-side view
+Additional view if necessary to clearly communicate the geometry
+Complete dimensions
+Functional gap dimensions
+Tolerances
+Tolerance block
+Third-angle projection symbol
+Title block
+
+The tolerance block required for the drawing is:
+
+X.X     ± .02
+X.XX    ± .01
+X.XXX   ± .005
+
+The tolerances will be selected based on the function of each feature. Dimensions associated with mating or sliding-fit surfaces require more control than dimensions that do not affect assembly or function.
+
+[IMAGE 18 – Drawing layout before dimensioning]
 
 ## Communicate
+
+### Engineering Drawing
+
+I created the engineering drawing from the completed parametric SolidWorks model. The drawing communicates the geometry and manufacturing dimensions of the bracket through multiple orthographic views.
+
+The drawing uses third-angle projection and includes the dimensions required to fully define the bracket.
+
+[IMAGE 19 – Completed engineering drawing]
+
+### Drawing Features
+
+The completed drawing includes:
+
+Third-angle projection.
+Multiple orthographic views.
+Overall dimensions.
+Feature dimensions.
+Functional gap dimensions.
+Appropriate dimensional tolerances.
+Tolerance block.
+Title block.
+Drawing notes where necessary.
+CAD File Submission
+
+The completed SolidWorks CAD file will be provided as a downloadable file for the TA.
+
+### CAD Part File:
+[INSERT CAD DOWNLOAD LINK]
+
+Engineering Drawing:
+[INSERT DRAWING FILE/LINK]
+
+The CAD files are included so that the TA can download and inspect the completed parametric model and engineering drawing.
+
+### Lessons Learned
+
+One of the main lessons I learned from A6 was how parametric modeling connects engineering calculations to CAD geometry. Instead of treating every dimension as an independent number, I was able to create relationships between dimensions using Global Variables and equations.
+
+The Feature A diameter was the clearest example. The stiffness equation was entered directly into SolidWorks and produced a required diameter of approximately 0.99 in. The final nominal CAD dimension was then selected as 1.00 in.
+
+I also learned that parametric relationships can reduce the amount of manual work required when a design changes. For example, the thicknesses of Features C, D, and E were connected to the Feature B thickness. This means that a change to the main thickness parameter can propagate through the model.
+
+Another lesson was the importance of carefully checking equations in CAD. My initial Feature A equation had an incorrect exponent format, which caused SolidWorks to evaluate it incorrectly. Correcting the equation showed me that CAD equations need to be checked just like calculations written by hand.
+
+The drawing portion also showed me that dimensions and tolerances communicate design intent. A dimension that affects a sliding or mating interface needs more control than a dimension that does not affect the function of the part. Using unnecessarily tight tolerances on every dimension can make manufacturing more difficult without improving the function of the bracket.
+
+### Time Spent
+
+Total time spent on A6:
+
+[INSERT ACTUAL TIME HERE]
+
+
+
+
 
