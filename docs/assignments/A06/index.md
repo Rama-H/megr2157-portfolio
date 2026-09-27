@@ -376,6 +376,9 @@ The tolerance block specifies:
 - X.XX ± 0.01
 - X.XXX ± 0.005 
 
+<img width="1114" height="772" alt="image" src="https://github.com/user-attachments/assets/0226df84-2a4a-487b-bfa4-09b8e8754e23" />
+
+
 The drawing was created from the final parametric model so that the dimensions shown on the drawing correspond to the CAD geometry.
 
 
@@ -391,25 +394,43 @@ The drawing was created from the final parametric model so that the dimensions s
 
 The part file contains the final parametric model, including the Global Variables and equations used to control the design. SolidWorks allows global variables and equations to control dimensions and relationships between features, so changing a linked variable can update the dependent dimensions and geometry. 
 
-### Lessons Learned
+### Reflections
 
-One of the main things I learned from A6 was how parametric modeling connects engineering calculations to CAD geometry. Instead of treating every dimension as an independent number, I was able to create relationships between dimensions using Global Variables and equations.
+#### Parametric Equation and Design Dimension
 
-The Feature A diameter was the clearest example. I entered the stiffness equation into SolidWorks, which produced a required diameter of approximately 0.99 in. I then selected a final nominal CAD diameter of 1.00 in.
+One of the analytical equations I used to drive the parametric model was the stiffness equation for **Feature A diameter**. The equation was used to determine the minimum required diameter based on the applied load, safety factor, length, material stiffness, and allowable deflection.
 
-I also learned how parametric relationships can reduce the amount of manual work required when a design changes. For example, the thicknesses of Features C, D, and E were connected to the Feature B thickness. This allows a change to the main thickness parameter to propagate to the related features.
+The equation entered into SolidWorks was:
 
-Another lesson was the importance of checking equations carefully. During the modeling process, I initially had an incorrect exponent format in the Feature A equation. After correcting the equation, SolidWorks evaluated the calculation correctly. This showed me that CAD equations need to be checked just like calculations done by hand.
+D_A_required = ((8*SF*F*L_A^3)/(E*pi*def))^(1/4)
 
-The drawing portion also helped me understand how dimensions and tolerances communicate design intent. More important or functional dimensions require more control, while noncritical dimensions can use a looser tolerance. Using unnecessarily tight tolerances on every dimension can make manufacturing more difficult without providing a functional benefit.
+Using the design values in the model, the equation produced a required diameter of approximately **0.99 in**. I then selected a final nominal Feature A diameter of **1.00 in**.
 
-### Tolerance Reflection
+Instead of calculating the diameter separately and only typing the final number into the CAD model, I entered the equation directly into the SolidWorks Equations/Global Variables system. This allowed the calculation to be evaluated inside the CAD model. SolidWorks equations can use global variables and dimensions to drive other dimensions and create relationships between features. :contentReference[oaicite:0]{index=0}
 
-For the drawing, I used a tighter tolerance of **±0.005 in** on the three-decimal dimension **0.630 in**. This dimension was given tighter control because it is more important to maintaining the intended geometry of the bracket.
+During the modeling process, I initially had an incorrect exponent format in the Feature A equation. After correcting the equation, SolidWorks evaluated the equation correctly and gave the required diameter of approximately 0.99 in. I then used 1.00 in as the final nominal diameter.
 
-A looser tolerance of **±0.02 in** was used on the **0.50 in** dimension. This dimension does not require the same level of precision as the more closely controlled feature, so the looser tolerance is appropriate.
+The parametric relationships also allowed related dimensions to respond to changes. For example, the Feature B width was linked to the Feature A diameter, so changing the Feature A diameter would update the linked Feature B dimension automatically. However, because the final Feature A diameter was selected as a nominal 1.00 in rather than directly set equal to the calculated 0.99 in required value, a change to the calculated required diameter would require me to make the final nominal-dimension decision manually.
 
-This showed me that tolerances should be selected based on the function of the feature rather than making every dimension as precise as possible.
+#### Tolerance Reflection
+
+For the tighter tolerance, I used **±0.005 in** on the **0.630 in** dimension. This is a three-decimal dimension and therefore uses the tightest tolerance class listed in the assignment tolerance block. This dimension controls an important part of the bracket geometry, so maintaining a more precise dimension helps keep the final geometry consistent with the design.
+
+For the looser tolerance, I used **±0.02 in** on the **0.50 in** dimension. This is a one-decimal dimension and is controlled by the general tolerance block. This dimension is not being used as a precision mating surface, so it does not require the same level of dimensional control as a functional sliding or mating interface.
+
+The main lesson I learned from the tolerance portion of A6 is that tolerances should be related to the function of the feature. A functional mating or sliding surface requires tighter dimensional control because changes in the gap can affect how the parts fit together. A non-critical feature can use a looser tolerance because small dimensional variations do not significantly affect the function of the part.
+
+Using a very tight tolerance on every dimension would also make manufacturing more difficult and potentially increase manufacturing cost because tighter tolerances generally require greater process control and more precise inspection. Therefore, the tolerance should be selected based on the function of each feature rather than making every dimension as precise as possible.
+
+#### Lessons Learned
+
+A major lesson from A6 was learning how engineering calculations can be connected directly to CAD geometry. I learned that a parametric model is more useful than simply entering fixed dimensions because relationships between dimensions can be preserved when the design changes.
+
+I also learned the importance of checking equations carefully. The initial error in my Feature A equation showed me that a small mistake in a CAD expression can produce an incorrect result just as it can in a hand calculation.
+
+The drawing portion of the assignment also helped me understand the importance of tolerances. Dimensions communicate not only the size of a feature but also how much variation is acceptable during manufacturing. Functional dimensions require more attention than dimensions that do not affect how the part operates.
+
+Overall, A6 helped me connect the calculations from A5 with the actual CAD model and engineering drawing instead of treating the analysis, modeling, and drawing as separate steps.
 
 ### Time Spent
 
