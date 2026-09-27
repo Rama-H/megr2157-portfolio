@@ -383,11 +383,11 @@ The drawing was created from the final parametric model so that the dimensions s
 
 **CAD Part File:**  
 
-(Parametric Bracket Part)[https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A5%20Bracket%201.SLDPRT]
+[Parametric Bracket Part](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A5%20Bracket%201.SLDPRT)
 
 **Engineering Drawing:**  
 
-(Bracket Drawing)[https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A6_Bracket%20drw.SLDDRW]
+[Bracket Drawing](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A6_Bracket%20drw.SLDDRW)
 
 The part file contains the final parametric model, including the Global Variables and equations used to control the design. SolidWorks allows global variables and equations to control dimensions and relationships between features, so changing a linked variable can update the dependent dimensions and geometry. 
 
