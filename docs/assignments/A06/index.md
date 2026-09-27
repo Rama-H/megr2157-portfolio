@@ -382,10 +382,12 @@ The drawing was created from the final parametric model so that the dimensions s
 ### CAD File Submission
 
 **CAD Part File:**  
-[INSERT CAD PART FILE LINK]
+
+(Parametric Bracket Part)[https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A5%20Bracket%201.SLDPRT]
 
 **Engineering Drawing:**  
-[INSERT ENGINEERING DRAWING FILE/LINK]
+
+(Bracket Drawing)[https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A6_Bracket%20drw.SLDDRW]
 
 The part file contains the final parametric model, including the Global Variables and equations used to control the design. SolidWorks allows global variables and equations to control dimensions and relationships between features, so changing a linked variable can update the dependent dimensions and geometry. 
 
@@ -412,41 +414,6 @@ This showed me that tolerances should be selected based on the function of the f
 ### Time Spent
 
 Total time spent on A6: 3 days
-
-
-
-
-
-
-
-
-### CAD Part File:
-
-[INSERT CAD DOWNLOAD LINK]
-
-Engineering Drawing:
-[INSERT DRAWING FILE/LINK]
-
-The CAD files are included so that the TA can download and inspect the completed parametric model and engineering drawing.
-
-### Lessons Learned
-
-One of the main lessons I learned from A6 was how parametric modeling connects engineering calculations to CAD geometry. Instead of treating every dimension as an independent number, I was able to create relationships between dimensions using Global Variables and equations.
-
-The Feature A diameter was the clearest example. The stiffness equation was entered directly into SolidWorks and produced a required diameter of approximately 0.99 in. The final nominal CAD dimension was then selected as 1.00 in.
-
-I also learned that parametric relationships can reduce the amount of manual work required when a design changes. For example, the thicknesses of Features C, D, and E were connected to the Feature B thickness. This means that a change to the main thickness parameter can propagate through the model.
-
-Another lesson was the importance of carefully checking equations in CAD. My initial Feature A equation had an incorrect exponent format, which caused SolidWorks to evaluate it incorrectly. Correcting the equation showed me that CAD equations need to be checked just like calculations written by hand.
-
-The drawing portion also showed me that dimensions and tolerances communicate design intent. A dimension that affects a sliding or mating interface needs more control than a dimension that does not affect the function of the part. Using unnecessarily tight tolerances on every dimension can make manufacturing more difficult without improving the function of the bracket.
-
-### Time Spent
-
-Total time spent on A6:
-
-[INSERT ACTUAL TIME HERE]
-
 
 
 
