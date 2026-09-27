@@ -345,26 +345,83 @@ I created the engineering drawing from the completed parametric SolidWorks model
 
 The drawing uses third-angle projection and includes the dimensions required to fully define the bracket.
 
-[IMAGE 19 – Completed engineering drawing]
+Here's the completed engineering drawing
+
+<img width="2122" height="1564" alt="image" src="https://github.com/user-attachments/assets/a36b0c5a-6499-484c-807e-adee13301a16" />
+
 
 ### Drawing Features
 
 The completed drawing includes:
 
-Third-angle projection.
-Multiple orthographic views.
-Overall dimensions.
-Feature dimensions.
-Functional gap dimensions.
-Appropriate dimensional tolerances.
-Tolerance block.
-Title block.
-Drawing notes where necessary.
-CAD File Submission
+Third-angle projection
 
-The completed SolidWorks CAD file will be provided as a downloadable file for the TA.
+Multiple orthographic views
+
+Overall dimensions
+
+Feature dimensions
+
+Functional gap dimensions
+
+Appropriate dimensional tolerances
+
+Tolerance block
+
+Title block
+
+The tolerance block specifies:
+
+- X.X ± 0.02
+- X.XX ± 0.01
+- X.XXX ± 0.005 
+
+The drawing was created from the final parametric model so that the dimensions shown on the drawing correspond to the CAD geometry.
+
+
+### CAD File Submission
+
+**CAD Part File:**  
+[INSERT CAD PART FILE LINK]
+
+**Engineering Drawing:**  
+[INSERT ENGINEERING DRAWING FILE/LINK]
+
+The part file contains the final parametric model, including the Global Variables and equations used to control the design. SolidWorks allows global variables and equations to control dimensions and relationships between features, so changing a linked variable can update the dependent dimensions and geometry. 
+
+### Lessons Learned
+
+One of the main things I learned from A6 was how parametric modeling connects engineering calculations to CAD geometry. Instead of treating every dimension as an independent number, I was able to create relationships between dimensions using Global Variables and equations.
+
+The Feature A diameter was the clearest example. I entered the stiffness equation into SolidWorks, which produced a required diameter of approximately 0.99 in. I then selected a final nominal CAD diameter of 1.00 in.
+
+I also learned how parametric relationships can reduce the amount of manual work required when a design changes. For example, the thicknesses of Features C, D, and E were connected to the Feature B thickness. This allows a change to the main thickness parameter to propagate to the related features.
+
+Another lesson was the importance of checking equations carefully. During the modeling process, I initially had an incorrect exponent format in the Feature A equation. After correcting the equation, SolidWorks evaluated the calculation correctly. This showed me that CAD equations need to be checked just like calculations done by hand.
+
+The drawing portion also helped me understand how dimensions and tolerances communicate design intent. More important or functional dimensions require more control, while noncritical dimensions can use a looser tolerance. Using unnecessarily tight tolerances on every dimension can make manufacturing more difficult without providing a functional benefit.
+
+### Tolerance Reflection
+
+For the drawing, I used a tighter tolerance of **±0.005 in** on the three-decimal dimension **0.630 in**. This dimension was given tighter control because it is more important to maintaining the intended geometry of the bracket.
+
+A looser tolerance of **±0.02 in** was used on the **0.50 in** dimension. This dimension does not require the same level of precision as the more closely controlled feature, so the looser tolerance is appropriate.
+
+This showed me that tolerances should be selected based on the function of the feature rather than making every dimension as precise as possible.
+
+### Time Spent
+
+Total time spent on A6: 3 days
+
+
+
+
+
+
+
 
 ### CAD Part File:
+
 [INSERT CAD DOWNLOAD LINK]
 
 Engineering Drawing:
