@@ -7,9 +7,9 @@ I will use different mesh sizes to examine convergence and determine how mesh re
 
 ## Analyze
 
-### Design I – Original Bracket
+## Design I – Original Bracket
 
-Initial FEA Setup
+**Initial FEA Setup**
 
 I began the analysis using the parametric bracket developed in Assignment A6. I saved a separate copy of the original CAD model to preserve the previous design.
 
@@ -425,6 +425,185 @@ Although the displacement results converged, the maximum stress remained mesh-de
 
 
 ## Design II
+
+### Fillet Modification — Design II
+
+For Design II, I modified my original bracket geometry by adding **0.10-inch fillets** to seven selected edges. These included the interior corners of the upper bracket, the transitions between the horizontal and vertical sections, and the connection between the vertical support and the lower cylindrical section.
+
+The purpose of adding these fillets was to reduce sharp corners and stress concentrations while improving load distribution throughout the bracket.
+
+I maintained the original material, **Aluminum 6061-T6**, to ensure that the comparison between Design I and Design II was based solely on geometric modifications rather than changes in material properties.
+
+
+<img width="2920" height="1902" alt="image" src="https://github.com/user-attachments/assets/f08ceda0-5d93-4191-8d6d-f51b0baf887d" />
+
+
+### 2. Material Properties
+ 
+The material assigned to Design II was **Aluminum 6061-T6**, the same material used in Design I.
+ 
+The material properties used in the simulation were:
+ 
+| Property | Value |
+|-----------|-----------|
+| Material | Aluminum 6061-T6 |
+| Elastic Modulus | 69,000 MPa |
+| Poisson's Ratio | 0.33 |
+| Yield Strength | 275 MPa |
+| Tensile Strength | 310 MPa |
+| Density | 2,700 kg/m³ |
+ 
+Keeping the material constant allowed me to evaluate how adding fillets affected the structural response.
+ 
+
+---
+ 
+### 3. Static Simulation Setup: Fixtures and Loading
+ 
+I created a static simulation in SOLIDWORKS Simulation to evaluate the structural behavior of the modified bracket.
+ 
+Fixed constraints were applied to the upper mounting surfaces of the bracket, representing the regions where the component is held in place.
+ 
+A downward force of **600 lbf** was applied to the lower cylindrical section of the bracket.
+ 
+I used the **Selected Direction** option to define the force direction rather than applying a radial force normal to the cylindrical surface. This allowed me to represent the intended downward loading condition.
+ 
+The loading and boundary conditions were intentionally kept consistent with Design I for comparison.
+ 
+#### Figure 4: Design II – Fixtures and Applied Load
+ 
+<img width="2048" height="1327" alt="image" src="https://github.com/user-attachments/assets/64e37604-68b7-4347-a720-60ecedc54bfb" />
+ 
+---
+ 
+### 4. Mesh 1: Initial Mesh Generation
+ 
+I generated the first mesh using the **blended curvature-based meshing method** with high-quality solid elements.
+ 
+The initial mesh settings were:
+ 
+| Mesh Parameter | Value |
+|---------------|-------|
+| Mesh Type | Blended curvature-based |
+| Maximum Element Size | 0.1664 in |
+| Minimum Element Size | 0.0555 in |
+| Minimum Elements in a Circle | 8 |
+| Element Growth Ratio | 1.4 |
+| Mesh Quality | High |
+| Total Elements | 12,272 |
+| Total Nodes | 19,693 |
+| Distorted Elements | 0 |
+ 
+The initial mesh contained **12,272 elements** and **19,693 nodes**. The mesh quality report indicated **zero distorted elements**.
+ 
+This mesh served as the baseline for evaluating stress and displacement before performing additional mesh refinement.
+
+ 
+ 
+---
+ 
+### 5. Mesh 1: Von Mises Stress Analysis
+ 
+After running the static simulation, I examined the Von Mises stress distribution throughout the bracket.
+ 
+The simulation produced a maximum Von Mises stress of approximately:
+ 
+sigma_max = 3.872  10^8 Pa
+
+sigma_max = 387.2 MPa
+
+ 
+The highest stress concentrations appeared near the upper interior corners of the bracket, particularly around the left mounting region
+ 
+The material yield strength was **275 MPa**
+ 
+Since the maximum stress exceeded the yield strength, the simulation indicated that the bracket did not satisfy the material yield criterion under the applied loading condition
+ 
+Although fillets were introduced to reduce stress concentrations, additional analysis and geometric optimization are necessary
+ 
+#### Figure 7: Design II – Mesh 1 Von Mises Stress Distribution
+ 
+*Insert screenshot showing the stress distribution and maximum stress legend.*
+ 
+---
+ 
+### 6. Mesh 1: Displacement Analysis
+ 
+I examined the resultant displacement distribution to evaluate the stiffness of the modified bracket.
+ 
+The maximum resultant displacement was:
+ 
+delta_max = 2.917 mm
+ 
+Converting to inches:
+ 
+delta_max= (2.917)/(25.4)
+ 
+
+delta_max= 0.1148 in
+
+ 
+The maximum displacement occurred near the free end of the lower cylindrical section where the external load was applied.
+ 
+The displacement was approximately zero near the fixed mounting surfaces and increased toward the loaded region.
+ 
+The deformation scale displayed by SOLIDWORKS was **4.70405**, which was used only to visually exaggerate the deformed shape
+
+
+ 
+#### Figure 8: Design II – Mesh 1 Resultant Displacement
+ 
+*Insert screenshot showing the displacement distribution and maximum displacement legend.*
+ 
+---
+ 
+### 7. Mesh 1: Factor of Safety
+ 
+The factor of safety was estimated using the material yield strength and maximum Von Mises stress.
+ 
+SF=(sigma_y)/(sigma_max)
+
+ 
+Substituting the simulation results:
+ 
+SF=(275)/(387.2)
+
+SF=0.710
+
+ 
+The estimated minimum factor of safety was below 1.0, indicating that the maximum simulated stress exceeded the material's yield strength.
+ 
+This suggests that further geometric modifications are necessary to improve the strength of the bracket.
+ 
+The calculated value will be checked against the SOLIDWORKS Factor of Safety plot.
+ 
+#### Figure 9: Design II – Mesh 1 Factor of Safety
+ 
+*Insert screenshot of the SOLIDWORKS Factor of Safety plot once generated.*
+ 
+---
+ 
+### 8. Mesh 1: Summary of Results
+ 
+| Parameter | Design II – Mesh 1 |
+|------------|-------------------|
+| Maximum Von Mises Stress | 387.2 MPa |
+| Maximum Stress Location | Upper Interior Mounting Region |
+| Maximum Displacement | 2.917 mm (0.1148 in) |
+| Maximum Displacement Location | Lower Cylindrical Section |
+| Estimated Minimum Safety Factor | 0.710 |
+| Number of Elements | 12,272 |
+| Number of Nodes | 19,693 |
+| Mesh Quality | High |
+| Distorted Elements | 0 |
+ 
+#### Key Findings
+ 
+- Addition of 0.10-inch fillets improved stress distribution by reducing sharp geometric transitions.
+- Peak stresses remained concentrated near the upper mounting region.
+- The maximum Von Mises stress (**387.2 MPa**) exceeded the material yield strength (**275 MPa**).
+- The estimated minimum safety factor (**0.710**) was below the acceptable value of 1.0.
+- Additional geometric optimization is required before the bracket can safely withstand the specified loading condition.
 
 
 ## Decide
