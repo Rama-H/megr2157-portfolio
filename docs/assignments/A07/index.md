@@ -169,7 +169,84 @@ The initial curvature-based mesh consisted of **24,404 elements and 37,899 nodes
 
 <img width="2900" height="1854" alt="image" src="https://github.com/user-attachments/assets/f77b232f-c0b2-4f29-821f-70871b181c94" />
 
+### Mesh Refinement — Mesh 2
 
+To evaluate mesh convergence, I refined the initial curvature-based mesh by reducing the maximum and minimum element sizes by approximately 25%.
+
+The initial mesh used a maximum element size of 0.120538 in and a minimum element size of 0.0602693 in. For the second simulation, I reduced these values to 0.090 in and 0.045 in, respectively.
+
+The purpose of this refinement was to increase the number of finite elements and examine whether the maximum Von Mises stress and resultant displacement would approach stable values.
+
+I maintained the same material (6061-T6 aluminum), 600-lbf downward load, fixed support locations, and bracket geometry to ensure a consistent comparison.
+
+The minimum number of elements in a circle was kept at 8, and the element growth ratio remained at 1.4. These settings were unchanged to isolate the effect of reducing the element sizes
+
+### Table 2. Mesh Refinement Parameters
+ 
+| Parameter | Mesh 1 (Initial) | Mesh 2 (Refined) |
+|------------|------------------|------------------|
+| Mesh Type | Curvature-based | Curvature-based |
+| Maximum Element Size (in) | 0.120538 | 0.090 |
+| Minimum Element Size (in) | 0.0602693 | 0.045 |
+| Minimum Elements in a Circle | 8 | 8 |
+| Element Growth Ratio | 1.4 | 1.4 |
+
+
+**Mesh 2 — Von Mises Stress Results**
+
+After reducing the maximum and minimum element sizes to 0.090 in and 0.045 in, respectively, I generated the refined mesh and reran the static simulation while maintaining the same material, loading conditions, fixtures, and bracket geometry.
+
+The second simulation produced a maximum Von Mises stress of approximately 5.450 × 10⁸ Pa (79,045 psi), compared with 65,818 psi from the initial mesh.
+
+The percentage change in maximum stress was calculated as:
+
+<img width="1300" height="554" alt="image" src="https://github.com/user-attachments/assets/c64b2383-98b7-4115-ad56-013bf9fbd404" />
+
+
+The stress increased with mesh refinement, indicating that the maximum stress result has not yet converged within the specified 7% tolerance.
+
+The highest stress regions remained concentrated near the upper support corners. Additional mesh refinement is needed to determine whether the maximum stress approaches a stable value.
+
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/9c92576f-485a-4057-9fb6-6224bafc1925" />
+
+Result: Stress convergence not achieved between Mesh 1 and Mesh 2.
+
+
+**Mesh 2 — Displacement Results**
+
+After refining the mesh, I examined the resultant displacement under the same 600-lbf downward load.
+
+The maximum displacement increased slightly from 2.684 mm in Mesh 1 to 2.700 mm in Mesh 2. The highest displacement occurred near the free end of the cylindrical shaft, while displacement decreased toward the fixed upper supports.
+
+The percentage change between the two meshes was calculated as:
+
+<img width="1060" height="323" alt="image" src="https://github.com/user-attachments/assets/35b12c95-fc59-4ad9-8a58-e8f8c6e73bda" />
+
+
+Since the percentage change was below the required 7% tolerance, the displacement results demonstrated convergence between the two mesh sizes.
+
+However, the maximum displacement of approximately 0.1063 in still exceeded the allowable displacement of 0.005 in.
+
+Result: Displacement convergence PASS — Structural stiffness requirement FAIL.
+
+<img width="3200" height="1910" alt="image" src="https://github.com/user-attachments/assets/4f95c12d-3f63-4dc5-a185-1dc2c91126f4" />
+
+
+**Mesh 2 — Mesh Refinement and Convergence**
+
+For the second simulation, I refined the curvature-based mesh by reducing the maximum element size from 0.120538 in to 0.090 in and the minimum element size from 0.0602693 in to 0.045 in
+
+The refined mesh contained 50,007 elements and 75,726 nodes, compared with 24,404 elements and 37,899 nodes in the initial mesh. The mesh maintained high quality with no distorted elements
+
+The maximum Von Mises stress increased from 65,818 psi to approximately 79,045 psi, representing a 20.1% change. Meanwhile, the maximum displacement increased from 2.684 mm to 2.700 mm, representing a 0.60% change
+
+The displacement results satisfied the 7% convergence criterion, but the maximum stress results did not.
+
+Therefore, an additional mesh refinement will be performed to investigate whether the stress results approach convergence
+
+Conclusion: Displacement convergence was achieved between Mesh 1 and Mesh 2, while further refinement is required to evaluate stress convergence
+
+<img width="3198" height="1906" alt="image" src="https://github.com/user-attachments/assets/f8c1ee2d-d17a-4cde-875d-169e42b883fd" />
 
 
 
