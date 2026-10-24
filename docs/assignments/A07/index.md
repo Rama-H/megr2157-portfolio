@@ -248,7 +248,183 @@ Conclusion: Displacement convergence was achieved between Mesh 1 and Mesh 2, whi
 
 <img width="3198" height="1906" alt="image" src="https://github.com/user-attachments/assets/f8c1ee2d-d17a-4cde-875d-169e42b883fd" />
 
+**Mesh 3 — Von Mises Stress Results**
 
+For the third simulation, I further refined the curvature-based mesh while maintaining the original geometry, 6061-T6 aluminum material, fixed supports, and 600-lbf downward load.
+
+The maximum Von Mises stress increased to approximately 105,514 psi (105.51 ksi), compared with 79,045 psi for Mesh 2.
+
+The percentage change was calculated as:
+
+<img width="1126" height="200" alt="image" src="https://github.com/user-attachments/assets/f2b936e0-7ddf-4798-a0f4-ad5969a5628e" />
+
+
+The stress change exceeded the specified 7% convergence tolerance. The highest stresses remained concentrated near the upper support regions.
+
+The increasing maximum stress with mesh refinement suggests that localized stress concentrations near the constrained edges may be influencing the results. Therefore, the peak stress has not demonstrated convergence.
+
+Result: Stress convergence FAIL — Further investigation of localized stress concentrations is required.
+
+<img width="3200" height="1908" alt="image" src="https://github.com/user-attachments/assets/c4241c58-6d52-4ef4-97ae-f41b0bada625" />
+
+
+### Mesh 3 — Final Mesh Refinement
+
+For the third simulation, I further refined the curvature-based mesh by reducing the maximum element size to 0.070 in and the minimum element size to 0.035 in.
+
+The refined mesh contained 115,359 elements and 169,808 nodes, with high mesh quality and no distorted elements.
+
+The maximum Von Mises stress increased to approximately 105,514 psi, while the maximum resultant displacement increased slightly to 2.713 mm.
+
+Mesh Convergence Comparison
+
+### Table 3. Mesh Convergence Study Results
+ 
+| Parameter | Mesh 1 | Mesh 2 | Mesh 3 |
+|------------|---------|---------|---------|
+| Total Elements | 24,404 | 50,007 | 115,359 |
+| Total Nodes | 37,899 | 75,726 | 169,808 |
+| Maximum Stress (psi) | 65,818 | 79,045 | 105,514 |
+| Maximum Displacement (mm) | 2.684 | 2.700 | 2.713 |
+| Stress Change (%) | — | 20.1 | 33.5 |
+| Displacement Change (%) | — | 0.60 | 0.48 | 
+Convergence Evaluation
+
+
+<img width="2912" height="1862" alt="image" src="https://github.com/user-attachments/assets/5c5d2200-3e8e-426e-a4f8-7d3ae382ef03" />
+
+**Investigation of Maximum Stress Location — Design I**
+
+
+After completing the mesh convergence study, I used the Probe tool in SOLIDWORKS Simulation to investigate the location of the maximum Von Mises stress.
+
+The maximum stress was approximately 105,514 psi (727.5 MPa), located at the upper-left inside corner of the bracket near the fixed support.
+
+Additional probe measurements showed elevated stresses around the upper support regions, indicating localized stress concentrations.
+
+Since the maximum stress increased with mesh refinement, I considered the possibility of a numerical stress singularity near the fixed boundary conditions. Therefore, the maximum stress result requires further investigation before being used to evaluate convergence or guide design modifications.
+
+The displacement results demonstrated convergence within the specified 7% tolerance, while the maximum stress results did not.
+
+These observations will help guide the next stage of the analysis and the development of Design II.
+
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/65215f5a-f68a-471e-881f-32a8bf9e4fc4" />
+
+
+**Comparison of Nodal and Elemental Stress Results**
+
+To further investigate the maximum stress concentration, I compared the nodal and elemental Von Mises stress results for Mesh 3.
+
+The nodal stress plot reported a maximum stress of 105,514 psi, while the elemental stress plot reported approximately 78,538 psi.
+
+The difference between these results was approximately 25.6%, indicating that the reported peak stress was sensitive to the stress display method.
+
+The highest stresses remained concentrated near the upper fixed-support regions. Combined with the increasing maximum stress observed during mesh refinement, this suggested a possible stress singularity associated with the boundary conditions or sharp geometric features.
+
+Although displacement convergence was achieved, the maximum stress had not converged. Therefore, the stress results require further investigation before a reliable maximum-stress assessment can be made
+
+<img width="2048" height="1223" alt="image" src="https://github.com/user-attachments/assets/9757a23c-cc2a-4836-a8ed-8f56162eb3ad" />
+
+<img width="2048" height="1214" alt="image" src="https://github.com/user-attachments/assets/96aabff6-641b-4010-b1a9-cc2f91a506cd" />
+
+
+
+**Factor of Safety Analysis — Design I (Mesh 3)**
+After completing the mesh convergence study, I evaluated the factor of safety using Mesh 3, the finest mesh in the analysis.
+
+In SolidWorks Simulation, I generated a Factor of Safety plot using the maximum Von Mises stress criterion and the yield strength of 6061-T6 aluminum.
+
+The factor of safety was calculated using:
+
+
+FOS= (sigma_y) / (sigma_max)
+
+Using the yield strength of 39,885 psi and the maximum nodal stress of approximately 105,514 psi:
+
+=(39,885)/(105,514)
+=0.378
+
+The preliminary calculated factor of safety is approximately 0.378, which is below 1.0.
+
+Minimum FOS reported by SolidWorks: 0.378027
+
+**Factor of Safety Plot:**
+
+<img width="2926" height="1872" alt="image" src="https://github.com/user-attachments/assets/26a874fe-f413-4b1e-9a4d-a009ab02134a" />
+
+
+The factor of safety is below 1.0, indicating that the maximum calculated stress exceeds the material's yield strength under the applied loading conditions.
+
+However, because the maximum stress did not converge within the required 7% tolerance, this factor of safety remains mesh-dependent.
+
+These results indicate that the original bracket requires geometric modifications to improve its strength.
+
+**Result: FAIL — Design modification required**
+
+
+<img width="2634" height="1818" alt="image" src="https://github.com/user-attachments/assets/fa14d4a3-487b-45c3-8def-761db0ec8ae3" />
+
+
+
+**Mesh 3 — Displacement Results**
+
+The third simulation produced a maximum resultant displacement of 2.713 mm (0.1068 in), compared with 2.700 mm for Mesh 2.
+
+The maximum displacement changed by only 0.48% between Meshes 2 and 3, satisfying the specified 7% mesh convergence tolerance. However, the maximum Von Mises stress continued increasing with refinement and did not satisfy the convergence criterion.
+
+Although displacement convergence was achieved, the maximum displacement remained greater than the allowable limit of 0.005 in.
+
+Result: Displacement convergence PASS — Stiffness requirement FAIL.
+The percentage change in displacement between Meshes 2 and 3 was:
+
+
+<img width="1190" height="330" alt="image" src="https://github.com/user-attachments/assets/9f2e1c53-393c-4b2b-9c05-cf9f8a5292e6" />
+
+
+<img width="3200" height="1894" alt="image" src="https://github.com/user-attachments/assets/5e03e79b-8786-4701-8c97-60508f6e7b8d" />
+
+
+### Mass Properties — Design I
+
+After completing the FEA simulations, I used the SolidWorks Mass Properties tool to determine the mass of the original bracket.
+
+The following properties were obtained:
+
+Table 4. Physical Properties of Design I
+
+| Property | Value |
+|----------|--------|
+| Material | 6061-T6 Aluminum |
+| Mass | 0.45 lb |
+| Volume | 4.59 in³ |
+| Density | 0.10 lb/in³ |
+| Surface Area | 30.80 in² |
+
+The original bracket has a mass of approximately 0.45 lb (0.204 kg).
+
+This mass will serve as the baseline for comparing the subsequent design iterations. The objective is to improve the bracket's strength and stiffness while minimizing unnecessary material.
+
+<img width="2924" height="1906" alt="image" src="https://github.com/user-attachments/assets/65972d02-7657-4818-8cde-8080e92ce1de" />
+
+
+
+### Mesh Convergence Conclusion — Design I
+
+After completing three mesh simulations, I compared the maximum Von Mises stress and resultant displacement to evaluate the convergence of the original bracket design.
+
+The maximum displacement changed by approximately 0.48% between Meshes 2 and 3, satisfying the required 7% convergence tolerance. However, the maximum Von Mises stress continued increasing with mesh refinement and did not converge within 7%.
+
+According to the assignment instructions, if convergence is not achieved after three attempts, the results from the finest mesh may be used to proceed with design optimization.
+
+Therefore, I selected Mesh 3, containing 115,359 elements and 169,808 nodes, for the final evaluation of Design I.
+
+Although the displacement results converged, the maximum stress remained mesh-dependent, particularly near the constrained upper corners. This limitation will be considered when evaluating the bracket and developing Design II.
+
+**Result: Displacement convergence achieved; stress convergence not achieved after three attempts**
+
+
+
+## Design II
 
 
 ## Decide
