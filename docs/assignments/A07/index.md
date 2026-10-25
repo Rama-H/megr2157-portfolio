@@ -669,9 +669,7 @@ Using the maximum displacement values:
 - Mesh 1 Displacement = 2.917 mm
 - Mesh 2 Displacement = 2.923 mm
 
-% Difference = |(2.923-2.917) / 2.923| × 100
-=
-0.205%
+% Difference = |(2.923-2.917) / 2.923| × 100 = 0.205%
 
 Because both percent differences are less than 1%, the results indicate that the solution is approaching mesh convergence. Further mesh refinement is expected to produce only minor changes in the stress and displacement results.
 
@@ -752,7 +750,157 @@ Therefore, **Design II did not satisfy the strength or stiffness requirements**,
 | Elements | 12,272 | 25,930 | 51,797 |
 | Nodes | 19,693 | 40,072 | 78,081 |
 
+---
 
+### Design Comparison: Design I vs. Design II
+
+The original bracket (Design I) and modified bracket (Design II) were evaluated using SolidWorks Simulation under a 600-lbf downward load. Both designs used 6061-T6 aluminum.
+
+The final Mesh 3 results were compared to determine whether the geometric modifications improved the bracket's structural performance.
+
+
+| Parameter | Design I | Design II |
+|------------|------------|------------|
+| Maximum Von Mises Stress | 727.5 MPa | 389.1 MPa |
+| Maximum Displacement | 2.713 mm | 2.927 mm |
+| Minimum Factor of Safety | 0.378 | 0.707 |
+| Yield Strength | 275 MPa | 275 MPa |
+| Allowable Displacement | 0.005 in | 0.005 in |
+| Strength Requirement | FAIL | FAIL |
+| Stiffness Requirement | FAIL | FAIL |
+
+**Comparison and Discussion**
+
+Design II reduced the reported maximum Von Mises stress by approximately 46.5% compared with Design I. The minimum factor of safety increased from 0.378 to 0.707, indicating an improvement in the predicted strength performance.
+
+However, maximum displacement increased by approximately 7.9%, indicating a reduction in stiffness.
+
+Although Design II demonstrated improved stress performance, neither design satisfied the strength or stiffness requirements.
+
+The Design I stress result was not fully mesh-converged, so the reported stress reduction should be interpreted as a comparison of the final mesh results rather than a verified mesh-independent improvement
+
+#### Mass Properties — Design II
+
+The mass properties of the modified bracket (Design II) were evaluated using the SolidWorks Mass Properties tool to determine the total mass, volume, and surface area of the final geometry.
+
+The bracket was modeled using 6061-T6 aluminum
+
+
+| Property | Design II Result |
+|-----------|-----------|
+| Mass | 0.45 lb |
+| Volume | 4.60 in³ |
+| Surface Area | 30.65 in² |
+| Material Density | 0.10 lb/in³ (rounded) |
+| Center of Mass (X) | 0.51 in |
+| Center of Mass (Y) | 1.54 in |
+| Center of Mass (Z) | 0.00 in |
+
+These values provide a basis for comparing the modified bracket with the original Design I geometry and evaluating the effect of the design changes on weight and structural performance
+
+<img width="2904" height="1874" alt="image" src="https://github.com/user-attachments/assets/0e380a5f-57a3-46f7-842d-0ab842ce0ad2" />
+
+
+#### Mass Comparison — Design I vs. Design II
+
+The mass properties of the original and modified brackets were compared using SolidWorks Mass Properties.
+
+| Property | Design I | Design II |
+|-----------|-----------|-----------|
+| Mass (lb) | 0.45 | 0.45 |
+| Volume (in³) | 4.59 | 4.60 |
+| Surface Area (in²) | 30.80 | 30.65 |
+
+The modified design increased the bracket volume by approximately 0.22%, while the reported mass remained 0.45 lb for both designs.
+
+The small difference in volume indicates that the geometric modifications had a minimal effect on overall material usage.
+
+Although Design II improved the reported maximum Von Mises stress and minimum factor of safety, the bracket still failed the strength and stiffness requirements.
+
+Therefore, further geometric improvements would be necessary to achieve an acceptable design
+
+## Design III – Final Design Iteration
+
+### Design Modifications
+
+For Design III, I modified the bracket geometry to improve structural stiffness and reduce stress concentrations. I increased the extrusion thickness of the vertical support to 0.75 in and adjusted the extrusion directions to Mid Plane to improve alignment between the upper U-shaped bracket, vertical support, and cylindrical shaft.
+
+I also added 0.15 in fillets at the connections between the vertical support and the upper bracket and cylindrical shaft to reduce stress concentrations.
+
+The final model was assigned 6061-T6 Aluminum.
+
+**Mass Properties**
+
+After completing the geometry modifications, I used the SolidWorks Mass Properties tool to determine the updated mass.
+
+| Property | Design III |
+|-----------|-----------|
+| Material | 6061-T6 Aluminum |
+| Mass | 0.50 lb |
+| Volume | 5.17 in³ |
+| Surface Area | 32.25 in² |
+
+<img width="2048" height="1332" alt="image" src="https://github.com/user-attachments/assets/d40ad7d1-5a51-40ab-84f7-f0fcc85f06a4" />
+
+**Simulation Setup**
+A static simulation was performed in SolidWorks Simulation using the following conditions:
+
+Material: 6061-T6 Aluminum
+
+Applied Load: 600 lbf downward
+
+Fixtures: Fixed geometry at the upper U-shaped bracket
+
+Load Application: Distributed over the cylindrical shaft surface
+
+Mesh Type: Curvature-based solid mesh
+
+Mesh 1 – Mesh Generation
+
+The first simulation used a curvature-based mesh with the following settings:
+
+| Mesh Parameter | Value |
+|----------------|--------|
+| Maximum Element Size | 0.090 in |
+| Minimum Element Size | 0.045 in |
+| Total Nodes | 88,156 |
+| Total Elements | 58,843 |
+| Mesh Quality | High |
+| Distorted Elements | 0 |
+
+
+#### Mesh 1 – Simulation Results
+
+| Parameter | Result |
+|------------|------------|
+| Maximum Von Mises Stress | 438 MPa |
+| Material Yield Strength | 275 MPa |
+| Maximum Displacement | 3.396 mm (0.1337 in) |
+| Allowable Displacement | 0.005 in |
+| Minimum Factor of Safety | 0.63 |
+| Stress Requirement | FAIL |
+| Displacement Requirement | FAIL |
+
+
+<img width="2048" height="1337" alt="image" src="https://github.com/user-attachments/assets/89ff038b-680d-4b84-8bcf-7f23f8139251" />
+
+
+<img width="2048" height="1324" alt="image" src="https://github.com/user-attachments/assets/e67f4039-2e4c-435a-99a7-46b939f67a43" />
+
+
+<img width="2048" height="1334" alt="image" src="https://github.com/user-attachments/assets/f91d7d4b-3d1f-4ed5-a584-8407085aedcd" />
+
+
+<img width="2048" height="1345" alt="image" src="https://github.com/user-attachments/assets/026b99ef-fcd1-4e81-bd43-b967bfd72430" />
+
+
+
+**Results and Discussion**
+The initial Design III simulation produced a maximum Von Mises stress of 438 MPa, exceeding the material yield strength of 275 MPa. The minimum factor of safety was 0.63, indicating that the design does not satisfy the strength requirement.
+
+The maximum displacement was 3.396 mm (0.1337 in), exceeding the allowable displacement of 0.005 in.
+
+Although the modified geometry included thicker sections and additional fillets, the initial simulation results indicate that the design does not meet the required strength and stiffness criteria. Additional mesh refinement is necessary to evaluate convergence and verify the numerical results before drawing final conclusions.
 
 ## Decide
 
