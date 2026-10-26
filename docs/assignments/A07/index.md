@@ -1099,7 +1099,7 @@ The simulations evaluated maximum von Mises stress, displacement, factor of safe
 
 Despite the improvements achieved through geometric modifications, none of the designs fully satisfied the specified strength and stiffness requirements.
 
-**Reflection**
+**Reflection (Lessons Learned)**
 
 This assignment helped me develop a better understanding of finite element analysis and the relationship between geometry, loading conditions, stress concentrations, and deformation.
 
