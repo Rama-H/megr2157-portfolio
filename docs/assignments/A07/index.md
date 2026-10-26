@@ -971,6 +971,16 @@ The percentage change in maximum displacement between Mesh 2 and Mesh 3 was calc
 
 The displacement results satisfy the 7% convergence tolerance. However, the maximum Von Mises stress varied significantly between meshes, indicating that stress convergence was not achieved.
 
+<img width="2048" height="1216" alt="image" src="https://github.com/user-attachments/assets/4046527a-faa5-4b97-a149-a8e3ea800d95" />
+
+<img width="2048" height="1212" alt="image" src="https://github.com/user-attachments/assets/91795aae-572d-4de4-8cb9-4e8488517fee" />
+
+<img width="2048" height="1216" alt="image" src="https://github.com/user-attachments/assets/a5f14579-b1ae-4ebe-a158-4cb5cefc091a" />
+
+<img width="2048" height="1306" alt="image" src="https://github.com/user-attachments/assets/e0c1f5fe-f750-4734-823a-cc5e1c6f9b14" />
+
+
+
 **Design III – Results and Discussion**
 
 The final mesh predicted a maximum displacement of 3.409 mm, exceeding the allowable displacement of 0.005 in (0.127 mm).
@@ -981,6 +991,37 @@ The highest stress concentrations appeared near the upper bracket's internal cor
 
 Although displacement convergence was achieved, Design III did not meet the strength or stiffness requirements. Further geometric modifications and investigation of the localized stress concentrations would be necessary to improve its performance
 
+
+## Final Design Comparison and Analysis
+
+Three bracket designs were evaluated using SolidWorks Simulation under a 600 lbf downward load. All designs used 6061-T6 aluminum with a yield strength of 275 MPa. The final results were obtained using Mesh 3 for each design
+
+| Parameter | Design I | Design II | Design III |
+|------------|------------|------------|------------|
+| Maximum Von Mises Stress (MPa) | 541.5 | 389.1 | 576.9 |
+| Maximum Displacement (mm) | 2.713 | 2.927 | 3.409 |
+| Minimum Factor of Safety | 0.38 | 0.71 | 0.48 |
+| Stress Requirement | FAIL | FAIL | FAIL |
+| Displacement Requirement | FAIL | FAIL | FAIL |
+
+
+Design II demonstrated the best strength performance, with a maximum Von Mises stress of 389.1 MPa and a minimum factor of safety of 0.71. Compared with Design I, the maximum stress decreased by approximately 28.1%.
+
+Design I exhibited the lowest displacement of 2.713 mm, indicating better stiffness performance than the other two designs under the simulated loading conditions.
+
+Design III showed the highest stress and displacement, indicating that its geometric modifications did not improve overall performance.
+
+All three designs exceeded the material yield strength of 275 MPa and the maximum allowable displacement of 0.005 in (0.127 mm). Therefore, none of the designs satisfied the required strength and stiffness criteria.
+
+**Conclusion**
+
+The finite element analysis demonstrated how geometric modifications affect bracket stress distribution, displacement, and factor of safety.
+
+Although Design II provided the best strength performance, additional design modifications would be necessary to satisfy both the stress and displacement requirements.
+
+Future improvements could include increasing the cross-sectional dimensions, reinforcing highly stressed regions, and reducing stress concentrations around sharp corners.
+
+The results also demonstrate the importance of evaluating both strength and stiffness when optimizing mechanical components.
 
 
 ## Decide
