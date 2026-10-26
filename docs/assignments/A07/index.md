@@ -1039,8 +1039,75 @@ Future improvements could include increasing the cross-sectional dimensions, rei
 The results also demonstrate the importance of evaluating both strength and stiffness when optimizing mechanical components.
 
 
-## Decide
+
+## Final Design Comparison
+
+After completing three design iterations and mesh refinement studies, I compared the structural performance of each bracket under the same applied load of 600 lbf
+
+| Parameter | Design I | Design II | Design III |
+|------------|------------|------------|------------|
+| Material | 6061-T6 Al | 6061-T6 Al | 6061-T6 Al |
+| Applied Load (lbf) | 600 | 600 | 600 |
+| Maximum von Mises Stress (MPa) | 541.5 | 389.1 | 576.9 |
+| Maximum Displacement (mm) | 2.713 | 2.927 | 3.409 |
+| Minimum Factor of Safety | 0.38 | 0.71 | 0.48 |
+| Mass (lb) | 0.45 | 0.45 | 0.50 |
+| Total Elements (Mesh 3) | 115,359 | 51,797 | 226,380 |
+| Total Nodes (Mesh 3) | 169,808 | 78,081 | 327,192 |
+| Strength Requirement | FAIL | FAIL | FAIL |
+| Stiffness Requirement | FAIL | FAIL | FAIL |
+
+Stress values are taken from the displayed Mesh 3 stress plots. Design I's 541.5 MPa is an elemental result, whereas the previously reported nodal result was 727.5 MPa. The extraction method must be consistent for a direct stress comparison.
+
+### Analysis
+
+Design II produced the lowest reported maximum von Mises stress and the highest minimum factor of safety. Design I demonstrated the lowest maximum displacement, while Design III had the highest mass and displacement.
+
+Although none of the designs satisfied the strength or stiffness requirements, Design II showed the most promising strength performance based on the reported results.
+
+The simulations demonstrated that changes in geometry and stress distribution can significantly affect structural performance. Increasing material does not necessarily improve strength or stiffness
+
+
+## Decide — Final Design Selection
+
+After comparing the three bracket designs, I selected Design II as the preferred design based on its overall strength performance and mass efficiency.
+
+Design II produced the lowest reported maximum von Mises stress of 389.1 MPa and the highest minimum factor of safety of 0.71, compared with Design I (0.38) and Design III (0.48). Additionally, Design II maintained a mass of approximately 0.45 lb, making it lighter than Design III (0.50 lb).
+
+Although Design I exhibited the lowest maximum displacement of 2.713 mm, Design II demonstrated better strength performance based on the reported simulation results.
+
+However, none of the three designs satisfied the strength or stiffness requirements. Design II's factor of safety remained below 1.0, indicating that yielding is predicted under the applied 600 lbf load. Its maximum displacement of 2.927 mm also exceeded the allowable displacement of 0.005 in (0.127 mm).
+
+Therefore, Design II was selected as the most promising design for further development rather than a fully acceptable final design.
+
+**Recommended Improvements**
+
+To improve the bracket's performance, I would increase the thickness of the critical load-bearing sections, reinforce the connection between the vertical support and horizontal shaft, and further optimize the fillet geometry to reduce stress concentrations.
+
+Additional simulations and mesh convergence studies would be necessary to verify whether these modifications satisfy the strength and stiffness requirements.
+
+This analysis demonstrated the importance of balancing strength, stiffness, geometry, and material efficiency during the engineering design process.
 
 
 ## Communicate
+
+**Conclusion**
+
+In this assignment, I used SolidWorks Simulation to evaluate and improve a bracket design subjected to a 600 lbf downward load. Three design iterations were analyzed using finite element analysis, with three mesh refinement studies performed for each design.
+
+The simulations evaluated maximum von Mises stress, displacement, factor of safety, and mass. Design II demonstrated the best reported strength performance, while Design I exhibited the lowest displacement.
+
+Despite the improvements achieved through geometric modifications, none of the designs fully satisfied the specified strength and stiffness requirements.
+
+**Reflection**
+
+This assignment helped me develop a better understanding of finite element analysis and the relationship between geometry, loading conditions, stress concentrations, and deformation.
+
+One important lesson was that adding more material does not necessarily improve a design. Design III had a greater mass than the previous iterations but exhibited higher stress and displacement.
+
+I also learned the importance of mesh refinement and convergence studies when evaluating the reliability of simulation results.
+
+If I were to continue improving this bracket, I would focus on reinforcing the critical regions, reducing stress concentrations, and achieving both the required factor of safety and allowable displacement.
+
+Overall, this project strengthened my SolidWorks Simulation skills and helped me understand how FEA can support engineering design decisions.
 
