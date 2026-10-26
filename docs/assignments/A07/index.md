@@ -1116,7 +1116,9 @@ Overall, this project strengthened my SolidWorks Simulation skills and helped me
 **CAD Files**
 
 [A7 Bracket Design I.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/A7%20Bracket%20Design.SLDPRT)
+
 [A7 Bracket Design II.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/A7%20Bracket%20Design%20II.SLDPRT)
+
 [A7 Bracket Design III.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/A7%20Bracket%20Design%20III.SLDPRT)
 
 
