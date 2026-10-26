@@ -944,6 +944,7 @@ For the third mesh iteration, I further refined the curvature-based mesh by redu
 
 The final mesh contained 327,192 nodes and 226,380 elements.
 
+
 **Mesh 3 – Simulation Results**
 
 | Parameter | Result |
@@ -980,7 +981,6 @@ The displacement results satisfy the 7% convergence tolerance. However, the maxi
 <img width="2048" height="1306" alt="image" src="https://github.com/user-attachments/assets/e0c1f5fe-f750-4734-823a-cc5e1c6f9b14" />
 
 
-
 **Design III – Results and Discussion**
 
 The final mesh predicted a maximum displacement of 3.409 mm, exceeding the allowable displacement of 0.005 in (0.127 mm).
@@ -990,6 +990,21 @@ The maximum Von Mises stress was 576.9 MPa, exceeding the material yield strengt
 The highest stress concentrations appeared near the upper bracket's internal corners and constrained regions.
 
 Although displacement convergence was achieved, Design III did not meet the strength or stiffness requirements. Further geometric modifications and investigation of the localized stress concentrations would be necessary to improve its performance
+
+
+### Mass Properties — Design III
+
+After completing the FEA simulations for Design III, I used the SolidWorks Mass Properties tool to evaluate the mass, volume, and surface area of the modified bracket.
+
+The final geometry had a mass of 0.50 lb, a volume of 5.17 in³, and a surface area of 32.25 in².
+
+Compared with Design I and Design II, which each had a mass of approximately 0.45 lb, Design III increased the mass by approximately 11.1%.
+
+Despite the additional material, Design III exhibited higher maximum stress and displacement than the previous designs. This indicates that increasing material alone does not necessarily improve structural performance; the location and distribution of material are also important.
+
+Based on the simulation results, Design III was less effective at balancing strength, stiffness, and lightweight design
+
+<img width="2910" height="1910" alt="image" src="https://github.com/user-attachments/assets/99b91ea8-bcdc-4dac-acfc-6e2fe2324b36" />
 
 
 ## Final Design Comparison and Analysis
