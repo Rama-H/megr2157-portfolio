@@ -902,6 +902,87 @@ The maximum displacement was 3.396 mm (0.1337 in), exceeding the allowable displ
 
 Although the modified geometry included thicker sections and additional fillets, the initial simulation results indicate that the design does not meet the required strength and stiffness criteria. Additional mesh refinement is necessary to evaluate convergence and verify the numerical results before drawing final conclusions.
 
+### Design III – Mesh 2: Mesh Refinement
+
+For the second mesh iteration, I refined the curvature-based mesh by reducing the maximum element size from 0.090 in to 0.070 in and the minimum element size from 0.045 in to 0.035 in. The geometry, material, loading conditions, and fixtures remained unchanged.
+
+The refined mesh contained 186,187 nodes and 126,962 elements
+
+**Mesh 2 – Simulation Results**
+
+| Parameter | Result |
+|------------|------------|
+| Maximum Von Mises Stress | 776.1 MPa |
+| Maximum Displacement | 3.406 mm (0.1341 in) |
+| Minimum Factor of Safety | 0.35 |
+| Material Yield Strength | 275 MPa |
+| Stress Requirement | FAIL |
+| Displacement Requirement | FAIL |
+
+
+<img width="2048" height="1328" alt="image" src="https://github.com/user-attachments/assets/84563b36-9da8-412d-8ec9-e0cf26403d1b" />
+
+<img width="2048" height="1331" alt="image" src="https://github.com/user-attachments/assets/7dba12ce-a234-4fd2-9f71-59656844b1f1" />
+
+<img width="2048" height="1332" alt="image" src="https://github.com/user-attachments/assets/b122801e-6be0-4f55-b8f4-f7606eb17a7f" />
+
+<img width="2048" height="1333" alt="image" src="https://github.com/user-attachments/assets/ce055195-cfad-4ec4-bb7e-1b410cd0b49a" />
+
+
+**Mesh Comparison and Discussion**
+
+Comparing Mesh 1 and Mesh 2, the maximum displacement increased from 3.396 mm to 3.406 mm, representing a percentage change of 0.294%. This is below the required 7% convergence tolerance.
+
+However, the maximum Von Mises stress increased from 438 MPa to 776.1 MPa, indicating that peak stress has not converged.
+
+The minimum factor of safety decreased from 0.63 to 0.35. Therefore, the design does not satisfy the strength or stiffness requirements under the applied loading conditions. Additional mesh refinement is needed to further evaluate convergence.
+
+
+### Design III – Mesh 3: Final Mesh Refinement
+
+For the third mesh iteration, I further refined the curvature-based mesh by reducing the maximum element size to 0.055 in and the minimum element size to 0.025 in. The material, applied load of 600 lbf, and boundary conditions remained unchanged.
+
+The final mesh contained 327,192 nodes and 226,380 elements.
+
+**Mesh 3 – Simulation Results**
+
+| Parameter | Result |
+|------------|------------|
+| Maximum Von Mises Stress | 576.9 MPa |
+| Maximum Displacement | 3.409 mm (0.1342 in) |
+| Minimum Factor of Safety | 0.48 |
+| Material Yield Strength | 275 MPa |
+| Stress Requirement | FAIL |
+| Displacement Requirement | FAIL |
+
+
+**Mesh Convergence Study**
+
+| Mesh | Max Element Size (in) | Max Stress (MPa) | Max Displacement (mm) | Min FOS |
+|-------|-------|-------|-------|-------|
+| Mesh 1 | 0.090 | 438.0 | 3.396 | 0.63 |
+| Mesh 2 | 0.070 | 776.1 | 3.406 | 0.35 |
+| Mesh 3 | 0.055 | 576.9 | 3.409 | 0.48 |
+
+
+The percentage change in maximum displacement between Mesh 2 and Mesh 3 was calculated as:
+
+<img width="1314" height="346" alt="image" src="https://github.com/user-attachments/assets/ea4ae2c4-4f54-41ec-922d-7d68dd67defe" />
+
+The displacement results satisfy the 7% convergence tolerance. However, the maximum Von Mises stress varied significantly between meshes, indicating that stress convergence was not achieved.
+
+**Design III – Results and Discussion**
+
+The final mesh predicted a maximum displacement of 3.409 mm, exceeding the allowable displacement of 0.005 in (0.127 mm).
+
+The maximum Von Mises stress was 576.9 MPa, exceeding the material yield strength of 275 MPa. The minimum factor of safety was 0.48, below the required value of 1.0
+
+The highest stress concentrations appeared near the upper bracket's internal corners and constrained regions.
+
+Although displacement convergence was achieved, Design III did not meet the strength or stiffness requirements. Further geometric modifications and investigation of the localized stress concentrations would be necessary to improve its performance
+
+
+
 ## Decide
 
 
