@@ -1111,3 +1111,8 @@ If I were to continue improving this bracket, I would focus on reinforcing the c
 
 Overall, this project strengthened my SolidWorks Simulation skills and helped me understand how FEA can support engineering design decisions.
 
+
+
+CAD Files
+
+Time Log
