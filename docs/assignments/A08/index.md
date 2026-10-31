@@ -506,7 +506,14 @@ Concentric mates were used to align the shafts with their corresponding sleeve b
 
 Coincident mates were used where appropriate to control the axial positions of the components.
 
-Insert Screenshot: Shafts and Bearings
+<img width="3200" height="1904" alt="image" src="https://github.com/user-attachments/assets/38d8e45a-67d5-4558-b591-816b6dd754b6" />
+
+<img width="3188" height="1902" alt="image" src="https://github.com/user-attachments/assets/21b44c6f-72e6-4edd-b9d2-c7316c1f354d" />
+
+<img width="3198" height="1906" alt="image" src="https://github.com/user-attachments/assets/a63c3e93-197b-45a2-b742-e106353c3543" />
+
+<img width="3192" height="1902" alt="image" src="https://github.com/user-attachments/assets/076c792f-b80e-426b-acab-c90f0f34c7f9" />
+
 
 #### Step 5: Gear Assembly
 
@@ -532,7 +539,15 @@ Input Speed = approximately 2933.33 rpm
 
 The input pinion rotates faster than the output gear, while the output gear produces greater torque.
 
-Insert Screenshot: Gear Assembly
+<img width="3198" height="1908" alt="image" src="https://github.com/user-attachments/assets/c0d00a87-af4e-4a04-9474-6bfa7ac768d4" />
+
+Back View 
+
+<img width="1304" height="1070" alt="image" src="https://github.com/user-attachments/assets/6008a883-4836-4dc2-8557-60d52446fc9e" />
+
+<img width="1514" height="1010" alt="image" src="https://github.com/user-attachments/assets/e2dc11cc-ec9e-4072-8d22-95f16c936b90" />
+
+
 
 #### Step 6: Final Gearbox Assembly
 
@@ -558,7 +573,61 @@ Output sleeve bearing
 
 SOLIDWORKS mates were used to align and position the components.
 
-Insert Screenshot: Final Gearbox Assembly
+<img width="3196" height="1914" alt="image" src="https://github.com/user-attachments/assets/092aee7a-8d5a-4911-a20c-bfed0c345dc3" />
+
+<img width="3200" height="1902" alt="image" src="https://github.com/user-attachments/assets/ff085600-08bc-45c1-b6d5-18ba74e1bf49" />
+
+
+### Lessons Learned
+
+1. Gear Ratio and Torque
+
+I learned how the number of gear teeth affects rotational speed and torque. The larger output gear rotates more slowly than the smaller input pinion while producing greater torque.
+
+2. Journal Bearing Design
+
+I learned that selecting a sleeve bearing requires considering bearing pressure, rotational speed, sliding velocity, PV rating, and wall thickness.
+
+3. Gear Center Distance
+
+I learned how to calculate the correct distance between the gear centers and use this value when positioning the shafts in SOLIDWORKS.
+
+4. Assembly Mates
+
+One of the challenges I encountered was positioning the shafts correctly inside the gearbox. Initially, the shafts were not properly aligned with the bearings and gear hubs.
+
+I used concentric mates to align the cylindrical surfaces and coincident mates to control the axial positions.
+
+This helped me understand the difference between aligning components and fully positioning them.
+
+5. Housing Design
+
+I learned that the gearbox housing must provide space for the gears and bearings while allowing the components to be assembled and disassembled.
+
+
+**Reflection**
+
+This assignment gave me experience combining analytical calculations with practical mechanical design.
+
+I developed a better understanding of shaft strength, gear transmission, journal bearing selection, and SOLIDWORKS assembly modeling.
+
+The most challenging part was positioning the shafts, gears, and bearings correctly while maintaining the proper relationship between the components.
+
+### Time Spent
+
+Total time spent on this assignment: 10 hrs
+
+This includes calculations, sketches, component selection, SOLIDWORKS modeling, assembly, and portfolio documentation
+
+### Downloadable CAD Files
+
+
+
+
+
+
+
+
 
 
 
