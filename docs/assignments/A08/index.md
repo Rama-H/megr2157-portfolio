@@ -353,6 +353,211 @@ The housing was designed to surround the gears while allowing sufficient space f
 
 ## Decide
 
+1. Shaft Selection
+
+The specified input and output shaft diameters were retained because the calculated torsional shear stresses were below the allowable shear stress for the assumed shaft material.
+
+3. Bearing Selection
+
+Oil-embedded 841 bronze sleeve bearings were selected as the proposed components to support the rotating shafts.
+
+3. Gear Positioning
+
+The gear centers were positioned 0.6875 inches apart to achieve the correct meshing relationship.
+
+4. Housing Design
+
+The gearbox housing was modeled as two separate components: an upper housing and a lower housing.
+
+This arrangement allows the internal components to be accessed when the housing is separated.
+
+5. Assembly Method
+
+The housing halves were aligned using SOLIDWORKS assembly mates. A mechanical fastening method, such as screws or bolts, would be needed to secure the two halves in a physical gearbox.
+
+The housing design was developed around the gear dimensions, shaft locations, and bearing requirements. The two-piece arrangement provides a basis for assembling and disassembling the gearbox.
+
+### Part 5: McMaster-Carr Component Selection
+
+The gears and journal bearings were selected from McMaster-Carr for use in the gearbox assembly.
+
+**Selected Components**
+
+1. Input Pinion
+
+Component name: Brass Spur Gear
+
+McMaster-Carr part number: 7880K19
+
+Number of teeth: 18
+
+Diametral pitch: 48
+
+Pressure angle: 20 degrees
+
+Pitch diameter: 0.375 in
+
+Bore diameter: 0.125 in
+
+Link : https://www.mcmaster.com/7880K19/
+
+2. Output Gear
+
+Component name: Brass Spur Gear
+
+McMaster-Carr part number: 7880K24
+
+Number of teeth: 48
+
+Diametral pitch: 48
+
+Pressure angle: 20 degrees
+
+Pitch diameter: 1.000 in
+
+Bore diameter: 0.250 in
+
+Link : https://www.mcmaster.com/7880K24/
+
+3. Input Journal Bearing
+
+Component name: Oil-Embedded 841 Bronze Sleeve Bearing
+
+McMaster-Carr part number: 6391K754
+
+Proposed inside diameter: 0.125 in
+
+Proposed outside diameter: 0.250 in
+
+Link : https://www.mcmaster.com/6391K754/
+
+4. Output Journal Bearing
+
+Component name: Oil-Embedded 841 Bronze Sleeve Bearing
+
+McMaster-Carr part number: 6391K127
+
+Proposed inside diameter: 0.250 in
+
+Proposed outside diameter: 0.375 in
+
+Link : https://www.mcmaster.com/6391k127/
+
+**Component Selection Explanation**
+
+The gears were selected to provide the required gear ratio of 48:18, equivalent to 24:9.
+
+The sleeve bearings were selected based on the required shaft diameters and the proposed bearing material.
+
+The selected gears and bearings were incorporated into the SOLIDWORKS assembly to create the gearbox model.
+
+
 
 ## Communicate
+
+### Part 6: SOLIDWORKS CAD Modeling and Assembly
+
+The gearbox was modeled using SOLIDWORKS. The assembly includes two housing components, two spur gears, two shafts, and two sleeve bearings.
+
+#### Step 1: Lower Housing Design
+
+The lower gearbox housing was created using SOLIDWORKS part modeling features.
+
+A rectangular base was modeled, followed by an internal cavity to provide space for the gears.
+
+The gear positions were determined using the calculated center distance of 0.6875 inches.
+
+The housing also included features for positioning the shafts and supporting the sleeve bearings.
+
+<img width="3190" height="1906" alt="image" src="https://github.com/user-attachments/assets/28cfa275-9b76-4f15-b12b-94039108e6e8" />
+
+#### Step 2: Upper Housing Design
+
+A separate upper housing component was created to close the gearbox.
+
+The upper and lower housing components were designed to fit together as a two-piece assembly.
+
+The two-part housing arrangement provides access to the internal gears, shafts, and bearings when disassembled.
+
+<img width="3200" height="1906" alt="image" src="https://github.com/user-attachments/assets/0af24834-3258-4a3d-975d-0181794e65ea" />
+
+#### Step 3: Importing the Gears and Bearings
+
+The 18-tooth pinion, 48-tooth output gear, and sleeve bearings were selected from McMaster-Carr.
+
+The components were inserted into the SOLIDWORKS assembly and positioned relative to the gearbox housing.
+
+Insert Screenshot: Imported Components
+
+<img width="3182" height="1636" alt="image" src="https://github.com/user-attachments/assets/71b756a6-1f9c-4527-9377-498f88e06bd2" />
+
+
+
+
+
+#### Step 4: Shaft and Bearing Assembly
+
+The input shaft has a diameter of 0.125 inches, and the output shaft has a diameter of 0.250 inches.
+
+Both shafts have a specified length of 1.00 inch.
+
+Concentric mates were used to align the shafts with their corresponding sleeve bearings and gear hubs.
+
+Coincident mates were used where appropriate to control the axial positions of the components.
+
+Insert Screenshot: Shafts and Bearings
+
+#### Step 5: Gear Assembly
+
+The smaller pinion and larger output gear were positioned so their teeth could mesh.
+
+A gear mate was used to represent the rotational relationship between the two gears.
+
+The theoretical gear ratio is:
+
+Gear Ratio = Output Gear Teeth / Input Pinion Teeth
+
+Gear Ratio = 48 / 18
+
+Gear Ratio = 2.667
+
+The output speed is 1100 rpm.
+
+Input Speed = Output Speed × Gear Ratio
+
+Input Speed = 1100 × 2.667
+
+Input Speed = approximately 2933.33 rpm
+
+The input pinion rotates faster than the output gear, while the output gear produces greater torque.
+
+Insert Screenshot: Gear Assembly
+
+#### Step 6: Final Gearbox Assembly
+
+The upper and lower housing components were brought together in the final assembly.
+
+The gearbox includes the following components:
+
+Lower housing
+
+Upper housing
+
+Input pinion
+
+Output gear
+
+Input shaft
+
+Output shaft
+
+Input sleeve bearing
+
+Output sleeve bearing
+
+SOLIDWORKS mates were used to align and position the components.
+
+Insert Screenshot: Final Gearbox Assembly
+
+
 
