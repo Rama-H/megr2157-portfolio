@@ -487,12 +487,13 @@ The 18-tooth pinion, 48-tooth output gear, and sleeve bearings were selected fro
 
 The components were inserted into the SOLIDWORKS assembly and positioned relative to the gearbox housing.
 
-Insert Screenshot: Imported Components
-
 <img width="3182" height="1636" alt="image" src="https://github.com/user-attachments/assets/71b756a6-1f9c-4527-9377-498f88e06bd2" />
 
+<img width="3182" height="1646" alt="image" src="https://github.com/user-attachments/assets/a32be477-3149-4bc0-a1c6-00b02fb520a2" />
 
+<img width="3178" height="1634" alt="image" src="https://github.com/user-attachments/assets/072c289a-bcfe-44f1-a2a8-a12b0df38d7f" />
 
+<img width="3154" height="1630" alt="image" src="https://github.com/user-attachments/assets/881040fc-7e14-4bf5-a9d1-ff2e7dca0a3b" />
 
 
 #### Step 4: Shaft and Bearing Assembly
