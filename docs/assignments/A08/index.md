@@ -621,11 +621,23 @@ This includes calculations, sketches, component selection, SOLIDWORKS modeling, 
 
 ### Downloadable CAD Files
 
-[A8 Gearbox Complete Assembly.SLDPRT]()
+[A8 Gearbox Complete Assembly.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/Gearbox_Complete_Assembly.SLDASM)
 
+[A8_Gearbox_Housing_Upper.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A8_Gearbox_Housing_Upper.SLDPRT)
 
+[A8_Gearbox_Housing_Lower.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/A8_Gearbox_Housing_Lower.SLDPRT)
 
+[A8_Input_Bearing.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/6391K754_Oil-Embedded%20841%20Bronze%20Sleeve%20Bearing.SLDPRT)
 
+[A8_Output_Bearing.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/6391K127_Oil-Embedded%20841%20Bronze%20Sleeve%20Bearing.SLDPRT)
+
+[A8_48 teeth Gear.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/48%20teeth%20Gear-7880K24_Metal%20Gear%20-%2020%20Degree%20Pressure%20Angle.SLDPRT)
+
+[A8_18 teeth Pinion.SLDPRT](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/Pinion%2018%20teeth-7880K19_Metal%20Gear%20-%2020%20Degree%20Pressure%20Angle.SLDPRT)
+
+[Input Shaft](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/Input%20shaft.SLDPRT)
+
+[Output Shaft](https://raw.githubusercontent.com/Rama-H/megr2157-portfolio/refs/heads/main/docs/assignments/Output%20Shaft.SLDPRT)
 
 
 
