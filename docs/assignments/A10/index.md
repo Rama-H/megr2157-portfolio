@@ -63,14 +63,11 @@ Therefore, the lead screws must operate between approximately 0.394 and 19.69 rp
 
 <img width="828" height="935" alt="image" src="https://github.com/user-attachments/assets/71f37969-e8ba-4563-a87d-183b9b143325" />
 
-
-<img width="1514" height="1624" alt="image" src="https://github.com/user-attachments/assets/2c21d66c-4f0c-4d3b-9c59-03f7700c65b1" />
+<img width="1390" height="484" alt="image" src="https://github.com/user-attachments/assets/883b9855-c029-4fa0-bd09-c1a28240d757" />
 
 <img width="1440" height="1322" alt="image" src="https://github.com/user-attachments/assets/11b65262-c904-4785-940a-94a2327c3632" />
 
 _Reference_: _Roton, Acme Lead Screws & Nuts — Engineering Data, Table 4._
-
-https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/?utm_source=chatgpt.com
 
 ### Part 3: Maximum Driving Torque
 
