@@ -1,4 +1,6 @@
-# A10 – Lead Screw Translating System
+# A10 – Lead Screw Translating System (Team Project) 
+
+## Team member 1: Rama Hamid (my part) 
 
 ## Objective
 
@@ -134,13 +136,62 @@ The use of two identical lead screws allows the tensile load to be distributed b
 
 
 
+## Decide
+_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
+
+## Communicate
 
 
 
+
+## Team member 2: Pierce Brown
+
+
+## Objective
+
+
+## Analyze
 
 
 ## Decide
 _Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
 
 ## Communicate
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Team member 3: Bridget Fagan
+
+
+## Objective
+
+
+## Analyze
+
+
+## Decide
+_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
+
+## Communicate
+
+
+
+
+
+
+
+
+
+
+
 
