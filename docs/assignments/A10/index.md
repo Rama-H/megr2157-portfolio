@@ -13,6 +13,11 @@ The lead screw design involves determining the minimum required diameter based o
 
 ### Part 1: Minimum Lead Screw Diameter
 
+**Knowns & Unknowns**
+
+<img width="1250" height="374" alt="image" src="https://github.com/user-attachments/assets/d753fc4e-4a3c-40cf-b01b-1ddf5de01245" />
+
+
 The minimum required lead screw diameter was determined using the axial stress equation and the specified factor of safety of 4. Since the system uses two identical lead screws, the total tensile force of 2,000 N was assumed to be distributed equally, resulting in an axial load of 1,000 N per screw.
 
 For the preliminary material selection, AISI 1018 steel was considered, with an assumed yield strength of 220 MPa. Using the axial stress relationship, the minimum required diameter was calculated to be 4.81 mm (0.189 in).
@@ -25,7 +30,7 @@ For the preliminary material selection, AISI 1018 steel was considered, with an 
 
 The selected Roton #59284 steel Acme lead screw has a manufacturer-listed minor diameter of 0.359 in (9.12 mm). Since the actual minor diameter exceeds the calculated minimum, the selected screw satisfies the preliminary axial stress requirement under the assumed material properties.
 
-<img width="3150" height="1588" alt="image" src="https://github.com/user-attachments/assets/da2571ef-5c4b-4782-8af3-97ab09654618" />
+<img width="1490" height="1548" alt="image" src="https://github.com/user-attachments/assets/518206e1-6116-4c76-8cb8-9d99f9188015" />
 
 
 **Note:** The 220 MPa yield strength is a preliminary design assumption for AISI 1018 steel and is not a manufacturer-certified property of Roton #59284.
@@ -38,6 +43,11 @@ The selected Roton #59284 steel Acme lead screw has a manufacturer-listed minor 
 
 
 ### Part 2: Rotational Speed Range
+
+**Knowns & Unknowns**
+
+<img width="1250" height="324" alt="image" src="https://github.com/user-attachments/assets/dde0147d-7c9a-4365-a786-4516f68c708e" />
+
 
 The rotational speed range was calculated using the required linear crosshead speed of 1–50 mm/min and the lead of the selected screw.
 
@@ -62,6 +72,11 @@ https://www.mcmaster.com/products/acme-lead-screws/nut-type~externally-threaded/
 
 
 ### Part 3: Maximum Driving Torque
+
+**Knowns & Unknowns**
+
+<img width="1254" height="434" alt="image" src="https://github.com/user-attachments/assets/c8cef9b4-907e-4ce7-84ff-80cfd2b54195" />
+
 
 The maximum driving torque was determined to ensure that the lead screw system can generate the required tensile force of 2 kN.
 
@@ -101,6 +116,12 @@ These values represent the calculated screw-thread driving torque under the stat
 
 Based on the calculated minimum diameter, rotational speed range, and driving torque, two identical **Roton #59284, 1/2"-10 RH Steel Acme lead screws** were selected for the tensile tester.
 
+_Reference: Roton, Acme Lead Screws, Table 5, and Roton #59284 product specifications._
+
+https://www.roton.com/products/acme-lead-screws-nuts/screws/ 
+
+<img width="1518" height="1638" alt="image" src="https://github.com/user-attachments/assets/bd59570b-290e-4acd-87ae-cfb7514dacb8" />
+
 <img width="1478" height="892" alt="image" src="https://github.com/user-attachments/assets/f513767e-608a-4794-acef-c79e696354d9" />
 
 
@@ -114,11 +135,7 @@ The selected screw has a minor diameter greater than the preliminary calculated 
 The use of two identical lead screws allows the tensile load to be distributed between the screws while maintaining synchronized crosshead movement.
 
 
-_Reference: Roton, Acme Lead Screws, Table 5, and Roton #59284 product specifications._
 
-https://www.roton.com/products/acme-lead-screws-nuts/screws/ 
-
-<img width="1518" height="1638" alt="image" src="https://github.com/user-attachments/assets/bd59570b-290e-4acd-87ae-cfb7514dacb8" />
 
 
 
