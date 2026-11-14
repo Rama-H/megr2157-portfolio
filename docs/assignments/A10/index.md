@@ -61,6 +61,29 @@ https://www.mcmaster.com/products/acme-lead-screws/nut-type~externally-threaded/
 <img width="3142" height="1564" alt="image" src="https://github.com/user-attachments/assets/c6231616-7c68-4d7d-ab26-df55c15cc283" />
 
 
+### Part 3: Maximum Driving Torque
+
+The maximum driving torque was determined to ensure that the lead screw system can generate the required tensile force of 2 kN.
+
+Because the system consists of two identical lead screws, each screw was assumed to carry an axial load of 1,000 N.
+
+The selected screw uses an Acme thread profile with an included thread angle of 29°, corresponding to a half-angle of 14.5°. The Acme thread geometry was referenced from Machinery's Handbook, 31st Edition, pages 2057–2060.
+
+<img width="1368" height="914" alt="image" src="https://github.com/user-attachments/assets/b9a6527d-ac98-4a3b-9f38-3a4a4cd55118" />
+
+
+For the friction analysis, a coefficient of static friction of μ = 0.16 was selected for lubricated steel-on-bronze contact. This value was extracted from Machinery's Handbook, 31st Edition, page 173, Table 1.
+
+<img width="824" height="1350" alt="image" src="https://github.com/user-attachments/assets/74308205-4b38-40b6-b13e-587d61d6ef6c" />
+
+
+The effective friction coefficient was calculated by accounting for the Acme thread angle. Using the lead screw torque equation and the selected screw geometry, the required driving torque was determined to be approximately:
+
+**Torque per lead screw: 1.36 N·m**
+
+**Combined torque for two lead screws: 2.72 N·m**
+
+**Calculations:** 
 
 
 <img width="705" height="960" alt="image" src="https://github.com/user-attachments/assets/ddb72952-9d07-47ca-a745-fccf23887eaf" />
@@ -69,6 +92,8 @@ https://www.mcmaster.com/products/acme-lead-screws/nut-type~externally-threaded/
 
 <img width="828" height="752" alt="image" src="https://github.com/user-attachments/assets/81127b10-9319-4851-bcfb-9b94bc54e4f2" />
 
+
+These values represent the calculated screw-thread driving torque under the stated friction and loading assumptions. Additional losses from bearings and the mechanical transmission would need to be considered when selecting the final driving mechanism.
 
 
 
