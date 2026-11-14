@@ -97,6 +97,33 @@ These values represent the calculated screw-thread driving torque under the stat
 
 
 
+### Part 4: Lead Screw Selection
+
+Based on the calculated minimum diameter, rotational speed range, and driving torque, two identical **Roton #59284, 1/2"-10 RH Steel Acme lead screws** were selected for the tensile tester.
+
+<img width="1478" height="892" alt="image" src="https://github.com/user-attachments/assets/f513767e-608a-4794-acef-c79e696354d9" />
+
+
+<img width="2428" height="1626" alt="image" src="https://github.com/user-attachments/assets/24fa8423-30d2-4404-b073-880d395b3bef" />
+
+<img width="802" height="646" alt="image" src="https://github.com/user-attachments/assets/278dcdfd-c45f-43c8-81cf-967f53366563" />
+
+
+The selected screw has a minor diameter greater than the preliminary calculated minimum diameter of 4.81 mm. Its lead also provides the required rotational speed range of 0.394–19.69 rpm.
+
+The use of two identical lead screws allows the tensile load to be distributed between the screws while maintaining synchronized crosshead movement.
+
+
+_Reference: Roton, Acme Lead Screws, Table 5, and Roton #59284 product specifications._
+
+https://www.roton.com/products/acme-lead-screws-nuts/screws/ 
+
+<img width="1518" height="1638" alt="image" src="https://github.com/user-attachments/assets/bd59570b-290e-4acd-87ae-cfb7514dacb8" />
+
+
+
+
+
 ## Decide
 _Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
 
