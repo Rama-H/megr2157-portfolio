@@ -135,12 +135,7 @@ The selected screw has a minor diameter greater than the preliminary calculated 
 The use of two identical lead screws allows the tensile load to be distributed between the screws while maintaining synchronized crosshead movement.
 
 
-
-## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
-
-## Communicate
-
+Time Spent: 2 days
 
 
 
