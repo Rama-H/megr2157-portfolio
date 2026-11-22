@@ -64,10 +64,13 @@ For the frame connections, we proposed heavy 40 Series aluminum T-slot framing w
 <img width="1178" height="636" alt="image" src="https://github.com/user-attachments/assets/aecfa39e-8286-48fb-abe2-93e0b0be73f0" />
 
 
+#### FBD & handwritten calculations
+
+
 <img width="828" height="909" alt="image" src="https://github.com/user-attachments/assets/245533e1-fb57-40da-bc72-afedc4ad5f3e" />
 
 
-<img width="828" height="674" alt="image" src="https://github.com/user-attachments/assets/d6d4a587-6daa-49d3-b161-26afe1154691" />
+<img width="1642" height="1336" alt="image" src="https://github.com/user-attachments/assets/219d6b6a-ebe8-4ea9-abd3-1f0b200381f4" />
 
 
 <img width="3070" height="1620" alt="image" src="https://github.com/user-attachments/assets/72ee13ea-b775-456d-be89-281590ef3c3d" />
