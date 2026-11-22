@@ -55,6 +55,10 @@ For the frame connections, we proposed heavy 40 Series aluminum T-slot framing w
 
 #### Knowns & Unknowns
 
+<img width="1180" height="1116" alt="image" src="https://github.com/user-attachments/assets/791174bf-200c-4a9b-bde5-e34d6a06fa72" />
+
+
+<img width="1178" height="636" alt="image" src="https://github.com/user-attachments/assets/aecfa39e-8286-48fb-abe2-93e0b0be73f0" />
 
 
 <img width="828" height="909" alt="image" src="https://github.com/user-attachments/assets/245533e1-fb57-40da-bc72-afedc4ad5f3e" />
@@ -69,10 +73,14 @@ For the frame connections, we proposed heavy 40 Series aluminum T-slot framing w
 <img width="2118" height="1524" alt="image" src="https://github.com/user-attachments/assets/59fcf3ac-ba3d-4536-93d1-99928e7db4ed" />
 
 
+We selected the 80/20 Gusseted Inside-Corner Bracket, Grainger Item #5JRU3 (manufacturer model 40-4338), as our preliminary frame connector. The bracket is compatible with 40 Series T-slot framing and has eight mounting holes, allowing multiple fastening points. Its gusseted design was chosen to provide additional rigidity at the connection between the top beam and vertical supports. Grainger also lists a compatible M8 bolt and T-slot nut assembly, Item #5JRH6
+
+The preliminary analysis gave vertical reactions of 1000 N and torsional reactions of 5.44 N·m at each support under the assumed loading conditions. The manufacturer's drawing confirmed a 40 mm spacing between mounting-hole columns, which was used as an assumed effective lever arm to calculate a 136 N force couple. The final fastener forces and connector capacity still require verification based on the actual bracket arrangement and loading direction
 
 
+### Lessons Learned 
 
-## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
+Through this assignment, I learned how to apply bearing stress, torsional shear stress, and equilibrium equations to the design of mechanical components. I also learned that theoretical minimum dimensions are not always the most practical choices, since rigidity, alignment, assembly, and manufacturer specifications must also be considered. This assignment helped me understand how the motor mount, coupler, and frame connections work together in the tensile testing machine.
 
-## Communicate
+
+**_Time spent: 5 hours_**
