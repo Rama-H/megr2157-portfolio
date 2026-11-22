@@ -23,6 +23,7 @@ For the motor mounting bracket, we selected 6061-T6 aluminum because it offers g
 
 The calculated minimum thickness was approximately 0.086 mm for the simplified bolt bearing-stress model. We selected a thicker 6.35 mm plate to provide a more practical and rigid mounting surface. This thickness satisfies the preliminary bearing-stress check, although bracket bending, frame attachment loads, and deflection still require verification.
 
+source: https://www.mcmaster.com/4855N17/
 
 ### Section 3- Coupler Design
 
@@ -46,6 +47,8 @@ We selected McMaster-Carr Precision Flexible Shaft Coupling #6208K569 as our pre
 
 
 Our preliminary cylindrical analysis gave a minimum wall thickness of approximately 0.133 mm, and we initially proposed a 6.35 mm wall thickness. These calculations helped establish a preliminary design, but they do not directly represent the stress distribution in the purchased spiral-cut coupling. Therefore, the manufacturer's published torque rating was used for the preliminary product selection.
+
+source: https://www.mcmaster.com/6208K569/
 
 
 ### Section 4- Frame Twist and T-Slot Connector Design
@@ -77,6 +80,11 @@ We selected the 80/20 Gusseted Inside-Corner Bracket, Grainger Item #5JRU3 (manu
 
 The preliminary analysis gave vertical reactions of 1000 N and torsional reactions of 5.44 N·m at each support under the assumed loading conditions. The manufacturer's drawing confirmed a 40 mm spacing between mounting-hole columns, which was used as an assumed effective lever arm to calculate a 136 N force couple. The final fastener forces and connector capacity still require verification based on the actual bracket arrangement and loading direction
 
+sources: 
+
+Grainger product page: https://www.grainger.com/product/80-20-Inside-Corner-Bracket-Gusseted-5JRU3
+
+Grainger dimension drawing:  https://www.grainger.com/ec/pdf/grainger-5jru3.pdf
 
 ### Lessons Learned 
 
