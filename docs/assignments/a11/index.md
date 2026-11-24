@@ -1,4 +1,44 @@
-# A11 – Motor Selection Part 2 (Team Project)
+# A11 – Motor Selection (Team Project) 
+
+## Member 1: Pierce Brown
+
+### Motor Selection and Attachments - Part 1
+#### Objective
+The objective of part 1 was to select a gear-motor for each lead screw using torque and speed requirements from the previous assignment, A10. Document the motor's rated output torque, speed, efficiency, voltage, current, and mounting. Use the motor's torque-speed curve to verify the motors can handle the 2kN total test load across the 1-50mm/min speed range with the required safety factor of 4. 
+
+#### Analyze
+<img width="955" height="438" alt="image" src="https://github.com/user-attachments/assets/6ca56df2-92ea-48b4-9b4c-9862d3f5ea56" />
+
+The McMaster-Carr 4855N17 gear motor is listed as base mounted. It has a 1/2 ich diameter by 1 inch long keyed output shaft. The reference drawing also shows four #10-32 face holes on a 2.645 by 2.645 inch pattern.
+
+Using the 2.54mm/rev screw lead from A10, the required cross-head speed of 1-50 mm/min corresponds to 0.394-19.685 rpm per motor. The operating thread torque from A10 is 1.36 N*m per screw. Applying the requires safety factor I got a torque of Td = 5.44 N*m or 48.1 lbf*in. 
+
+<img width="748" height="567" alt="image" src="https://github.com/user-attachments/assets/dd9c7e8f-f04f-4140-8896-dbf6662e0823" />
+<img width="751" height="574" alt="image" src="https://github.com/user-attachments/assets/948478c9-c1e8-4681-bbd2-a9b42f47f1f5" />
+
+at the maximum required speed of 19.685 rpm, the 90 V DC torque-speed chart shows around 80-85 lbf*in per moor. This exceeds the required design torque of 48.1 lbf*in per motor, which includes the safety factor of 4. The plotted torque stays above the design requirement throughout the 0.394-19.685 rpm range, supporting the selection of motor 4855N17. https://www.mcmaster.com/4855N17/
+
+### Design Floating Bearing Mount 
+#### Objective 
+
+Design a mounting bearing that supports the lower end of the lead screw while allowing it to rotate and move axially. Use a RC3 Fit between the bore and the screw end, and justify the mount dimensions and hole locations. 
+    
+#### Analyze 
+
+
+The proposed mount is 80 mm long by 40 mm wide by 15.88 mm thick, with one mount per leadscrew. Viewed from above, the bore center is 40 mm from the left short edge and 20 mm from the bottom long edge. The two M8 clearance-hole centers are 15mm and 65 mm from the same short edge, both 20 mm from the bottom long edge The mounting holes are 2 x 9.00-9.22 mm through for normal M8 clearance. The proposed 15.88 mm (0.625 in) thickness provides 0.500 in of nominal screw engagement and leaves the screw tip 0.125 in short of the bottom face. 
+
+
+<img width="1000" height="544" alt="image" src="https://github.com/user-attachments/assets/eed8df94-933c-4a15-b032-d0edd5d51908" />
+
+For the selected 0.3750 in basic diameter, the RC3 fit gives an H7 bore of 0.3750-0.3756 in and an f6 screw end of 0.3741-0.3745 in. Using these, the diametrical clearance is calculated as 0.0005-0.0015 inch clearance. 
+
+### Lessons Learned
+
+I learned to check a gearmotor's available torque, the relationship between speed and torque via a speed-torque graph, and that the efficiency estimate depends on using electrical input and mechanical output. I also learned how to use RC3 fit tables to set bore and shaft diameter limits, and how to check clearance at both tolerance extremes. Overall I spent roughly 5 hours on gathering the needed information, calculating, and compiling the work done into the portfolio. 
+
+
+## Member 2: Rama Hamid
 
 ## Objective
 
@@ -89,9 +129,113 @@ Grainger product page: https://www.grainger.com/product/80-20-Inside-Corner-Brac
 
 Grainger dimension drawing:  https://www.grainger.com/ec/pdf/grainger-5jru3.pdf
 
+### Cost Tables
+
+Bill of Materials:
+
+<img width="863" height="218" alt="Screenshot 2026-11-23 222122" src="https://github.com/user-attachments/assets/39b65a6e-0df4-44f5-b08e-bfa61bff8ab1" />
+
+<img width="361" height="225" alt="Screenshot 2026-11-23 220615" src="https://github.com/user-attachments/assets/cef529fb-f6f0-4943-8fee-bd3f5014f0ea" />
+
+Design Production Cost:
+
+<img width="234" height="99" alt="Screenshot 2026-11-23 222033" src="https://github.com/user-attachments/assets/0d93c411-c0e0-47d3-a524-2057e711e502" />
+
+
 ### Lessons Learned 
 
 Through this assignment, I learned how to apply bearing stress, torsional shear stress, and equilibrium equations to the design of mechanical components. I also learned that theoretical minimum dimensions are not always the most practical choices, since rigidity, alignment, assembly, and manufacturer specifications must also be considered. This assignment helped me understand how the motor mount, coupler, and frame connections work together in the tensile testing machine.
 
 
 **_Time spent: 5 hours_**
+
+
+
+
+## Member 3: Bridget Fagan
+
+### Click [here](https://github.com/user-attachments/files/35306960/A11.FEA.zip) to download the CAD files.
+
+## Objective
+
+The objective of this part of the assignment was to conduct simulations on the tensile tester assembly to verify that the assembly would survive its application. To do this, we had to apply meshes of three different sizes to the model and run the same study for convergence. The entire frame is made from aluminum with the exception of the steel lead screws. There are two parts to this section. The first part involves testing the top rail to ensure it can withstand the torque and axial loads of the lead screws. The second part involves testing the side rails for the same criteria.
+
+## Analyze
+
+### Section 5
+
+
+#### Model Setup
+
+Part 5 required the testing of the top of the frame against the applied torque from the motor as well as the axial force through the lead screws. To set up the model, I removed the crosshead assembly including the nut and flange and the lead screws. The crosshead assembly does not affect the results of the study, and the lead screws do not mesh correctly in coarser sizes. To get around this, I removed the lead screws and instead applied the axial force around the rim of the hole the lead screw was in. The hole has a sharp corner, and from the results of my first study with a coarse mesh, the maximum stress occurred at those corners. This would be concerning if not for the fact that the lead screw is not directly mounted to the top of the frame in the way that is described. 
+
+The feet of the frame and the faces of the frame top were fixed as shown which emulates the standard loading conditions of a simply supported beam. I conducted the study this way to understand the worst possible case of loading, and I found that the maximum stress was within the elastic region for aluminum, at 4.86 x 10^7 N/m^2.
+
+<img width="614" height="266" alt="Screenshot 2026-11-23 151244" src="https://github.com/user-attachments/assets/d7496c0e-a6f6-49d3-9284-773b77886e4d" />
+
+The deflection results showed that the maximum deflection occurred in the center of the rail. If the lead screws were in the assembly, they would provide minimal support to the rail in the center to reduce the deflection. There was no unusual bending or warping in the study, the beam behaved as expected. The end faces were what kept the rail behaving normally. The deflection effects of the load peaked in the center of the beam.
+
+
+## Communicate
+
+#### Meshing and Results
+
+I used three different mesh sizes in this part (coarse, medium, fine) with the aim to achieve a result that converges. I tested each size of mesh for convergence and on the three required criteria (stress, displacement, safety factor) using the following table:
+
+<img width="348" height="62" alt="Screenshot 2026-11-23 193940" src="https://github.com/user-attachments/assets/76fe59cd-2c21-4937-99a6-ca3b802254d1" />
+
+I found that increasing the mesh size led to divergence within the results, which was not unexpected. 
+
+#### Optimization Suggestions
+
+To optimize the model of the frame top, I would suggest adding fillets or chamfers around the holes in the rail. This will reduce stress around the hole and prevent edge degradation through use. To reduce the large deflection in the center, I would install the gusseted brackets discussed in Part 4 between the top rail and side rails to increase the support from the ends.
+
+Using a fine mesh may create more accurate results, however it takes more computing power and time. I would suggest using a medium mesh as a midpoint between computation time and accuracy.
+
+
+### Section 6
+
+## Analyze
+
+#### Model Setup
+
+***_Note: Due to constraints on computing power and Random Access Memory, the results of this study were not convergent and produced results that were massively variant. As such, the results can not be interpreted the same way as Section 5. Additionally, the study is missing features, which could not be avoided_
+
+Constraining this assembly involved removing all members besides the side rails and the top rail. I fixed the end faces of the top rail and applied compression loads down the side rails equivalent to the 1kN loads through the lead screws and a transverse load applied from the center of the assembly towards the outside. 
+
+## Communicate
+
+#### Meshing and Results
+
+I ran into issues running the simulation with finer meshes as my computer did not have enough memory to run the simulation. I had to adjust by removing the top rail and motor brackets, and applying the loads directly to the side rails, illustrated below.
+
+
+Iteration 1 (Coarse Mesh):
+
+<img width="484" height="299" alt="Screenshot 2026-11-23 162123" src="https://github.com/user-attachments/assets/567b95cd-9c51-4075-b4a4-40a002fc9f7c" />
+
+
+Iteration 3 (Fine Mesh):
+
+<img width="460" height="302" alt="Screenshot 2026-11-23 175607" src="https://github.com/user-attachments/assets/d1fccb27-3bda-4251-aa8a-77facaedd597" />
+
+
+The filled out results table is below:
+
+<img width="347" height="62" alt="Screenshot 2026-11-23 193945" src="https://github.com/user-attachments/assets/ed3ef683-cfd8-434f-a1c3-de8f2b8e70f8" />
+
+The results of this study proved that the rails would not fail under the loads from the lead screws and motors. The most dangerous parameter is deflection, which peaked at 0.19 m. The Von Mises stress peaked at 1.782 x 10^7 N/m^2 which is well within the limit of aluminum. The load path acted along the length of the rail as anticipated, however the transverse loading caused the rails to deflect outwards from the center.
+
+The omission of certain parts of the assembly dramatically affected the results of the study. The motor brackets were not present in any of the simulations, and the top rail was absent for the fine mesh run. This caused the side rails to deflect higher up than expected, as there was no top rail to fix them. Additionally, the motor brackets would have allowed the torque and stresses to be transmitted via the interface between the bracket and top rail, instead of in the generalized location that the simulation was conducted with. I understand that the study is therefore incorrect, however, there was no way around this outcome.
+
+
+#### Optimization Suggestions
+
+There weren't many issues that were encountered with the side rails, however with the inclusion of the bracket mentioned above in Section 5, the rails would remain more stable when load is applied. Beyond the gusset brackets on the bottom rail and the brackets on the top rail, there isn't much to optimize the side rails. If the load increases in the lead screws, we might consider a rod through the center of the rails to decrease transverse deflection.
+
+
+### Lessons Learned
+
+A major holdup of this part of the project was the software itself. I had to keep troubleshooting issues with Solidworks for days before I could even run the FEA studies. Even during the FEA, the software would suddenly freeze the analysis for over an hour and refuse to continue. I still don't know what caused this issue, I have never experienced it before, however I did learn a lot about troubleshooting meshes and simulation errors.
+
+_Time Spent: 6 hours_
